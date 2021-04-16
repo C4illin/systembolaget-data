@@ -1,0 +1,15 @@
+{
+  "name": "systembolaget",
+  "version": "1.0.0",
+  "main": "getAllURLs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^8.0.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
