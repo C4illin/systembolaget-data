@@ -3,7 +3,7 @@ const fs = require("fs");
 
 (async () => {
   let products = require('./products.json')
-  let urls = fs.readFileSync('testurls.txt','utf8').split('\n')
+  let urls = fs.readFileSync('urls.txt','utf8').split('\n')
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
   await page.goto('https://www.systembolaget.se/')
@@ -11,8 +11,8 @@ const fs = require("fs");
   await page.click('button.css-49r7zy')
   // var product = {}
 
-  for (let i = 0; i < urls.length; i++) { //urls.length
-    console.log(i + " - " + urls[i])
+  for (let i = 0; i < 100; i++) { //urls.length
+    console.log(i + 1 + " - " + urls[i])
     await page.goto(urls[i])
 
     var product = await page.evaluate(() => {

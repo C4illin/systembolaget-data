@@ -39,15 +39,16 @@
         "price": 299,
         "volume": "700 ml",
         "sugar": "<3 g/l",
-        "country": "Tillverkad i Storbritannien",
-        "nr": "Nr 320",
+        "country": "Storbritannien",
+        "nr": 320,
         "tags": [
             "sprit",
             "gin & genever",
             "gin"
         ],
         "image": "https://sb-product-media-prod.azureedge.net/productimages/24478611/24478611_400.png",
-        "apk": 0.96
+        "apk": 0.96,
+        "url": "https://www.systembolaget.se/produkt/sprit/gibsons-exception-32001/"
     },
     "https://www.systembolaget.se/produkt/alkoholfritt/richard-juhlin-191501/": {
         "name": "Richard Juhlin",
@@ -56,14 +57,15 @@
         "price": 89,
         "volume": "750 ml",
         "sugar": "45 g/l",
-        "country": "Tillverkad i Frankrike",
-        "nr": "Nr 1915",
+        "country": "Frankrike",
+        "nr": 1915,
         "tags": [
             "alkoholfritt",
             "mousserande"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24558780/24558780_400.png",
-        "apk": 0
+        "apk": 0,
+        "url": "https://www.systembolaget.se/produkt/alkoholfritt/richard-juhlin-191501/"
     },
     "https://www.systembolaget.se/produkt/vin/casas-honestos-7633708/": {
         "name": "Casas Honestos",
@@ -184,5 +186,1704 @@
         "image": "https://product-cdn.systembolaget.se/productimages/507846/507846_400.png",
         "apk": 1.73,
         "url": "https://www.systembolaget.se/produkt/ol/carlsberg-sort-guld-129112/"
+    },
+    "https://www.systembolaget.se/produkt/ol/hawkshead-120101/": {
+        "name": "Hawkshead",
+        "subtitle": "Red Bitter",
+        "alcohol": "4,2 %",
+        "price": 20.9,
+        "volume": "500 ml",
+        "country": "Storbritannien",
+        "nr": 1201,
+        "tags": [
+            "öl",
+            "ale",
+            "engelsk pale ale och bitter"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24529131/24529131_400.png",
+        "apk": 1,
+        "url": "https://www.systembolaget.se/produkt/ol/hawkshead-120101/"
+    },
+    "https://www.systembolaget.se/produkt/alkoholfritt/stella-artois-111903/": {
+        "name": "Stella Artois",
+        "subtitle": "Alcohol Free 0.0",
+        "alcohol": "0 %",
+        "price": 12.9,
+        "volume": "330 ml",
+        "country": "Belgien",
+        "nr": 1119,
+        "tags": [
+            "alkoholfritt",
+            "öl",
+            "alkoholfri internationell lager"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24558926/24558926_400.png",
+        "apk": 0,
+        "url": "https://www.systembolaget.se/produkt/alkoholfritt/stella-artois-111903/"
+    },
+    "https://www.systembolaget.se/produkt/vin/la-farra-prosecco-232301/": {
+        "name": "La Farra Prosecco",
+        "subtitle": "Rosé, 2020",
+        "alcohol": "11,5 %",
+        "price": 79,
+        "volume": "750 ml",
+        "sugar": "8 g/l",
+        "country": "Italien, Venetien, Prosecco",
+        "nr": 2323,
+        "tags": [
+            "vin",
+            "mousserande vin",
+            "rosé"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24555257/24555257_400.png",
+        "apk": 1.09,
+        "url": "https://www.systembolaget.se/produkt/vin/la-farra-prosecco-232301/"
+    },
+    "https://www.systembolaget.se/produkt/vin/don-david-236407/": {
+        "name": "Don David",
+        "subtitle": "Red Blend, 2020",
+        "alcohol": "14,5 %",
+        "price": 199,
+        "volume": "2000 ml",
+        "sugar": "<3 g/l",
+        "country": "Argentina, North, Salta, Valles Calchaquies",
+        "nr": 2364,
+        "tags": [
+            "vin",
+            "rött vin",
+            "fruktigt & smakrikt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24537228/24537228_400.png",
+        "apk": 1.46,
+        "url": "https://www.systembolaget.se/produkt/vin/don-david-236407/"
+    },
+    "https://www.systembolaget.se/produkt/vin/piconico-chardonnay-229601/": {
+        "name": "Piconico Chardonnay",
+        "subtitle": "2020",
+        "alcohol": "13,5 %",
+        "price": 79,
+        "volume": "750 ml",
+        "sugar": "<3 g/l",
+        "country": "Argentina, Cuyo, Mendoza",
+        "nr": 2296,
+        "tags": [
+            "vin",
+            "vitt vin",
+            "friskt & fruktigt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24528946/24528946_400.png",
+        "apk": 1.28,
+        "url": "https://www.systembolaget.se/produkt/vin/piconico-chardonnay-229601/"
+    },
+    "https://www.systembolaget.se/produkt/vin/santa-ines-244601/": {
+        "name": "Santa Inés",
+        "subtitle": "2019",
+        "alcohol": "13,5 %",
+        "price": 79,
+        "volume": "750 ml",
+        "sugar": "<3 g/l",
+        "country": "Chile, Valle Central",
+        "nr": 2446,
+        "tags": [
+            "vin",
+            "rött vin",
+            "fruktigt & smakrikt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24536977/24536977_400.png",
+        "apk": 1.28,
+        "url": "https://www.systembolaget.se/produkt/vin/santa-ines-244601/"
+    },
+    "https://www.systembolaget.se/produkt/sprit/the-dundee-47101/": {
+        "name": "The Dundee",
+        "subtitle": "Blended Scotch Whisky 10 Years",
+        "alcohol": "40 %",
+        "price": 299,
+        "volume": "700 ml",
+        "country": "Storbritannien, Skottland",
+        "nr": 471,
+        "tags": [
+            "sprit",
+            "whisky",
+            "blended whisky"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24529050/24529050_400.png",
+        "apk": 0.94,
+        "url": "https://www.systembolaget.se/produkt/sprit/the-dundee-47101/"
+    },
+    "https://www.systembolaget.se/produkt/cider-blanddrycker/barrels-and-drums-111415/": {
+        "name": "Barrels and Drums",
+        "subtitle": "Raspberry Mojito",
+        "alcohol": "4,5 %",
+        "price": 19.9,
+        "volume": "330 ml",
+        "sugar": "84 g/l",
+        "country": "Sverige",
+        "nr": 1114,
+        "tags": [
+            "cider & blanddrycker",
+            "blanddrycker"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24537762/24537762_400.png",
+        "apk": 0.75,
+        "url": "https://www.systembolaget.se/produkt/cider-blanddrycker/barrels-and-drums-111415/"
+    },
+    "https://www.systembolaget.se/produkt/vin/twenty-one-631201/": {
+        "name": "Twenty One",
+        "subtitle": "Rosé, 2020",
+        "alcohol": "13 %",
+        "price": 59,
+        "volume": "750 ml",
+        "sugar": "<3 g/l",
+        "country": "Australien, South Australia",
+        "nr": 6312,
+        "tags": [
+            "vin",
+            "rosévin",
+            "fruktigt & smakrikt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24520221/24520221_400.png",
+        "apk": 1.65,
+        "url": "https://www.systembolaget.se/produkt/vin/twenty-one-631201/"
+    },
+    "https://www.systembolaget.se/produkt/ol/gosser-132015/": {
+        "name": "Gösser",
+        "alcohol": "5,2 %",
+        "price": 12.9,
+        "volume": "330 ml",
+        "country": "Österrike",
+        "nr": 1320,
+        "tags": [
+            "öl",
+            "ljus lager",
+            "pilsner - tysk stil"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24535602/24535602_400.png",
+        "apk": 1.33,
+        "url": "https://www.systembolaget.se/produkt/ol/gosser-132015/"
+    },
+    "https://www.systembolaget.se/produkt/vin/kingstate-627408/": {
+        "name": "Kingstate",
+        "subtitle": "White Blend, 2020",
+        "alcohol": "12,5 %",
+        "price": 199,
+        "volume": "3000 ml",
+        "sugar": "3 g/l",
+        "country": "Australien, South Eastern Australia",
+        "nr": 6274,
+        "tags": [
+            "vin",
+            "vitt vin",
+            "friskt & fruktigt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24494095/24494095_400.png",
+        "apk": 1.88,
+        "url": "https://www.systembolaget.se/produkt/vin/kingstate-627408/"
+    },
+    "https://www.systembolaget.se/produkt/vin/expedition-carmenere-254301/": {
+        "name": "Expedition Carmenère",
+        "subtitle": "2020",
+        "alcohol": "13,5 %",
+        "price": 69,
+        "volume": "750 ml",
+        "sugar": "<3 g/l",
+        "country": "Chile, Valle Central",
+        "nr": 2543,
+        "tags": [
+            "vin",
+            "rött vin",
+            "fruktigt & smakrikt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24536978/24536978_400.png",
+        "apk": 1.47,
+        "url": "https://www.systembolaget.se/produkt/vin/expedition-carmenere-254301/"
+    },
+    "https://www.systembolaget.se/produkt/ol/pistonhead-102115/": {
+        "name": "Pistonhead",
+        "subtitle": "X-Edition",
+        "alcohol": "5 %",
+        "price": 11.5,
+        "volume": "330 ml",
+        "country": "Sverige",
+        "nr": 1021,
+        "tags": [
+            "öl",
+            "ljus lager",
+            "modern stil/india pale lager"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24529577/24529577_400.png",
+        "apk": 1.43,
+        "url": "https://www.systembolaget.se/produkt/ol/pistonhead-102115/"
+    },
+    "https://www.systembolaget.se/produkt/vin/cuvee-prestige-rose-millesime-273501/": {
+        "name": "Cuvée Prestige Rosé Millésime",
+        "subtitle": "JM Gobillard & Fils, 2014",
+        "alcohol": "12,5 %",
+        "price": 279,
+        "volume": "750 ml",
+        "sugar": "7 g/l",
+        "country": "Frankrike, Champagne",
+        "nr": 2735,
+        "tags": [
+            "vin",
+            "mousserande vin",
+            "rosé"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24534105/24534105_400.png",
+        "apk": 0.34,
+        "url": "https://www.systembolaget.se/produkt/vin/cuvee-prestige-rose-millesime-273501/"
+    },
+    "https://www.systembolaget.se/produkt/vin/istine-230901/": {
+        "name": "Istine",
+        "subtitle": "Chianti Classico, 2018",
+        "alcohol": "14 %",
+        "price": 159,
+        "volume": "750 ml",
+        "sugar": "<3 g/l",
+        "country": "Italien, Toscana, Chianti, Chianti Classico",
+        "nr": 2309,
+        "tags": [
+            "vin",
+            "rött vin",
+            "kryddigt & mustigt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24528500/24528500_400.png",
+        "apk": 0.66,
+        "url": "https://www.systembolaget.se/produkt/vin/istine-230901/"
+    },
+    "https://www.systembolaget.se/produkt/vin/banderilleros-ecologico-278301/": {
+        "name": "Banderilleros Ecológico",
+        "subtitle": "Tempranillo Cabernet Sauvignon Merlot, 2019",
+        "alcohol": "14 %",
+        "price": 84,
+        "volume": "750 ml",
+        "sugar": "<3 g/l",
+        "country": "Spanien, Kastilien-La Mancha, VdlT Castilla",
+        "nr": 2783,
+        "tags": [
+            "vin",
+            "rött vin",
+            "fruktigt & smakrikt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24519573/24519573_400.png",
+        "apk": 1.25,
+        "url": "https://www.systembolaget.se/produkt/vin/banderilleros-ecologico-278301/"
+    },
+    "https://www.systembolaget.se/produkt/ol/fraugruber-102315/": {
+        "name": "FrauGruber",
+        "subtitle": "24/7",
+        "alcohol": "5,1 %",
+        "price": 24.9,
+        "volume": "330 ml",
+        "country": "Tyskland",
+        "nr": 1023,
+        "tags": [
+            "öl",
+            "ljus lager",
+            "modern stil/india pale lager"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24532326/24532326_400.png",
+        "apk": 0.68,
+        "url": "https://www.systembolaget.se/produkt/ol/fraugruber-102315/"
+    },
+    "https://www.systembolaget.se/produkt/vin/grand-tokaj-468202/": {
+        "name": "Grand Tokaj",
+        "subtitle": "Szamorodni, 2017",
+        "alcohol": "10 %",
+        "price": 129,
+        "volume": "500 ml",
+        "sugar": "135 g/l",
+        "country": "Ungern, Tokaj",
+        "nr": 4682,
+        "tags": [
+            "vin",
+            "vitt vin",
+            "sött"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24538731/24538731_400.png",
+        "apk": 0.39,
+        "url": "https://www.systembolaget.se/produkt/vin/grand-tokaj-468202/"
+    },
+    "https://www.systembolaget.se/produkt/vin/argento-rose-256408/": {
+        "name": "Argento Rosé",
+        "subtitle": "2020",
+        "alcohol": "12,5 %",
+        "price": 199,
+        "volume": "3000 ml",
+        "sugar": "4 g/l",
+        "country": "Argentina, Cuyo, Mendoza",
+        "nr": 2564,
+        "tags": [
+            "vin",
+            "rosévin",
+            "fruktigt & smakrikt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24502479/24502479_400.png",
+        "apk": 1.88,
+        "url": "https://www.systembolaget.se/produkt/vin/argento-rose-256408/"
+    },
+    "https://www.systembolaget.se/produkt/vin/kleine-zalze-2003501/": {
+        "name": "Kleine Zalze",
+        "subtitle": "Cellar Selection Fairtrade White Blend, 2020",
+        "alcohol": "13,5 %",
+        "price": 99,
+        "volume": "750 ml",
+        "sugar": "4 g/l",
+        "country": "Sydafrika, Western Cape",
+        "nr": 20035,
+        "tags": [
+            "vin",
+            "vitt vin",
+            "friskt & fruktigt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24546367/24546367_400.png",
+        "apk": 1.02,
+        "url": "https://www.systembolaget.se/produkt/vin/kleine-zalze-2003501/"
+    },
+    "https://www.systembolaget.se/produkt/cider-blanddrycker/herrljunga-cider-122415/": {
+        "name": "Herrljunga Cider",
+        "subtitle": "Blodapelsin",
+        "alcohol": "4,5 %",
+        "price": 14.9,
+        "volume": "250 ml",
+        "sugar": "74 g/l",
+        "country": "Sverige",
+        "nr": 1224,
+        "tags": [
+            "cider & blanddrycker",
+            "cider",
+            "söt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24539611/24539611_400.png",
+        "apk": 0.76,
+        "url": "https://www.systembolaget.se/produkt/cider-blanddrycker/herrljunga-cider-122415/"
+    },
+    "https://www.systembolaget.se/produkt/sprit/the-dundee-47102/": {
+        "name": "The Dundee",
+        "subtitle": "Blended Scotch Whisky 10 Years",
+        "alcohol": "40 %",
+        "price": 159,
+        "volume": "350 ml",
+        "country": "Storbritannien, Skottland",
+        "nr": 471,
+        "tags": [
+            "sprit",
+            "whisky",
+            "blended whisky"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24537759/24537759_400.png",
+        "apk": 0.88,
+        "url": "https://www.systembolaget.se/produkt/sprit/the-dundee-47102/"
+    },
+    "https://www.systembolaget.se/produkt/vin/gemtree-2003301/": {
+        "name": "Gemtree",
+        "subtitle": "Organic Shiraz, 2020",
+        "alcohol": "14,5 %",
+        "price": 119,
+        "volume": "750 ml",
+        "sugar": "<3 g/l",
+        "country": "Australien, South Australia, Fleurieu, McLaren Vale",
+        "nr": 20033,
+        "tags": [
+            "vin",
+            "rött vin",
+            "fruktigt & smakrikt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24532865/24532865_400.png",
+        "apk": 0.91,
+        "url": "https://www.systembolaget.se/produkt/vin/gemtree-2003301/"
+    },
+    "https://www.systembolaget.se/produkt/vin/saam-222001/": {
+        "name": "SAAM",
+        "subtitle": "Pinotage, 2020",
+        "alcohol": "15 %",
+        "price": 89,
+        "volume": "750 ml",
+        "sugar": "4 g/l",
+        "country": "Sydafrika, Western Cape, Coastal Region",
+        "nr": 2220,
+        "tags": [
+            "vin",
+            "rött vin",
+            "fruktigt & smakrikt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24548290/24548290_400.png",
+        "apk": 1.26,
+        "url": "https://www.systembolaget.se/produkt/vin/saam-222001/"
+    },
+    "https://www.systembolaget.se/produkt/vin/fiore-2003401/": {
+        "name": "Fiore",
+        "subtitle": "Sauvignon Blanc, 2020",
+        "alcohol": "13,5 %",
+        "price": 99,
+        "volume": "750 ml",
+        "sugar": "<3 g/l",
+        "country": "Chile, Aconcagua, San Antonio, Valle de Leyda",
+        "nr": 20034,
+        "tags": [
+            "vin",
+            "vitt vin",
+            "friskt & fruktigt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24536864/24536864_400.png",
+        "apk": 1.02,
+        "url": "https://www.systembolaget.se/produkt/vin/fiore-2003401/"
+    },
+    "https://www.systembolaget.se/produkt/alkoholfritt/jp-chenet-so-free-1903701/": {
+        "name": "JP Chenet So Free",
+        "subtitle": "Cabernet-Syrah",
+        "alcohol": "0,3 %",
+        "price": 55,
+        "volume": "750 ml",
+        "sugar": "57 g/l",
+        "country": "Frankrike",
+        "nr": 19037,
+        "tags": [
+            "alkoholfritt",
+            "rött"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24558891/24558891_400.png",
+        "apk": 0.04,
+        "url": "https://www.systembolaget.se/produkt/alkoholfritt/jp-chenet-so-free-1903701/"
+    },
+    "https://www.systembolaget.se/produkt/alkoholfritt/leitz-eins-zwei-zero-196815/": {
+        "name": "Leitz Eins Zwei Zero",
+        "subtitle": "Sparkling Riesling",
+        "alcohol": "0 %",
+        "price": 26,
+        "volume": "250 ml",
+        "sugar": "36 g/l",
+        "country": "Tyskland",
+        "nr": 1968,
+        "tags": [
+            "alkoholfritt",
+            "mousserande"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24558875/24558875_400.png",
+        "apk": 0,
+        "url": "https://www.systembolaget.se/produkt/alkoholfritt/leitz-eins-zwei-zero-196815/"
+    },
+    "https://www.systembolaget.se/produkt/cider-blanddrycker/urban-peers-127615/": {
+        "name": "Urban Peers",
+        "subtitle": "Crisp Peach",
+        "alcohol": "4,5 %",
+        "price": 16.9,
+        "volume": "330 ml",
+        "sugar": "70 g/l",
+        "country": "Sverige",
+        "nr": 1276,
+        "tags": [
+            "cider & blanddrycker",
+            "cider",
+            "torr/halvtorr"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24538749/24538749_400.png",
+        "apk": 0.88,
+        "url": "https://www.systembolaget.se/produkt/cider-blanddrycker/urban-peers-127615/"
+    },
+    "https://www.systembolaget.se/produkt/ol/desperados-102003/": {
+        "name": "Desperados",
+        "subtitle": "Mojito",
+        "alcohol": "5,9 %",
+        "price": 18.9,
+        "volume": "330 ml",
+        "country": "Nederländerna",
+        "nr": 1020,
+        "tags": [
+            "öl",
+            "annan öl",
+            "annan öl"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24529567/24529567_400.png",
+        "apk": 1.03,
+        "url": "https://www.systembolaget.se/produkt/ol/desperados-102003/"
+    },
+    "https://www.systembolaget.se/produkt/ol/ottakringer-101803/": {
+        "name": "Ottakringer",
+        "subtitle": "Helles",
+        "alcohol": "5,2 %",
+        "price": 12.9,
+        "volume": "330 ml",
+        "country": "Österrike",
+        "nr": 1018,
+        "tags": [
+            "öl",
+            "ljus lager",
+            "dortmunder och helles"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24529556/24529556_400.png",
+        "apk": 1.33,
+        "url": "https://www.systembolaget.se/produkt/ol/ottakringer-101803/"
+    },
+    "https://www.systembolaget.se/produkt/ol/praga-silver-102812/": {
+        "name": "Praga Silver",
+        "alcohol": "4 %",
+        "price": 14.9,
+        "volume": "500 ml",
+        "country": "Tjeckien",
+        "nr": 1028,
+        "tags": [
+            "öl",
+            "ljus lager",
+            "pilsner - tjeckisk stil"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24534117/24534117_400.png",
+        "apk": 1.34,
+        "url": "https://www.systembolaget.se/produkt/ol/praga-silver-102812/"
+    },
+    "https://www.systembolaget.se/produkt/vin/mazet-de-nizas-560207/": {
+        "name": "Mazet de Nizas",
+        "subtitle": "2019",
+        "alcohol": "14 %",
+        "price": 229,
+        "volume": "2000 ml",
+        "sugar": "<3 g/l",
+        "country": "Frankrike, Languedoc-Roussillon, Languedoc",
+        "nr": 5602,
+        "tags": [
+            "vin",
+            "rött vin",
+            "fruktigt & smakrikt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24528950/24528950_400.png",
+        "apk": 1.22,
+        "url": "https://www.systembolaget.se/produkt/vin/mazet-de-nizas-560207/"
+    },
+    "https://www.systembolaget.se/produkt/vin/vernissage-795001/": {
+        "name": "Vernissage",
+        "alcohol": "12,5 %",
+        "price": 89,
+        "volume": "750 ml",
+        "sugar": "7 g/l",
+        "country": "Rumänien",
+        "nr": 7950,
+        "tags": [
+            "vin",
+            "mousserande vin"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24538719/24538719_400.png",
+        "apk": 1.05,
+        "url": "https://www.systembolaget.se/produkt/vin/vernissage-795001/"
+    },
+    "https://www.systembolaget.se/produkt/vin/vina-bujanda-222101/": {
+        "name": "Viña Bujanda",
+        "subtitle": "Gran Reserva, 2012",
+        "alcohol": "13,5 %",
+        "price": 249,
+        "volume": "750 ml",
+        "sugar": "<3 g/l",
+        "country": "Spanien, Rioja",
+        "nr": 2221,
+        "tags": [
+            "vin",
+            "rött vin",
+            "kryddigt & mustigt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24548436/24548436_400.png",
+        "apk": 0.41,
+        "url": "https://www.systembolaget.se/produkt/vin/vina-bujanda-222101/"
+    },
+    "https://www.systembolaget.se/produkt/vin/louco-228401/": {
+        "name": "Louco",
+        "subtitle": "2019",
+        "alcohol": "13 %",
+        "price": 79,
+        "volume": "750 ml",
+        "sugar": "<3 g/l",
+        "country": "Portugal, Península de Setúbal",
+        "nr": 2284,
+        "tags": [
+            "vin",
+            "vitt vin",
+            "friskt & fruktigt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24551826/24551826_400.png",
+        "apk": 1.23,
+        "url": "https://www.systembolaget.se/produkt/vin/louco-228401/"
+    },
+    "https://www.systembolaget.se/produkt/vin/gaia-223801/": {
+        "name": "Gaia",
+        "subtitle": "White Blend, 2020",
+        "alcohol": "13,5 %",
+        "price": 119,
+        "volume": "750 ml",
+        "sugar": "<3 g/l",
+        "country": "Argentina, Cuyo, Mendoza",
+        "nr": 2238,
+        "tags": [
+            "vin",
+            "vitt vin",
+            "friskt & fruktigt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24531854/24531854_400.png",
+        "apk": 0.85,
+        "url": "https://www.systembolaget.se/produkt/vin/gaia-223801/"
+    },
+    "https://www.systembolaget.se/produkt/sprit/plymouth-gin-8623401/": {
+        "name": "Plymouth Gin",
+        "alcohol": "41,2 %",
+        "price": 299,
+        "volume": "700 ml",
+        "sugar": "1 g/l",
+        "country": "Storbritannien, England",
+        "nr": 86234,
+        "tags": [
+            "sprit",
+            "gin & genever",
+            "gin"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/524977/524977_400.png",
+        "apk": 0.96,
+        "url": "https://www.systembolaget.se/produkt/sprit/plymouth-gin-8623401/"
+    },
+    "https://www.systembolaget.se/produkt/ol/antiek-blonde-super-5-ale-102703/": {
+        "name": "Antiek Blonde Super 5 Ale",
+        "alcohol": "5 %",
+        "price": 24.9,
+        "volume": "330 ml",
+        "country": "Belgien",
+        "nr": 1027,
+        "tags": [
+            "öl",
+            "ale",
+            "belgisk ljus ale"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24534107/24534107_400.png",
+        "apk": 0.66,
+        "url": "https://www.systembolaget.se/produkt/ol/antiek-blonde-super-5-ale-102703/"
+    },
+    "https://www.systembolaget.se/produkt/ol/dala-102503/": {
+        "name": "Dala",
+        "subtitle": "IPL",
+        "alcohol": "5 %",
+        "price": 24.9,
+        "volume": "330 ml",
+        "country": "Sverige",
+        "nr": 1025,
+        "tags": [
+            "öl",
+            "ljus lager",
+            "modern stil/india pale lager"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24532785/24532785_400.png",
+        "apk": 0.66,
+        "url": "https://www.systembolaget.se/produkt/ol/dala-102503/"
+    },
+    "https://www.systembolaget.se/produkt/vin/kleine-zalze-226901/": {
+        "name": "Kleine Zalze",
+        "subtitle": "Cellar Selection Fairtrade Red Blend, 2020",
+        "alcohol": "15 %",
+        "price": 99,
+        "volume": "750 ml",
+        "sugar": "7 g/l",
+        "country": "Sydafrika, Western Cape, Coastal Region",
+        "nr": 2269,
+        "tags": [
+            "vin",
+            "rött vin",
+            "fruktigt & smakrikt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24547973/24547973_400.png",
+        "apk": 1.14,
+        "url": "https://www.systembolaget.se/produkt/vin/kleine-zalze-226901/"
+    },
+    "https://www.systembolaget.se/produkt/sprit/teerenpeli-kaski-sherry-cask-45602/": {
+        "name": "Teerenpeli Kaski Sherry Cask",
+        "subtitle": "Single Malt Whisky",
+        "alcohol": "43 %",
+        "price": 549,
+        "volume": "500 ml",
+        "country": "Finland",
+        "nr": 456,
+        "tags": [
+            "sprit",
+            "whisky",
+            "maltwhisky"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24539257/24539257_400.png",
+        "apk": 0.39,
+        "url": "https://www.systembolaget.se/produkt/sprit/teerenpeli-kaski-sherry-cask-45602/"
+    },
+    "https://www.systembolaget.se/produkt/vin/reserved-wild-organic-2003201/": {
+        "name": "Reserved & Wild Organic",
+        "subtitle": "Chardonnay Sauvignon Blanc, 2020",
+        "alcohol": "13 %",
+        "price": 99,
+        "volume": "750 ml",
+        "sugar": "<3 g/l",
+        "country": "Australien, South Australia",
+        "nr": 20032,
+        "tags": [
+            "vin",
+            "vitt vin",
+            "friskt & fruktigt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24528942/24528942_400.png",
+        "apk": 0.98,
+        "url": "https://www.systembolaget.se/produkt/vin/reserved-wild-organic-2003201/"
+    },
+    "https://www.systembolaget.se/produkt/cider-blanddrycker/absolut-111515/": {
+        "name": "Absolut",
+        "subtitle": "Soda Lime",
+        "alcohol": "5 %",
+        "price": 19.9,
+        "volume": "250 ml",
+        "sugar": "1 g/l",
+        "country": "Sverige",
+        "nr": 1115,
+        "tags": [
+            "cider & blanddrycker",
+            "blanddrycker"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24537764/24537764_400.png",
+        "apk": 0.63,
+        "url": "https://www.systembolaget.se/produkt/cider-blanddrycker/absolut-111515/"
+    },
+    "https://www.systembolaget.se/produkt/vin/church-road-mcdonald-series-chardonnay-253001/": {
+        "name": "Church Road McDonald Series Chardonnay",
+        "subtitle": "Church Road Winery, 2019",
+        "alcohol": "13 %",
+        "price": 179,
+        "volume": "750 ml",
+        "sugar": "<3 g/l",
+        "country": "Nya Zeeland, Hawke's Bay",
+        "nr": 2530,
+        "tags": [
+            "vin",
+            "vitt vin",
+            "fylligt & smakrikt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24534241/24534241_400.png",
+        "apk": 0.54,
+        "url": "https://www.systembolaget.se/produkt/vin/church-road-mcdonald-series-chardonnay-253001/"
+    },
+    "https://www.systembolaget.se/produkt/alkoholfritt/st-eriks-8439303/": {
+        "name": "S:t Eriks",
+        "subtitle": "Glutenfri IPA Alkoholfri",
+        "alcohol": "0,5 %",
+        "price": 15.9,
+        "volume": "330 ml",
+        "country": "Sverige",
+        "nr": 84393,
+        "tags": [
+            "alkoholfritt",
+            "öl",
+            "alkoholfri india pale ale"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24525648/24525648_400.png",
+        "apk": 0.1,
+        "url": "https://www.systembolaget.se/produkt/alkoholfritt/st-eriks-8439303/"
+    },
+    "https://www.systembolaget.se/produkt/vin/rendola-281701/": {
+        "name": "Rendola",
+        "subtitle": "Sangiovese Organic, 2019",
+        "alcohol": "13,5 %",
+        "price": 105,
+        "volume": "750 ml",
+        "sugar": "5 g/l",
+        "country": "Italien, Marche",
+        "nr": 2817,
+        "tags": [
+            "vin",
+            "rött vin",
+            "fruktigt & smakrikt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24528944/24528944_400.png",
+        "apk": 0.96,
+        "url": "https://www.systembolaget.se/produkt/vin/rendola-281701/"
+    },
+    "https://www.systembolaget.se/produkt/vin/tuffeaux-252401/": {
+        "name": "Tuffeaux",
+        "subtitle": "2018",
+        "alcohol": "14 %",
+        "price": 159,
+        "volume": "750 ml",
+        "sugar": "<3 g/l",
+        "country": "Frankrike, Loiredalen, Touraine, Bourgueil",
+        "nr": 2524,
+        "tags": [
+            "vin",
+            "rött vin",
+            "fruktigt & smakrikt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24531966/24531966_400.png",
+        "apk": 0.66,
+        "url": "https://www.systembolaget.se/produkt/vin/tuffeaux-252401/"
+    },
+    "https://www.systembolaget.se/produkt/ol/faith-1169514/": {
+        "name": "Faith",
+        "alcohol": "5,4 %",
+        "price": 24.9,
+        "volume": "440 ml",
+        "country": "Storbritannien",
+        "nr": 11695,
+        "tags": [
+            "öl",
+            "ale",
+            "session ipa"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24529730/24529730_400.png",
+        "apk": 0.95,
+        "url": "https://www.systembolaget.se/produkt/ol/faith-1169514/"
+    },
+    "https://www.systembolaget.se/produkt/vin/costa-gran-reserva-220201/": {
+        "name": "Costa Gran Reserva",
+        "subtitle": "Cinsault Rosé, 2020",
+        "alcohol": "12 %",
+        "price": 99,
+        "volume": "750 ml",
+        "sugar": "<3 g/l",
+        "country": "Chile, Région del Sur, Valle del Itata",
+        "nr": 2202,
+        "tags": [
+            "vin",
+            "rosévin",
+            "friskt & bärigt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24531549/24531549_400.png",
+        "apk": 0.91,
+        "url": "https://www.systembolaget.se/produkt/vin/costa-gran-reserva-220201/"
+    },
+    "https://www.systembolaget.se/produkt/ol/grebbestad-128715/": {
+        "name": "Grebbestad",
+        "subtitle": "American Pale Ale",
+        "alcohol": "5,4 %",
+        "price": 22.8,
+        "volume": "330 ml",
+        "country": "Sverige",
+        "nr": 1287,
+        "tags": [
+            "öl",
+            "ale",
+            "amerikansk pale ale (apa)"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24539259/24539259_400.png",
+        "apk": 0.78,
+        "url": "https://www.systembolaget.se/produkt/ol/grebbestad-128715/"
+    },
+    "https://www.systembolaget.se/produkt/vin/malat-ried-hohlgraben-242701/": {
+        "name": "Malat Ried Höhlgraben",
+        "subtitle": "Grüner Veltliner, 2019",
+        "alcohol": "12,5 %",
+        "price": 179,
+        "volume": "750 ml",
+        "sugar": "<3 g/l",
+        "country": "Österrike, Niederösterreich, Kremstal",
+        "nr": 2427,
+        "tags": [
+            "vin",
+            "vitt vin",
+            "friskt & fruktigt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24531986/24531986_400.png",
+        "apk": 0.52,
+        "url": "https://www.systembolaget.se/produkt/vin/malat-ried-hohlgraben-242701/"
+    },
+    "https://www.systembolaget.se/produkt/vin/crama-trantu-noblesse-feteasca-regala-215601/": {
+        "name": "Crama Trantu Noblesse Feteasca Regala",
+        "subtitle": "2019",
+        "alcohol": "12,5 %",
+        "price": 89,
+        "volume": "750 ml",
+        "sugar": "<3 g/l",
+        "country": "Rumänien, Dobrogea, Murfatlar",
+        "nr": 2156,
+        "tags": [
+            "vin",
+            "vitt vin",
+            "friskt & fruktigt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24538034/24538034_400.png",
+        "apk": 1.05,
+        "url": "https://www.systembolaget.se/produkt/vin/crama-trantu-noblesse-feteasca-regala-215601/"
+    },
+    "https://www.systembolaget.se/produkt/alkoholfritt/kiviks-musteri-190802/": {
+        "name": "Kiviks Musteri",
+        "subtitle": "Belle de Boskoop Cider",
+        "alcohol": "0,5 %",
+        "price": 21,
+        "volume": "275 ml",
+        "sugar": "109 g/l",
+        "country": "Sverige",
+        "nr": 1908,
+        "tags": [
+            "alkoholfritt",
+            "cider & blanddryck",
+            "cider"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24558921/24558921_400.png",
+        "apk": 0.07,
+        "url": "https://www.systembolaget.se/produkt/alkoholfritt/kiviks-musteri-190802/"
+    },
+    "https://www.systembolaget.se/produkt/alkoholfritt/edenvale-191401/": {
+        "name": "Edenvale",
+        "subtitle": "Pinot Gris",
+        "alcohol": "0,5 %",
+        "price": 79,
+        "volume": "750 ml",
+        "sugar": "34 g/l",
+        "country": "Australien",
+        "nr": 1914,
+        "tags": [
+            "alkoholfritt",
+            "vitt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24558676/24558676_400.png",
+        "apk": 0.05,
+        "url": "https://www.systembolaget.se/produkt/alkoholfritt/edenvale-191401/"
+    },
+    "https://www.systembolaget.se/produkt/vin/wente-202701/": {
+        "name": "Wente",
+        "subtitle": "Estate Grown Chardonnay, 2019",
+        "alcohol": "13,5 %",
+        "price": 145,
+        "volume": "750 ml",
+        "sugar": "3 g/l",
+        "country": "USA, Kalifornien, Central Coast, Livermore Valley",
+        "nr": 2027,
+        "tags": [
+            "vin",
+            "vitt vin",
+            "fylligt & smakrikt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24528948/24528948_400.png",
+        "apk": 0.7,
+        "url": "https://www.systembolaget.se/produkt/vin/wente-202701/"
+    },
+    "https://www.systembolaget.se/produkt/vin/garzon-247101/": {
+        "name": "Garzón",
+        "subtitle": "Reserva Albariño, 2020",
+        "alcohol": "13,5 %",
+        "price": 139,
+        "volume": "750 ml",
+        "sugar": "<3 g/l",
+        "country": "Uruguay, Maldonado",
+        "nr": 2471,
+        "tags": [
+            "vin",
+            "vitt vin",
+            "friskt & fruktigt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24537227/24537227_400.png",
+        "apk": 0.73,
+        "url": "https://www.systembolaget.se/produkt/vin/garzon-247101/"
+    },
+    "https://www.systembolaget.se/produkt/ol/brekeriet-beer-102415/": {
+        "name": "Brekeriet Beer",
+        "subtitle": "Tistron",
+        "alcohol": "4,8 %",
+        "price": 29.9,
+        "volume": "330 ml",
+        "country": "Sverige",
+        "nr": 1024,
+        "tags": [
+            "öl",
+            "syrlig öl",
+            "övrig syrlig öl"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24532327/24532327_400.png",
+        "apk": 0.53,
+        "url": "https://www.systembolaget.se/produkt/ol/brekeriet-beer-102415/"
+    },
+    "https://www.systembolaget.se/produkt/ol/sakikiu-alus-102603/": {
+        "name": "Sakiškiu Alus",
+        "subtitle": "Bready Rye Ale",
+        "alcohol": "5,2 %",
+        "price": 24.9,
+        "volume": "330 ml",
+        "country": "Litauen",
+        "nr": 1026,
+        "tags": [
+            "öl",
+            "ale",
+            "brown ale"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24532797/24532797_400.png",
+        "apk": 0.69,
+        "url": "https://www.systembolaget.se/produkt/ol/sakikiu-alus-102603/"
+    },
+    "https://www.systembolaget.se/produkt/vin/rota-de-santiago-255501/": {
+        "name": "Rota de Santiago",
+        "subtitle": "2019",
+        "alcohol": "13,5 %",
+        "price": 99,
+        "volume": "750 ml",
+        "sugar": "5 g/l",
+        "country": "Portugal, Beira Interior",
+        "nr": 2555,
+        "tags": [
+            "vin",
+            "rött vin",
+            "fruktigt & smakrikt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24540389/24540389_400.png",
+        "apk": 1.02,
+        "url": "https://www.systembolaget.se/produkt/vin/rota-de-santiago-255501/"
+    },
+    "https://www.systembolaget.se/produkt/sprit/la-fee-3547804/": {
+        "name": "La Fée",
+        "subtitle": "Parisienne Absinthe Supérieure",
+        "alcohol": "68 %",
+        "price": 179,
+        "volume": "200 ml",
+        "sugar": "2 g/l",
+        "country": "Frankrike",
+        "nr": 35478,
+        "tags": [
+            "sprit",
+            "anissprit",
+            "absint"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24539222/24539222_400.png",
+        "apk": 0.76,
+        "url": "https://www.systembolaget.se/produkt/sprit/la-fee-3547804/"
+    },
+    "https://www.systembolaget.se/produkt/ol/oude-beersel-8837703/": {
+        "name": "Oude Beersel",
+        "subtitle": "Kriek Vieille",
+        "alcohol": "6,5 %",
+        "price": 59,
+        "volume": "375 ml",
+        "country": "Belgien",
+        "nr": 88377,
+        "tags": [
+            "öl",
+            "syrlig öl",
+            "frukt- och bärlambic"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/957958/957958_400.png",
+        "apk": 0.41,
+        "url": "https://www.systembolaget.se/produkt/ol/oude-beersel-8837703/"
+    },
+    "https://www.systembolaget.se/produkt/ol/semedorato-168301/": {
+        "name": "Semedorato",
+        "subtitle": "Premium",
+        "alcohol": "5 %",
+        "price": 27.9,
+        "volume": "660 ml",
+        "country": "Italien",
+        "nr": 1683,
+        "tags": [
+            "öl",
+            "ljus lager",
+            "pilsner - tjeckisk stil"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24528501/24528501_400.png",
+        "apk": 1.18,
+        "url": "https://www.systembolaget.se/produkt/ol/semedorato-168301/"
+    },
+    "https://www.systembolaget.se/produkt/sprit/grappa-di-gewurztraminer-17304/": {
+        "name": "Grappa di Gewürztraminer",
+        "subtitle": "Maxentia",
+        "alcohol": "42 %",
+        "price": 139,
+        "volume": "200 ml",
+        "sugar": "2 g/l",
+        "country": "Italien",
+        "nr": 173,
+        "tags": [
+            "sprit",
+            "grappa & marc",
+            "grappa"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24539234/24539234_400.png",
+        "apk": 0.6,
+        "url": "https://www.systembolaget.se/produkt/sprit/grappa-di-gewurztraminer-17304/"
+    },
+    "https://www.systembolaget.se/produkt/ol/kral-lev-pivo-125015/": {
+        "name": "Král lev Pivo",
+        "alcohol": "5 %",
+        "price": 7.9,
+        "volume": "330 ml",
+        "country": "Tjeckien",
+        "nr": 1250,
+        "tags": [
+            "öl",
+            "ljus lager",
+            "internationell stil"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24463479/24463479_400.png",
+        "apk": 2.09,
+        "url": "https://www.systembolaget.se/produkt/ol/kral-lev-pivo-125015/"
+    },
+    "https://www.systembolaget.se/produkt/ol/zlatopramen-160401/": {
+        "name": "Zlatopramen",
+        "subtitle": "Half n' Half",
+        "alcohol": "4,8 %",
+        "price": 18.9,
+        "volume": "500 ml",
+        "country": "Tjeckien",
+        "nr": 1604,
+        "tags": [
+            "öl",
+            "mellanmörk & mörk lager",
+            "polotmavý"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/217227/217227_400.png",
+        "apk": 1.27,
+        "url": "https://www.systembolaget.se/produkt/ol/zlatopramen-160401/"
+    },
+    "https://www.systembolaget.se/produkt/alkoholfritt/jus-de-pommes-artisanal-petillant-199001/": {
+        "name": "Jus de Pommes Artisanal Pétillant",
+        "subtitle": "2012",
+        "alcohol": "0,1 %",
+        "price": 43,
+        "volume": "750 ml",
+        "sugar": "113 g/l",
+        "country": "Frankrike",
+        "nr": 1990,
+        "tags": [
+            "alkoholfritt",
+            "must",
+            "äppelmust"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/755904/755904_400.png",
+        "apk": 0.02,
+        "url": "https://www.systembolaget.se/produkt/alkoholfritt/jus-de-pommes-artisanal-petillant-199001/"
+    },
+    "https://www.systembolaget.se/produkt/alkoholfritt/briska-194103/": {
+        "name": "Briska",
+        "subtitle": "Jordgubb/rabarber Eko",
+        "alcohol": "0,5 %",
+        "price": 12.5,
+        "volume": "330 ml",
+        "sugar": "100 g/l",
+        "country": "Sverige",
+        "nr": 1941,
+        "tags": [
+            "alkoholfritt",
+            "cider & blanddryck",
+            "cider"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/19236421/19236421_400.png",
+        "apk": 0.13,
+        "url": "https://www.systembolaget.se/produkt/alkoholfritt/briska-194103/"
+    },
+    "https://www.systembolaget.se/produkt/alkoholfritt/carlsberg-alcohol-free-198502/": {
+        "name": "Carlsberg Alcohol Free",
+        "alcohol": "0,5 %",
+        "price": 11.9,
+        "volume": "330 ml",
+        "country": "Internationellt märke",
+        "nr": 1985,
+        "tags": [
+            "alkoholfritt",
+            "öl",
+            "alkoholfri ljus lager"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/215300/215300_400.png",
+        "apk": 0.14,
+        "url": "https://www.systembolaget.se/produkt/alkoholfritt/carlsberg-alcohol-free-198502/"
+    },
+    "https://www.systembolaget.se/produkt/ol/poppels-bryggeri-3140803/": {
+        "name": "Poppels Bryggeri",
+        "subtitle": "Passion Pale Ale",
+        "alcohol": "5,2 %",
+        "price": 24.9,
+        "volume": "330 ml",
+        "country": "Sverige, Västra Götalands län, Partille kommun",
+        "nr": 31408,
+        "tags": [
+            "öl",
+            "ale",
+            "amerikansk pale ale (apa)"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/1151355/1151355_400.png",
+        "apk": 0.69,
+        "url": "https://www.systembolaget.se/produkt/ol/poppels-bryggeri-3140803/"
+    },
+    "https://www.systembolaget.se/produkt/ol/melleruds-125303/": {
+        "name": "Melleruds",
+        "subtitle": "Utmärkta Pilsner",
+        "alcohol": "4,5 %",
+        "price": 15.9,
+        "volume": "330 ml",
+        "country": "Sverige",
+        "nr": 1253,
+        "tags": [
+            "öl",
+            "ljus lager",
+            "pilsner - tysk stil"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/831123/831123_400.png",
+        "apk": 0.93,
+        "url": "https://www.systembolaget.se/produkt/ol/melleruds-125303/"
+    },
+    "https://www.systembolaget.se/produkt/alkoholfritt/staropramen-193002/": {
+        "name": "Staropramen",
+        "subtitle": "Non-Alcoholic",
+        "alcohol": "0,5 %",
+        "price": 12.9,
+        "volume": "330 ml",
+        "country": "Tjeckien",
+        "nr": 1930,
+        "tags": [
+            "alkoholfritt",
+            "öl",
+            "alkoholfri pilsner - tjeckisk stil"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/680440/680440_400.png",
+        "apk": 0.13,
+        "url": "https://www.systembolaget.se/produkt/alkoholfritt/staropramen-193002/"
+    },
+    "https://www.systembolaget.se/produkt/ol/brewdog-punk-ipa-151503/": {
+        "name": "Brewdog Punk IPA",
+        "alcohol": "5,6 %",
+        "price": 20.9,
+        "volume": "330 ml",
+        "country": "Storbritannien, Skottland",
+        "nr": 1515,
+        "tags": [
+            "öl",
+            "ale",
+            "india pale ale (ipa)"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/299605/299605_400.png",
+        "apk": 0.88,
+        "url": "https://www.systembolaget.se/produkt/ol/brewdog-punk-ipa-151503/"
+    },
+    "https://www.systembolaget.se/produkt/alkoholfritt/gotlands-bryggeri-197303/": {
+        "name": "Gotlands Bryggeri",
+        "subtitle": "Easy Rider Bulldog Non-alcoholic IPA",
+        "alcohol": "0,4 %",
+        "price": 15.9,
+        "volume": "330 ml",
+        "country": "Sverige",
+        "nr": 1973,
+        "tags": [
+            "alkoholfritt",
+            "öl",
+            "alkoholfri india pale ale"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/2388764/2388764_400.png",
+        "apk": 0.08,
+        "url": "https://www.systembolaget.se/produkt/alkoholfritt/gotlands-bryggeri-197303/"
+    },
+    "https://www.systembolaget.se/produkt/vin/moonlight-manor-629301/": {
+        "name": "Moonlight Manor",
+        "subtitle": "Chenin Blanc Sauvignon Blanc, 2020",
+        "alcohol": "12,5 %",
+        "price": 89,
+        "volume": "750 ml",
+        "sugar": "<3 g/l",
+        "country": "Sydafrika, Western Cape",
+        "nr": 6293,
+        "tags": [
+            "vin",
+            "vitt vin",
+            "friskt & fruktigt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24298447/24298447_400.png",
+        "apk": 1.05,
+        "url": "https://www.systembolaget.se/produkt/vin/moonlight-manor-629301/"
+    },
+    "https://www.systembolaget.se/produkt/ol/newcastle-brown-ale-153803/": {
+        "name": "Newcastle Brown Ale",
+        "alcohol": "4,7 %",
+        "price": 16.9,
+        "volume": "330 ml",
+        "country": "Storbritannien, England",
+        "nr": 1538,
+        "tags": [
+            "öl",
+            "ale",
+            "brown ale"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/1134/1134_400.png",
+        "apk": 0.92,
+        "url": "https://www.systembolaget.se/produkt/ol/newcastle-brown-ale-153803/"
+    },
+    "https://www.systembolaget.se/produkt/alkoholfritt/sigtuna-non-alco-pale-ale-197503/": {
+        "name": "Sigtuna Non Alco Pale Ale",
+        "alcohol": "0,5 %",
+        "price": 15.9,
+        "volume": "330 ml",
+        "country": "Sverige",
+        "nr": 1975,
+        "tags": [
+            "alkoholfritt",
+            "öl",
+            "alkoholfri amerikansk pale ale (apa)"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/12945633/12945633_400.png",
+        "apk": 0.1,
+        "url": "https://www.systembolaget.se/produkt/alkoholfritt/sigtuna-non-alco-pale-ale-197503/"
+    },
+    "https://www.systembolaget.se/produkt/ol/hoegaarden-156303/": {
+        "name": "Hoegaarden",
+        "subtitle": "Wit-Blanche",
+        "alcohol": "4,9 %",
+        "price": 17,
+        "volume": "330 ml",
+        "country": "Belgien",
+        "nr": 1563,
+        "tags": [
+            "öl",
+            "veteöl",
+            "witbier"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/34564/34564_400.png",
+        "apk": 0.95,
+        "url": "https://www.systembolaget.se/produkt/ol/hoegaarden-156303/"
+    },
+    "https://www.systembolaget.se/produkt/vin/cigarra-256501/": {
+        "name": "Cigarra",
+        "subtitle": "Reserva Shiraz Tinta Barroca, 2018",
+        "alcohol": "13 %",
+        "price": 69,
+        "volume": "750 ml",
+        "sugar": "8 g/l",
+        "country": "Portugal, Lisboa",
+        "nr": 2565,
+        "tags": [
+            "vin",
+            "rött vin",
+            "kryddigt & mustigt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/368246/368246_400.png",
+        "apk": 1.41,
+        "url": "https://www.systembolaget.se/produkt/vin/cigarra-256501/"
+    },
+    "https://www.systembolaget.se/produkt/ol/lagunitas-8960703/": {
+        "name": "Lagunitas",
+        "subtitle": "IPA",
+        "alcohol": "6,2 %",
+        "price": 23.9,
+        "volume": "355 ml",
+        "country": "USA",
+        "nr": 89607,
+        "tags": [
+            "öl",
+            "ale",
+            "india pale ale (ipa)"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/716800/716800_400.png",
+        "apk": 0.92,
+        "url": "https://www.systembolaget.se/produkt/ol/lagunitas-8960703/"
+    },
+    "https://www.systembolaget.se/produkt/ol/leffe-165903/": {
+        "name": "Leffe",
+        "subtitle": "Blonde",
+        "alcohol": "6,6 %",
+        "price": 20.9,
+        "volume": "330 ml",
+        "country": "Belgien",
+        "nr": 1659,
+        "tags": [
+            "öl",
+            "ale",
+            "belgisk ljus ale"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/7481/7481_400.png",
+        "apk": 1.04,
+        "url": "https://www.systembolaget.se/produkt/ol/leffe-165903/"
+    },
+    "https://www.systembolaget.se/produkt/ol/peroni-nastro-azzurro-141803/": {
+        "name": "Peroni Nastro Azzurro",
+        "alcohol": "5,1 %",
+        "price": 17.9,
+        "volume": "330 ml",
+        "country": "Italien",
+        "nr": 1418,
+        "tags": [
+            "öl",
+            "ljus lager",
+            "internationell stil"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/27855/27855_400.png",
+        "apk": 0.94,
+        "url": "https://www.systembolaget.se/produkt/ol/peroni-nastro-azzurro-141803/"
+    },
+    "https://www.systembolaget.se/produkt/alkoholfritt/mariestads-195202/": {
+        "name": "Mariestads",
+        "subtitle": "Alkoholfri",
+        "alcohol": "0,5 %",
+        "price": 11.9,
+        "volume": "330 ml",
+        "country": "Sverige, Dalarnas län, Ludvika kommun",
+        "nr": 1952,
+        "tags": [
+            "alkoholfritt",
+            "öl",
+            "alkoholfri ljus lager"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/680562/680562_400.png",
+        "apk": 0.14,
+        "url": "https://www.systembolaget.se/produkt/alkoholfritt/mariestads-195202/"
+    },
+    "https://www.systembolaget.se/produkt/ol/corona-extra-159803/": {
+        "name": "Corona Extra",
+        "alcohol": "4,5 %",
+        "price": 18.5,
+        "volume": "355 ml",
+        "country": "Mexiko",
+        "nr": 1598,
+        "tags": [
+            "öl",
+            "ljus lager",
+            "internationell stil"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/1194/1194_400.png",
+        "apk": 0.86,
+        "url": "https://www.systembolaget.se/produkt/ol/corona-extra-159803/"
+    },
+    "https://www.systembolaget.se/produkt/ol/1664-blanc-151403/": {
+        "name": "1664 Blanc",
+        "alcohol": "5 %",
+        "price": 17.7,
+        "volume": "330 ml",
+        "country": "Internationellt märke",
+        "nr": 1514,
+        "tags": [
+            "öl",
+            "veteöl",
+            "witbier"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/242735/242735_400.png",
+        "apk": 0.93,
+        "url": "https://www.systembolaget.se/produkt/ol/1664-blanc-151403/"
+    },
+    "https://www.systembolaget.se/produkt/alkoholfritt/estrella-damm-n-a-190312/": {
+        "name": "Estrella Damm N. A.",
+        "subtitle": "Non-Alcoholic",
+        "alcohol": "0 %",
+        "price": 12.9,
+        "volume": "330 ml",
+        "country": "Spanien",
+        "nr": 1903,
+        "tags": [
+            "alkoholfritt",
+            "öl",
+            "alkoholfri internationell lager"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/508354/508354_400.png",
+        "apk": 0,
+        "url": "https://www.systembolaget.se/produkt/alkoholfritt/estrella-damm-n-a-190312/"
+    },
+    "https://www.systembolaget.se/produkt/ol/brutal-brewing-8942503/": {
+        "name": "Brutal Brewing",
+        "subtitle": "A Ship Full of IPA India Pale Ale",
+        "alcohol": "5,8 %",
+        "price": 16.9,
+        "volume": "330 ml",
+        "country": "Sverige, Dalarnas län, Ludvika kommun",
+        "nr": 89425,
+        "tags": [
+            "öl",
+            "ale",
+            "india pale ale (ipa)"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/931037/931037_400.png",
+        "apk": 1.13,
+        "url": "https://www.systembolaget.se/produkt/ol/brutal-brewing-8942503/"
+    },
+    "https://www.systembolaget.se/produkt/ol/amundsen-3268415/": {
+        "name": "Amundsen",
+        "subtitle": "Apocalyptic Thunder Juice NEIPA",
+        "alcohol": "6,5 %",
+        "price": 25.9,
+        "volume": "330 ml",
+        "country": "Norge",
+        "nr": 32684,
+        "tags": [
+            "öl",
+            "ale",
+            "new england ipa/hazy ipa"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/9356444/9356444_400.png",
+        "apk": 0.83,
+        "url": "https://www.systembolaget.se/produkt/ol/amundsen-3268415/"
+    },
+    "https://www.systembolaget.se/produkt/ol/lagunitas-maximus-1150903/": {
+        "name": "Lagunitas Maximus",
+        "alcohol": "9 %",
+        "price": 27.9,
+        "volume": "355 ml",
+        "country": "USA",
+        "nr": 11509,
+        "tags": [
+            "öl",
+            "ale",
+            "imperial/dubbel ipa"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24566228/24566228_400.png",
+        "apk": 1.15,
+        "url": "https://www.systembolaget.se/produkt/ol/lagunitas-maximus-1150903/"
+    },
+    "https://www.systembolaget.se/produkt/ol/stigbergets-120515/": {
+        "name": "Stigbergets",
+        "subtitle": "West Coast IPA",
+        "alcohol": "6,5 %",
+        "price": 32.9,
+        "volume": "330 ml",
+        "country": "Sverige",
+        "nr": 1205,
+        "tags": [
+            "öl",
+            "ale",
+            "india pale ale (ipa)"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/24407938/24407938_400.png",
+        "apk": 0.65,
+        "url": "https://www.systembolaget.se/produkt/ol/stigbergets-120515/"
+    },
+    "https://www.systembolaget.se/produkt/alkoholfritt/brooklyn-special-effects-1902803/": {
+        "name": "Brooklyn Special Effects",
+        "subtitle": "Alkoholfri",
+        "alcohol": "0,4 %",
+        "price": 15.9,
+        "volume": "330 ml",
+        "country": "Internationellt märke",
+        "nr": 19028,
+        "tags": [
+            "alkoholfritt",
+            "öl",
+            "alkoholfri modern lager/india pale lager"
+        ],
+        "image": "https://sb-product-media-prod.azureedge.net/productimages/24453968/24453968_400.png",
+        "apk": 0.08,
+        "url": "https://www.systembolaget.se/produkt/alkoholfritt/brooklyn-special-effects-1902803/"
+    },
+    "https://www.systembolaget.se/produkt/ol/guinness-126015/": {
+        "name": "Guinness",
+        "subtitle": "Draught",
+        "alcohol": "4,2 %",
+        "price": 23.4,
+        "volume": "440 ml",
+        "country": "Irland",
+        "nr": 1260,
+        "tags": [
+            "öl",
+            "porter & stout",
+            "torr porter och stout"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/507849/507849_400.png",
+        "apk": 0.79,
+        "url": "https://www.systembolaget.se/produkt/ol/guinness-126015/"
+    },
+    "https://www.systembolaget.se/produkt/vin/welmoed-260107/": {
+        "name": "Welmoed",
+        "subtitle": "Shiraz Pinotage, 2020",
+        "alcohol": "14,5 %",
+        "price": 199,
+        "volume": "2000 ml",
+        "sugar": "3 g/l",
+        "country": "Sydafrika, Western Cape",
+        "nr": 2601,
+        "tags": [
+            "vin",
+            "rött vin",
+            "fruktigt & smakrikt"
+        ],
+        "image": "https://sb-product-media-prod.azureedge.net/productimages/24424454/24424454_400.png",
+        "apk": 1.46,
+        "url": "https://www.systembolaget.se/produkt/vin/welmoed-260107/"
+    },
+    "https://www.systembolaget.se/produkt/vin/solybiza-red-sangria-organic-246615/": {
+        "name": "Solybiza Red Sangria Organic",
+        "alcohol": "7 %",
+        "price": 26,
+        "volume": "330 ml",
+        "sugar": "92 g/l",
+        "country": "Spanien",
+        "nr": 2466,
+        "tags": [
+            "vin",
+            "aperitif & dessert",
+            "smaksatta viner & fruktviner",
+            "sangria"
+        ],
+        "image": "https://sb-product-media-prod.azureedge.net/productimages/24439953/24439953_400.png",
+        "apk": 0.89,
+        "url": "https://www.systembolaget.se/produkt/vin/solybiza-red-sangria-organic-246615/"
+    },
+    "https://www.systembolaget.se/produkt/vin/guldkula-7307701/": {
+        "name": "Guldkula",
+        "subtitle": "Premier Cru",
+        "alcohol": "12 %",
+        "price": 299,
+        "volume": "750 ml",
+        "sugar": "9 g/l",
+        "country": "Frankrike, Champagne",
+        "nr": 73077,
+        "tags": [
+            "vin",
+            "mousserande vin",
+            "torrt vitt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/1204332/1204332_400.png",
+        "apk": 0.3,
+        "url": "https://www.systembolaget.se/produkt/vin/guldkula-7307701/"
+    },
+    "https://www.systembolaget.se/produkt/vin/gw-s-roda-7213901/": {
+        "name": "GW :s Röda",
+        "subtitle": "2019",
+        "alcohol": "13 %",
+        "price": 109,
+        "volume": "750 ml",
+        "sugar": "7 g/l",
+        "country": "Portugal, Tejo",
+        "nr": 72139,
+        "tags": [
+            "vin",
+            "rött vin",
+            "fruktigt & smakrikt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/12947975/12947975_400.png",
+        "apk": 0.89,
+        "url": "https://www.systembolaget.se/produkt/vin/gw-s-roda-7213901/"
+    },
+    "https://www.systembolaget.se/produkt/vin/hacienda-el-espino-224901/": {
+        "name": "Hacienda el Espino",
+        "subtitle": "Garnacha Tintorera, 2019",
+        "alcohol": "14 %",
+        "price": 79,
+        "volume": "750 ml",
+        "sugar": "<3 g/l",
+        "country": "Spanien, Kastilien-La Mancha, Almansa",
+        "nr": 2249,
+        "tags": [
+            "vin",
+            "rött vin",
+            "fruktigt & smakrikt"
+        ],
+        "image": "https://sb-product-media-prod.azureedge.net/productimages/24457279/24457279_400.png",
+        "apk": 1.33,
+        "url": "https://www.systembolaget.se/produkt/vin/hacienda-el-espino-224901/"
+    },
+    "https://www.systembolaget.se/produkt/vin/massimo-7354601/": {
+        "name": "Massimo",
+        "subtitle": "Rosso Organico, 2019",
+        "alcohol": "12,5 %",
+        "price": 89,
+        "volume": "1000 ml",
+        "sugar": "7 g/l",
+        "country": "Italien",
+        "nr": 73546,
+        "tags": [
+            "vin",
+            "rött vin",
+            "kryddigt & mustigt"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/1144313/1144313_400.png",
+        "apk": 1.4,
+        "url": "https://www.systembolaget.se/produkt/vin/massimo-7354601/"
+    },
+    "https://www.systembolaget.se/produkt/vin/red-port-808702/": {
+        "name": "Red Port",
+        "alcohol": "20 %",
+        "price": 69,
+        "volume": "375 ml",
+        "sugar": "97 g/l",
+        "country": "Portugal, Douro, Porto",
+        "nr": 8087,
+        "tags": [
+            "vin",
+            "aperitif & dessert",
+            "portvin",
+            "ruby"
+        ],
+        "image": "https://product-cdn.systembolaget.se/productimages/11633/11633_400.png",
+        "apk": 1.09,
+        "url": "https://www.systembolaget.se/produkt/vin/red-port-808702/"
     }
 }
