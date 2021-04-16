@@ -39,7 +39,15 @@ const fs = require("fs");
 
   let sortOnAPK = []
   for (let url in products) {
-    sortOnAPK.push(products[url])
+    sortOnAPK.push({
+      "apk": products[url]["apk"],
+      "name": products[url]["name"],
+      "subtitle": products[url]["subtitle"],
+      "tags": products[url]["tags"],
+      "alcohol": products[url]["alcohol"],
+      "volume": products[url]["volume"],
+      "price": products[url]["price"]
+    })
   }
 
   sortOnAPK = sortOnAPK.sort(function(a, b) {
@@ -49,7 +57,7 @@ const fs = require("fs");
 
   console.log(sortOnAPK)
 
-  fs.writeFile('apksort.json', JSON.stringify(sortOnAPK, null, 4), (err) => {
+  fs.writeFile('apksort.json', JSON.stringify(sortOnAPK, null, 0), (err) => {
     if (err) {
       throw err
     }
