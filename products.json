@@ -96,7 +96,8 @@
             "pilsner - tysk stil"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/1167/1167_400.png",
-        "apk": 1.11
+        "apk": 1.11,
+        "url": "https://www.systembolaget.se/produkt/ol/bitburger-156503/"
     },
     "https://www.systembolaget.se/produkt/ol/daura-damm-153203/": {
         "name": "Daura Damm",
@@ -112,7 +113,8 @@
             "internationell stil"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/709488/709488_400.png",
-        "apk": 1.05
+        "apk": 1.05,
+        "url": "https://www.systembolaget.se/produkt/ol/daura-damm-153203/"
     },
     "https://www.systembolaget.se/produkt/vin/il-conte-232201/": {
         "name": "il Conte",
@@ -129,7 +131,8 @@
             "fruktigt & smakrikt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/235878/235878_400.png",
-        "apk": 1.52
+        "apk": 1.52,
+        "url": "https://www.systembolaget.se/produkt/vin/il-conte-232201/"
     },
     "https://www.systembolaget.se/produkt/vin/le-hurlevent-229101/": {
         "name": "Le Hurlevent",
@@ -146,7 +149,8 @@
             "kryddigt & mustigt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/714764/714764_400.png",
-        "apk": 0.47
+        "apk": 0.47,
+        "url": "https://www.systembolaget.se/produkt/vin/le-hurlevent-229101/"
     },
     "https://www.systembolaget.se/produkt/sprit/bacardi-limon-73001/": {
         "name": "Bacardi Limón",
@@ -162,7 +166,8 @@
             "smaksatt sprit av rom"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/45981/45981_400.png",
-        "apk": 0.95
+        "apk": 0.95,
+        "url": "https://www.systembolaget.se/produkt/sprit/bacardi-limon-73001/"
     },
     "https://www.systembolaget.se/produkt/ol/carlsberg-sort-guld-129112/": {
         "name": "Carlsberg Sort Guld",
@@ -177,6 +182,7 @@
             "internationell stil"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/507846/507846_400.png",
-        "apk": 1.73
+        "apk": 1.73,
+        "url": "https://www.systembolaget.se/produkt/ol/carlsberg-sort-guld-129112/"
     }
 }

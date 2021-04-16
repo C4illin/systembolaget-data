@@ -11,5 +11,13 @@
     "puppeteer": "^8.0.0"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C4illin/systembolaget-data.git"
+  },
+  "bugs": {
+    "url": "https://github.com/C4illin/systembolaget-data/issues"
+  },
+  "homepage": "https://github.com/C4illin/systembolaget-data#readme"
 }

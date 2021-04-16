@@ -3,7 +3,7 @@ const fs = require("fs");
 
 (async () => {
   let products = require('./products.json')
-  let urls = fs.readFileSync('urls.txt','utf8').split('\n')
+  let urls = fs.readFileSync('testurls.txt','utf8').split('\n')
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
   await page.goto('https://www.systembolaget.se/')
@@ -11,8 +11,8 @@ const fs = require("fs");
   await page.click('button.css-49r7zy')
   // var product = {}
 
-  for (let i = 0; i < urls.length; i++) {
-    console.log(urls[i])
+  for (let i = 0; i < urls.length; i++) { //urls.length
+    console.log(i + " - " + urls[i])
     await page.goto(urls[i])
 
     var product = await page.evaluate(() => {
@@ -32,9 +32,29 @@ const fs = require("fs");
     })
     let apk = product.alcohol?.split(' ')[0].replace(",",".")*product.volume?.split(' ')[0]/100/product.price
     product.apk =  Math.round((apk + Number.EPSILON) * 100) / 100
-    console.log(product)
+    product.url = urls[i]
+    // console.log(product)
     products[urls[i]] = product
   }
+
+  let sortOnAPK = []
+  for (let url in products) {
+    sortOnAPK.push(products[url])
+  }
+
+  sortOnAPK = sortOnAPK.sort(function(a, b) {
+    var x = a["apk"]; var y = b["apk"]
+    return ((x > y) ? -1 : ((x < y) ? 1 : 0))
+  })
+
+  console.log(sortOnAPK)
+
+  fs.writeFile('apksort.json', JSON.stringify(sortOnAPK, null, 4), (err) => {
+    if (err) {
+      throw err
+    }
+    console.log("apk done")
+  })
 
   fs.writeFile('products.json', JSON.stringify(products, null, 4), (err) => {
     if (err) {
