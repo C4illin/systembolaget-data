@@ -11,7 +11,7 @@ const fs = require("fs");
   await page.click('button.css-49r7zy')
   // var product = {}
 
-  for (let i = 0; i < 100; i++) { //urls.length
+  for (let i = 0; i < 2000; i++) { //urls.length
     console.log(i + 1 + " - " + urls[i])
     await page.goto(urls[i])
 
