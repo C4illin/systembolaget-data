@@ -47,8 +47,7 @@
             "gin"
         ],
         "image": "https://sb-product-media-prod.azureedge.net/productimages/24478611/24478611_400.png",
-        "apk": 0.96,
-        "url": "https://www.systembolaget.se/produkt/sprit/gibsons-exception-32001/"
+        "apk": 0.96
     },
     "https://www.systembolaget.se/produkt/alkoholfritt/richard-juhlin-191501/": {
         "name": "Richard Juhlin",
@@ -64,8 +63,7 @@
             "mousserande"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24558780/24558780_400.png",
-        "apk": 0,
-        "url": "https://www.systembolaget.se/produkt/alkoholfritt/richard-juhlin-191501/"
+        "apk": 0
     },
     "https://www.systembolaget.se/produkt/vin/casas-honestos-7633708/": {
         "name": "Casas Honestos",
@@ -201,8 +199,7 @@
             "engelsk pale ale och bitter"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24529131/24529131_400.png",
-        "apk": 1,
-        "url": "https://www.systembolaget.se/produkt/ol/hawkshead-120101/"
+        "apk": 1
     },
     "https://www.systembolaget.se/produkt/alkoholfritt/stella-artois-111903/": {
         "name": "Stella Artois",
@@ -218,8 +215,7 @@
             "alkoholfri internationell lager"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24558926/24558926_400.png",
-        "apk": 0,
-        "url": "https://www.systembolaget.se/produkt/alkoholfritt/stella-artois-111903/"
+        "apk": 0
     },
     "https://www.systembolaget.se/produkt/vin/la-farra-prosecco-232301/": {
         "name": "La Farra Prosecco",
@@ -236,8 +232,7 @@
             "rosé"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24555257/24555257_400.png",
-        "apk": 1.09,
-        "url": "https://www.systembolaget.se/produkt/vin/la-farra-prosecco-232301/"
+        "apk": 1.09
     },
     "https://www.systembolaget.se/produkt/vin/don-david-236407/": {
         "name": "Don David",
@@ -254,8 +249,7 @@
             "fruktigt & smakrikt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24537228/24537228_400.png",
-        "apk": 1.46,
-        "url": "https://www.systembolaget.se/produkt/vin/don-david-236407/"
+        "apk": 1.46
     },
     "https://www.systembolaget.se/produkt/vin/piconico-chardonnay-229601/": {
         "name": "Piconico Chardonnay",
@@ -272,8 +266,7 @@
             "friskt & fruktigt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24528946/24528946_400.png",
-        "apk": 1.28,
-        "url": "https://www.systembolaget.se/produkt/vin/piconico-chardonnay-229601/"
+        "apk": 1.28
     },
     "https://www.systembolaget.se/produkt/vin/santa-ines-244601/": {
         "name": "Santa Inés",
@@ -290,8 +283,7 @@
             "fruktigt & smakrikt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24536977/24536977_400.png",
-        "apk": 1.28,
-        "url": "https://www.systembolaget.se/produkt/vin/santa-ines-244601/"
+        "apk": 1.28
     },
     "https://www.systembolaget.se/produkt/sprit/the-dundee-47101/": {
         "name": "The Dundee",
@@ -307,8 +299,7 @@
             "blended whisky"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24529050/24529050_400.png",
-        "apk": 0.94,
-        "url": "https://www.systembolaget.se/produkt/sprit/the-dundee-47101/"
+        "apk": 0.94
     },
     "https://www.systembolaget.se/produkt/cider-blanddrycker/barrels-and-drums-111415/": {
         "name": "Barrels and Drums",
@@ -324,8 +315,7 @@
             "blanddrycker"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24537762/24537762_400.png",
-        "apk": 0.75,
-        "url": "https://www.systembolaget.se/produkt/cider-blanddrycker/barrels-and-drums-111415/"
+        "apk": 0.75
     },
     "https://www.systembolaget.se/produkt/vin/twenty-one-631201/": {
         "name": "Twenty One",
@@ -342,8 +332,7 @@
             "fruktigt & smakrikt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24520221/24520221_400.png",
-        "apk": 1.65,
-        "url": "https://www.systembolaget.se/produkt/vin/twenty-one-631201/"
+        "apk": 1.65
     },
     "https://www.systembolaget.se/produkt/ol/gosser-132015/": {
         "name": "Gösser",
@@ -358,8 +347,7 @@
             "pilsner - tysk stil"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24535602/24535602_400.png",
-        "apk": 1.33,
-        "url": "https://www.systembolaget.se/produkt/ol/gosser-132015/"
+        "apk": 1.33
     },
     "https://www.systembolaget.se/produkt/vin/kingstate-627408/": {
         "name": "Kingstate",
@@ -376,8 +364,7 @@
             "friskt & fruktigt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24494095/24494095_400.png",
-        "apk": 1.88,
-        "url": "https://www.systembolaget.se/produkt/vin/kingstate-627408/"
+        "apk": 1.88
     },
     "https://www.systembolaget.se/produkt/vin/expedition-carmenere-254301/": {
         "name": "Expedition Carmenère",
@@ -394,8 +381,7 @@
             "fruktigt & smakrikt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24536978/24536978_400.png",
-        "apk": 1.47,
-        "url": "https://www.systembolaget.se/produkt/vin/expedition-carmenere-254301/"
+        "apk": 1.47
     },
     "https://www.systembolaget.se/produkt/ol/pistonhead-102115/": {
         "name": "Pistonhead",
@@ -411,8 +397,7 @@
             "modern stil/india pale lager"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24529577/24529577_400.png",
-        "apk": 1.43,
-        "url": "https://www.systembolaget.se/produkt/ol/pistonhead-102115/"
+        "apk": 1.43
     },
     "https://www.systembolaget.se/produkt/vin/cuvee-prestige-rose-millesime-273501/": {
         "name": "Cuvée Prestige Rosé Millésime",
@@ -429,8 +414,7 @@
             "rosé"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24534105/24534105_400.png",
-        "apk": 0.34,
-        "url": "https://www.systembolaget.se/produkt/vin/cuvee-prestige-rose-millesime-273501/"
+        "apk": 0.34
     },
     "https://www.systembolaget.se/produkt/vin/istine-230901/": {
         "name": "Istine",
@@ -447,8 +431,7 @@
             "kryddigt & mustigt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24528500/24528500_400.png",
-        "apk": 0.66,
-        "url": "https://www.systembolaget.se/produkt/vin/istine-230901/"
+        "apk": 0.66
     },
     "https://www.systembolaget.se/produkt/vin/banderilleros-ecologico-278301/": {
         "name": "Banderilleros Ecológico",
@@ -465,8 +448,7 @@
             "fruktigt & smakrikt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24519573/24519573_400.png",
-        "apk": 1.25,
-        "url": "https://www.systembolaget.se/produkt/vin/banderilleros-ecologico-278301/"
+        "apk": 1.25
     },
     "https://www.systembolaget.se/produkt/ol/fraugruber-102315/": {
         "name": "FrauGruber",
@@ -482,8 +464,7 @@
             "modern stil/india pale lager"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24532326/24532326_400.png",
-        "apk": 0.68,
-        "url": "https://www.systembolaget.se/produkt/ol/fraugruber-102315/"
+        "apk": 0.68
     },
     "https://www.systembolaget.se/produkt/vin/grand-tokaj-468202/": {
         "name": "Grand Tokaj",
@@ -500,8 +481,7 @@
             "sött"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24538731/24538731_400.png",
-        "apk": 0.39,
-        "url": "https://www.systembolaget.se/produkt/vin/grand-tokaj-468202/"
+        "apk": 0.39
     },
     "https://www.systembolaget.se/produkt/vin/argento-rose-256408/": {
         "name": "Argento Rosé",
@@ -518,8 +498,7 @@
             "fruktigt & smakrikt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24502479/24502479_400.png",
-        "apk": 1.88,
-        "url": "https://www.systembolaget.se/produkt/vin/argento-rose-256408/"
+        "apk": 1.88
     },
     "https://www.systembolaget.se/produkt/vin/kleine-zalze-2003501/": {
         "name": "Kleine Zalze",
@@ -536,8 +515,7 @@
             "friskt & fruktigt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24546367/24546367_400.png",
-        "apk": 1.02,
-        "url": "https://www.systembolaget.se/produkt/vin/kleine-zalze-2003501/"
+        "apk": 1.02
     },
     "https://www.systembolaget.se/produkt/cider-blanddrycker/herrljunga-cider-122415/": {
         "name": "Herrljunga Cider",
@@ -554,8 +532,7 @@
             "söt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24539611/24539611_400.png",
-        "apk": 0.76,
-        "url": "https://www.systembolaget.se/produkt/cider-blanddrycker/herrljunga-cider-122415/"
+        "apk": 0.76
     },
     "https://www.systembolaget.se/produkt/sprit/the-dundee-47102/": {
         "name": "The Dundee",
@@ -571,8 +548,7 @@
             "blended whisky"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24537759/24537759_400.png",
-        "apk": 0.88,
-        "url": "https://www.systembolaget.se/produkt/sprit/the-dundee-47102/"
+        "apk": 0.88
     },
     "https://www.systembolaget.se/produkt/vin/gemtree-2003301/": {
         "name": "Gemtree",
@@ -589,8 +565,7 @@
             "fruktigt & smakrikt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24532865/24532865_400.png",
-        "apk": 0.91,
-        "url": "https://www.systembolaget.se/produkt/vin/gemtree-2003301/"
+        "apk": 0.91
     },
     "https://www.systembolaget.se/produkt/vin/saam-222001/": {
         "name": "SAAM",
@@ -607,8 +582,7 @@
             "fruktigt & smakrikt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24548290/24548290_400.png",
-        "apk": 1.26,
-        "url": "https://www.systembolaget.se/produkt/vin/saam-222001/"
+        "apk": 1.26
     },
     "https://www.systembolaget.se/produkt/vin/fiore-2003401/": {
         "name": "Fiore",
@@ -625,8 +599,7 @@
             "friskt & fruktigt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24536864/24536864_400.png",
-        "apk": 1.02,
-        "url": "https://www.systembolaget.se/produkt/vin/fiore-2003401/"
+        "apk": 1.02
     },
     "https://www.systembolaget.se/produkt/alkoholfritt/jp-chenet-so-free-1903701/": {
         "name": "JP Chenet So Free",
@@ -642,8 +615,7 @@
             "rött"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24558891/24558891_400.png",
-        "apk": 0.04,
-        "url": "https://www.systembolaget.se/produkt/alkoholfritt/jp-chenet-so-free-1903701/"
+        "apk": 0.04
     },
     "https://www.systembolaget.se/produkt/alkoholfritt/leitz-eins-zwei-zero-196815/": {
         "name": "Leitz Eins Zwei Zero",
@@ -659,8 +631,7 @@
             "mousserande"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24558875/24558875_400.png",
-        "apk": 0,
-        "url": "https://www.systembolaget.se/produkt/alkoholfritt/leitz-eins-zwei-zero-196815/"
+        "apk": 0
     },
     "https://www.systembolaget.se/produkt/cider-blanddrycker/urban-peers-127615/": {
         "name": "Urban Peers",
@@ -677,8 +648,7 @@
             "torr/halvtorr"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24538749/24538749_400.png",
-        "apk": 0.88,
-        "url": "https://www.systembolaget.se/produkt/cider-blanddrycker/urban-peers-127615/"
+        "apk": 0.88
     },
     "https://www.systembolaget.se/produkt/ol/desperados-102003/": {
         "name": "Desperados",
@@ -694,8 +664,7 @@
             "annan öl"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24529567/24529567_400.png",
-        "apk": 1.03,
-        "url": "https://www.systembolaget.se/produkt/ol/desperados-102003/"
+        "apk": 1.03
     },
     "https://www.systembolaget.se/produkt/ol/ottakringer-101803/": {
         "name": "Ottakringer",
@@ -711,8 +680,7 @@
             "dortmunder och helles"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24529556/24529556_400.png",
-        "apk": 1.33,
-        "url": "https://www.systembolaget.se/produkt/ol/ottakringer-101803/"
+        "apk": 1.33
     },
     "https://www.systembolaget.se/produkt/ol/praga-silver-102812/": {
         "name": "Praga Silver",
@@ -727,8 +695,7 @@
             "pilsner - tjeckisk stil"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24534117/24534117_400.png",
-        "apk": 1.34,
-        "url": "https://www.systembolaget.se/produkt/ol/praga-silver-102812/"
+        "apk": 1.34
     },
     "https://www.systembolaget.se/produkt/vin/mazet-de-nizas-560207/": {
         "name": "Mazet de Nizas",
@@ -745,8 +712,7 @@
             "fruktigt & smakrikt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24528950/24528950_400.png",
-        "apk": 1.22,
-        "url": "https://www.systembolaget.se/produkt/vin/mazet-de-nizas-560207/"
+        "apk": 1.22
     },
     "https://www.systembolaget.se/produkt/vin/vernissage-795001/": {
         "name": "Vernissage",
@@ -761,8 +727,7 @@
             "mousserande vin"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24538719/24538719_400.png",
-        "apk": 1.05,
-        "url": "https://www.systembolaget.se/produkt/vin/vernissage-795001/"
+        "apk": 1.05
     },
     "https://www.systembolaget.se/produkt/vin/vina-bujanda-222101/": {
         "name": "Viña Bujanda",
@@ -779,8 +744,7 @@
             "kryddigt & mustigt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24548436/24548436_400.png",
-        "apk": 0.41,
-        "url": "https://www.systembolaget.se/produkt/vin/vina-bujanda-222101/"
+        "apk": 0.41
     },
     "https://www.systembolaget.se/produkt/vin/louco-228401/": {
         "name": "Louco",
@@ -797,8 +761,7 @@
             "friskt & fruktigt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24551826/24551826_400.png",
-        "apk": 1.23,
-        "url": "https://www.systembolaget.se/produkt/vin/louco-228401/"
+        "apk": 1.23
     },
     "https://www.systembolaget.se/produkt/vin/gaia-223801/": {
         "name": "Gaia",
@@ -815,8 +778,7 @@
             "friskt & fruktigt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24531854/24531854_400.png",
-        "apk": 0.85,
-        "url": "https://www.systembolaget.se/produkt/vin/gaia-223801/"
+        "apk": 0.85
     },
     "https://www.systembolaget.se/produkt/sprit/plymouth-gin-8623401/": {
         "name": "Plymouth Gin",
@@ -832,8 +794,7 @@
             "gin"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/524977/524977_400.png",
-        "apk": 0.96,
-        "url": "https://www.systembolaget.se/produkt/sprit/plymouth-gin-8623401/"
+        "apk": 0.96
     },
     "https://www.systembolaget.se/produkt/ol/antiek-blonde-super-5-ale-102703/": {
         "name": "Antiek Blonde Super 5 Ale",
@@ -848,8 +809,7 @@
             "belgisk ljus ale"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24534107/24534107_400.png",
-        "apk": 0.66,
-        "url": "https://www.systembolaget.se/produkt/ol/antiek-blonde-super-5-ale-102703/"
+        "apk": 0.66
     },
     "https://www.systembolaget.se/produkt/ol/dala-102503/": {
         "name": "Dala",
@@ -865,8 +825,7 @@
             "modern stil/india pale lager"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24532785/24532785_400.png",
-        "apk": 0.66,
-        "url": "https://www.systembolaget.se/produkt/ol/dala-102503/"
+        "apk": 0.66
     },
     "https://www.systembolaget.se/produkt/vin/kleine-zalze-226901/": {
         "name": "Kleine Zalze",
@@ -883,8 +842,7 @@
             "fruktigt & smakrikt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24547973/24547973_400.png",
-        "apk": 1.14,
-        "url": "https://www.systembolaget.se/produkt/vin/kleine-zalze-226901/"
+        "apk": 1.14
     },
     "https://www.systembolaget.se/produkt/sprit/teerenpeli-kaski-sherry-cask-45602/": {
         "name": "Teerenpeli Kaski Sherry Cask",
@@ -900,8 +858,7 @@
             "maltwhisky"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24539257/24539257_400.png",
-        "apk": 0.39,
-        "url": "https://www.systembolaget.se/produkt/sprit/teerenpeli-kaski-sherry-cask-45602/"
+        "apk": 0.39
     },
     "https://www.systembolaget.se/produkt/vin/reserved-wild-organic-2003201/": {
         "name": "Reserved & Wild Organic",
@@ -918,8 +875,7 @@
             "friskt & fruktigt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24528942/24528942_400.png",
-        "apk": 0.98,
-        "url": "https://www.systembolaget.se/produkt/vin/reserved-wild-organic-2003201/"
+        "apk": 0.98
     },
     "https://www.systembolaget.se/produkt/cider-blanddrycker/absolut-111515/": {
         "name": "Absolut",
@@ -935,8 +891,7 @@
             "blanddrycker"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24537764/24537764_400.png",
-        "apk": 0.63,
-        "url": "https://www.systembolaget.se/produkt/cider-blanddrycker/absolut-111515/"
+        "apk": 0.63
     },
     "https://www.systembolaget.se/produkt/vin/church-road-mcdonald-series-chardonnay-253001/": {
         "name": "Church Road McDonald Series Chardonnay",
@@ -953,8 +908,7 @@
             "fylligt & smakrikt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24534241/24534241_400.png",
-        "apk": 0.54,
-        "url": "https://www.systembolaget.se/produkt/vin/church-road-mcdonald-series-chardonnay-253001/"
+        "apk": 0.54
     },
     "https://www.systembolaget.se/produkt/alkoholfritt/st-eriks-8439303/": {
         "name": "S:t Eriks",
@@ -970,8 +924,7 @@
             "alkoholfri india pale ale"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24525648/24525648_400.png",
-        "apk": 0.1,
-        "url": "https://www.systembolaget.se/produkt/alkoholfritt/st-eriks-8439303/"
+        "apk": 0.1
     },
     "https://www.systembolaget.se/produkt/vin/rendola-281701/": {
         "name": "Rendola",
@@ -988,8 +941,7 @@
             "fruktigt & smakrikt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24528944/24528944_400.png",
-        "apk": 0.96,
-        "url": "https://www.systembolaget.se/produkt/vin/rendola-281701/"
+        "apk": 0.96
     },
     "https://www.systembolaget.se/produkt/vin/tuffeaux-252401/": {
         "name": "Tuffeaux",
@@ -1006,8 +958,7 @@
             "fruktigt & smakrikt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24531966/24531966_400.png",
-        "apk": 0.66,
-        "url": "https://www.systembolaget.se/produkt/vin/tuffeaux-252401/"
+        "apk": 0.66
     },
     "https://www.systembolaget.se/produkt/ol/faith-1169514/": {
         "name": "Faith",
@@ -1022,8 +973,7 @@
             "session ipa"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24529730/24529730_400.png",
-        "apk": 0.95,
-        "url": "https://www.systembolaget.se/produkt/ol/faith-1169514/"
+        "apk": 0.95
     },
     "https://www.systembolaget.se/produkt/vin/costa-gran-reserva-220201/": {
         "name": "Costa Gran Reserva",
@@ -1040,8 +990,7 @@
             "friskt & bärigt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24531549/24531549_400.png",
-        "apk": 0.91,
-        "url": "https://www.systembolaget.se/produkt/vin/costa-gran-reserva-220201/"
+        "apk": 0.91
     },
     "https://www.systembolaget.se/produkt/ol/grebbestad-128715/": {
         "name": "Grebbestad",
@@ -1057,8 +1006,7 @@
             "amerikansk pale ale (apa)"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24539259/24539259_400.png",
-        "apk": 0.78,
-        "url": "https://www.systembolaget.se/produkt/ol/grebbestad-128715/"
+        "apk": 0.78
     },
     "https://www.systembolaget.se/produkt/vin/malat-ried-hohlgraben-242701/": {
         "name": "Malat Ried Höhlgraben",
@@ -1075,8 +1023,7 @@
             "friskt & fruktigt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24531986/24531986_400.png",
-        "apk": 0.52,
-        "url": "https://www.systembolaget.se/produkt/vin/malat-ried-hohlgraben-242701/"
+        "apk": 0.52
     },
     "https://www.systembolaget.se/produkt/vin/crama-trantu-noblesse-feteasca-regala-215601/": {
         "name": "Crama Trantu Noblesse Feteasca Regala",
@@ -1093,8 +1040,7 @@
             "friskt & fruktigt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24538034/24538034_400.png",
-        "apk": 1.05,
-        "url": "https://www.systembolaget.se/produkt/vin/crama-trantu-noblesse-feteasca-regala-215601/"
+        "apk": 1.05
     },
     "https://www.systembolaget.se/produkt/alkoholfritt/kiviks-musteri-190802/": {
         "name": "Kiviks Musteri",
@@ -1111,8 +1057,7 @@
             "cider"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24558921/24558921_400.png",
-        "apk": 0.07,
-        "url": "https://www.systembolaget.se/produkt/alkoholfritt/kiviks-musteri-190802/"
+        "apk": 0.07
     },
     "https://www.systembolaget.se/produkt/alkoholfritt/edenvale-191401/": {
         "name": "Edenvale",
@@ -1128,8 +1073,7 @@
             "vitt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24558676/24558676_400.png",
-        "apk": 0.05,
-        "url": "https://www.systembolaget.se/produkt/alkoholfritt/edenvale-191401/"
+        "apk": 0.05
     },
     "https://www.systembolaget.se/produkt/vin/wente-202701/": {
         "name": "Wente",
@@ -1146,8 +1090,7 @@
             "fylligt & smakrikt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24528948/24528948_400.png",
-        "apk": 0.7,
-        "url": "https://www.systembolaget.se/produkt/vin/wente-202701/"
+        "apk": 0.7
     },
     "https://www.systembolaget.se/produkt/vin/garzon-247101/": {
         "name": "Garzón",
@@ -1164,8 +1107,7 @@
             "friskt & fruktigt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24537227/24537227_400.png",
-        "apk": 0.73,
-        "url": "https://www.systembolaget.se/produkt/vin/garzon-247101/"
+        "apk": 0.73
     },
     "https://www.systembolaget.se/produkt/ol/brekeriet-beer-102415/": {
         "name": "Brekeriet Beer",
@@ -1181,8 +1123,7 @@
             "övrig syrlig öl"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24532327/24532327_400.png",
-        "apk": 0.53,
-        "url": "https://www.systembolaget.se/produkt/ol/brekeriet-beer-102415/"
+        "apk": 0.53
     },
     "https://www.systembolaget.se/produkt/ol/sakikiu-alus-102603/": {
         "name": "Sakiškiu Alus",
@@ -1198,8 +1139,7 @@
             "brown ale"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24532797/24532797_400.png",
-        "apk": 0.69,
-        "url": "https://www.systembolaget.se/produkt/ol/sakikiu-alus-102603/"
+        "apk": 0.69
     },
     "https://www.systembolaget.se/produkt/vin/rota-de-santiago-255501/": {
         "name": "Rota de Santiago",
@@ -1216,8 +1156,7 @@
             "fruktigt & smakrikt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24540389/24540389_400.png",
-        "apk": 1.02,
-        "url": "https://www.systembolaget.se/produkt/vin/rota-de-santiago-255501/"
+        "apk": 1.02
     },
     "https://www.systembolaget.se/produkt/sprit/la-fee-3547804/": {
         "name": "La Fée",
@@ -1234,8 +1173,7 @@
             "absint"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24539222/24539222_400.png",
-        "apk": 0.76,
-        "url": "https://www.systembolaget.se/produkt/sprit/la-fee-3547804/"
+        "apk": 0.76
     },
     "https://www.systembolaget.se/produkt/ol/oude-beersel-8837703/": {
         "name": "Oude Beersel",
@@ -1251,8 +1189,7 @@
             "frukt- och bärlambic"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/957958/957958_400.png",
-        "apk": 0.41,
-        "url": "https://www.systembolaget.se/produkt/ol/oude-beersel-8837703/"
+        "apk": 0.41
     },
     "https://www.systembolaget.se/produkt/ol/semedorato-168301/": {
         "name": "Semedorato",
@@ -1268,8 +1205,7 @@
             "pilsner - tjeckisk stil"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24528501/24528501_400.png",
-        "apk": 1.18,
-        "url": "https://www.systembolaget.se/produkt/ol/semedorato-168301/"
+        "apk": 1.18
     },
     "https://www.systembolaget.se/produkt/sprit/grappa-di-gewurztraminer-17304/": {
         "name": "Grappa di Gewürztraminer",
@@ -1286,8 +1222,7 @@
             "grappa"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24539234/24539234_400.png",
-        "apk": 0.6,
-        "url": "https://www.systembolaget.se/produkt/sprit/grappa-di-gewurztraminer-17304/"
+        "apk": 0.6
     },
     "https://www.systembolaget.se/produkt/ol/kral-lev-pivo-125015/": {
         "name": "Král lev Pivo",
@@ -1302,8 +1237,7 @@
             "internationell stil"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24463479/24463479_400.png",
-        "apk": 2.09,
-        "url": "https://www.systembolaget.se/produkt/ol/kral-lev-pivo-125015/"
+        "apk": 2.09
     },
     "https://www.systembolaget.se/produkt/ol/zlatopramen-160401/": {
         "name": "Zlatopramen",
@@ -1319,8 +1253,7 @@
             "polotmavý"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/217227/217227_400.png",
-        "apk": 1.27,
-        "url": "https://www.systembolaget.se/produkt/ol/zlatopramen-160401/"
+        "apk": 1.27
     },
     "https://www.systembolaget.se/produkt/alkoholfritt/jus-de-pommes-artisanal-petillant-199001/": {
         "name": "Jus de Pommes Artisanal Pétillant",
@@ -1337,8 +1270,7 @@
             "äppelmust"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/755904/755904_400.png",
-        "apk": 0.02,
-        "url": "https://www.systembolaget.se/produkt/alkoholfritt/jus-de-pommes-artisanal-petillant-199001/"
+        "apk": 0.02
     },
     "https://www.systembolaget.se/produkt/alkoholfritt/briska-194103/": {
         "name": "Briska",
@@ -1355,8 +1287,7 @@
             "cider"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/19236421/19236421_400.png",
-        "apk": 0.13,
-        "url": "https://www.systembolaget.se/produkt/alkoholfritt/briska-194103/"
+        "apk": 0.13
     },
     "https://www.systembolaget.se/produkt/alkoholfritt/carlsberg-alcohol-free-198502/": {
         "name": "Carlsberg Alcohol Free",
@@ -1371,8 +1302,7 @@
             "alkoholfri ljus lager"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/215300/215300_400.png",
-        "apk": 0.14,
-        "url": "https://www.systembolaget.se/produkt/alkoholfritt/carlsberg-alcohol-free-198502/"
+        "apk": 0.14
     },
     "https://www.systembolaget.se/produkt/ol/poppels-bryggeri-3140803/": {
         "name": "Poppels Bryggeri",
@@ -1388,8 +1318,7 @@
             "amerikansk pale ale (apa)"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/1151355/1151355_400.png",
-        "apk": 0.69,
-        "url": "https://www.systembolaget.se/produkt/ol/poppels-bryggeri-3140803/"
+        "apk": 0.69
     },
     "https://www.systembolaget.se/produkt/ol/melleruds-125303/": {
         "name": "Melleruds",
@@ -1405,8 +1334,7 @@
             "pilsner - tysk stil"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/831123/831123_400.png",
-        "apk": 0.93,
-        "url": "https://www.systembolaget.se/produkt/ol/melleruds-125303/"
+        "apk": 0.93
     },
     "https://www.systembolaget.se/produkt/alkoholfritt/staropramen-193002/": {
         "name": "Staropramen",
@@ -1422,8 +1350,7 @@
             "alkoholfri pilsner - tjeckisk stil"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/680440/680440_400.png",
-        "apk": 0.13,
-        "url": "https://www.systembolaget.se/produkt/alkoholfritt/staropramen-193002/"
+        "apk": 0.13
     },
     "https://www.systembolaget.se/produkt/ol/brewdog-punk-ipa-151503/": {
         "name": "Brewdog Punk IPA",
@@ -1438,8 +1365,7 @@
             "india pale ale (ipa)"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/299605/299605_400.png",
-        "apk": 0.88,
-        "url": "https://www.systembolaget.se/produkt/ol/brewdog-punk-ipa-151503/"
+        "apk": 0.88
     },
     "https://www.systembolaget.se/produkt/alkoholfritt/gotlands-bryggeri-197303/": {
         "name": "Gotlands Bryggeri",
@@ -1455,8 +1381,7 @@
             "alkoholfri india pale ale"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/2388764/2388764_400.png",
-        "apk": 0.08,
-        "url": "https://www.systembolaget.se/produkt/alkoholfritt/gotlands-bryggeri-197303/"
+        "apk": 0.08
     },
     "https://www.systembolaget.se/produkt/vin/moonlight-manor-629301/": {
         "name": "Moonlight Manor",
@@ -1473,8 +1398,7 @@
             "friskt & fruktigt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24298447/24298447_400.png",
-        "apk": 1.05,
-        "url": "https://www.systembolaget.se/produkt/vin/moonlight-manor-629301/"
+        "apk": 1.05
     },
     "https://www.systembolaget.se/produkt/ol/newcastle-brown-ale-153803/": {
         "name": "Newcastle Brown Ale",
@@ -1489,8 +1413,7 @@
             "brown ale"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/1134/1134_400.png",
-        "apk": 0.92,
-        "url": "https://www.systembolaget.se/produkt/ol/newcastle-brown-ale-153803/"
+        "apk": 0.92
     },
     "https://www.systembolaget.se/produkt/alkoholfritt/sigtuna-non-alco-pale-ale-197503/": {
         "name": "Sigtuna Non Alco Pale Ale",
@@ -1505,8 +1428,7 @@
             "alkoholfri amerikansk pale ale (apa)"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/12945633/12945633_400.png",
-        "apk": 0.1,
-        "url": "https://www.systembolaget.se/produkt/alkoholfritt/sigtuna-non-alco-pale-ale-197503/"
+        "apk": 0.1
     },
     "https://www.systembolaget.se/produkt/ol/hoegaarden-156303/": {
         "name": "Hoegaarden",
@@ -1522,8 +1444,7 @@
             "witbier"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/34564/34564_400.png",
-        "apk": 0.95,
-        "url": "https://www.systembolaget.se/produkt/ol/hoegaarden-156303/"
+        "apk": 0.95
     },
     "https://www.systembolaget.se/produkt/vin/cigarra-256501/": {
         "name": "Cigarra",
@@ -1540,8 +1461,7 @@
             "kryddigt & mustigt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/368246/368246_400.png",
-        "apk": 1.41,
-        "url": "https://www.systembolaget.se/produkt/vin/cigarra-256501/"
+        "apk": 1.41
     },
     "https://www.systembolaget.se/produkt/ol/lagunitas-8960703/": {
         "name": "Lagunitas",
@@ -1557,8 +1477,7 @@
             "india pale ale (ipa)"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/716800/716800_400.png",
-        "apk": 0.92,
-        "url": "https://www.systembolaget.se/produkt/ol/lagunitas-8960703/"
+        "apk": 0.92
     },
     "https://www.systembolaget.se/produkt/ol/leffe-165903/": {
         "name": "Leffe",
@@ -1574,8 +1493,7 @@
             "belgisk ljus ale"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/7481/7481_400.png",
-        "apk": 1.04,
-        "url": "https://www.systembolaget.se/produkt/ol/leffe-165903/"
+        "apk": 1.04
     },
     "https://www.systembolaget.se/produkt/ol/peroni-nastro-azzurro-141803/": {
         "name": "Peroni Nastro Azzurro",
@@ -1590,8 +1508,7 @@
             "internationell stil"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/27855/27855_400.png",
-        "apk": 0.94,
-        "url": "https://www.systembolaget.se/produkt/ol/peroni-nastro-azzurro-141803/"
+        "apk": 0.94
     },
     "https://www.systembolaget.se/produkt/alkoholfritt/mariestads-195202/": {
         "name": "Mariestads",
@@ -1607,8 +1524,7 @@
             "alkoholfri ljus lager"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/680562/680562_400.png",
-        "apk": 0.14,
-        "url": "https://www.systembolaget.se/produkt/alkoholfritt/mariestads-195202/"
+        "apk": 0.14
     },
     "https://www.systembolaget.se/produkt/ol/corona-extra-159803/": {
         "name": "Corona Extra",
@@ -1623,8 +1539,7 @@
             "internationell stil"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/1194/1194_400.png",
-        "apk": 0.86,
-        "url": "https://www.systembolaget.se/produkt/ol/corona-extra-159803/"
+        "apk": 0.86
     },
     "https://www.systembolaget.se/produkt/ol/1664-blanc-151403/": {
         "name": "1664 Blanc",
@@ -1639,8 +1554,7 @@
             "witbier"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/242735/242735_400.png",
-        "apk": 0.93,
-        "url": "https://www.systembolaget.se/produkt/ol/1664-blanc-151403/"
+        "apk": 0.93
     },
     "https://www.systembolaget.se/produkt/alkoholfritt/estrella-damm-n-a-190312/": {
         "name": "Estrella Damm N. A.",
@@ -1656,8 +1570,7 @@
             "alkoholfri internationell lager"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/508354/508354_400.png",
-        "apk": 0,
-        "url": "https://www.systembolaget.se/produkt/alkoholfritt/estrella-damm-n-a-190312/"
+        "apk": 0
     },
     "https://www.systembolaget.se/produkt/ol/brutal-brewing-8942503/": {
         "name": "Brutal Brewing",
@@ -1673,8 +1586,7 @@
             "india pale ale (ipa)"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/931037/931037_400.png",
-        "apk": 1.13,
-        "url": "https://www.systembolaget.se/produkt/ol/brutal-brewing-8942503/"
+        "apk": 1.13
     },
     "https://www.systembolaget.se/produkt/ol/amundsen-3268415/": {
         "name": "Amundsen",
@@ -1690,8 +1602,7 @@
             "new england ipa/hazy ipa"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/9356444/9356444_400.png",
-        "apk": 0.83,
-        "url": "https://www.systembolaget.se/produkt/ol/amundsen-3268415/"
+        "apk": 0.83
     },
     "https://www.systembolaget.se/produkt/ol/lagunitas-maximus-1150903/": {
         "name": "Lagunitas Maximus",
@@ -1706,8 +1617,7 @@
             "imperial/dubbel ipa"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24566228/24566228_400.png",
-        "apk": 1.15,
-        "url": "https://www.systembolaget.se/produkt/ol/lagunitas-maximus-1150903/"
+        "apk": 1.15
     },
     "https://www.systembolaget.se/produkt/ol/stigbergets-120515/": {
         "name": "Stigbergets",
@@ -1723,8 +1633,7 @@
             "india pale ale (ipa)"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/24407938/24407938_400.png",
-        "apk": 0.65,
-        "url": "https://www.systembolaget.se/produkt/ol/stigbergets-120515/"
+        "apk": 0.65
     },
     "https://www.systembolaget.se/produkt/alkoholfritt/brooklyn-special-effects-1902803/": {
         "name": "Brooklyn Special Effects",
@@ -1740,8 +1649,7 @@
             "alkoholfri modern lager/india pale lager"
         ],
         "image": "https://sb-product-media-prod.azureedge.net/productimages/24453968/24453968_400.png",
-        "apk": 0.08,
-        "url": "https://www.systembolaget.se/produkt/alkoholfritt/brooklyn-special-effects-1902803/"
+        "apk": 0.08
     },
     "https://www.systembolaget.se/produkt/ol/guinness-126015/": {
         "name": "Guinness",
@@ -1757,8 +1665,7 @@
             "torr porter och stout"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/507849/507849_400.png",
-        "apk": 0.79,
-        "url": "https://www.systembolaget.se/produkt/ol/guinness-126015/"
+        "apk": 0.79
     },
     "https://www.systembolaget.se/produkt/vin/welmoed-260107/": {
         "name": "Welmoed",
@@ -1775,8 +1682,7 @@
             "fruktigt & smakrikt"
         ],
         "image": "https://sb-product-media-prod.azureedge.net/productimages/24424454/24424454_400.png",
-        "apk": 1.46,
-        "url": "https://www.systembolaget.se/produkt/vin/welmoed-260107/"
+        "apk": 1.46
     },
     "https://www.systembolaget.se/produkt/vin/solybiza-red-sangria-organic-246615/": {
         "name": "Solybiza Red Sangria Organic",
@@ -1793,8 +1699,7 @@
             "sangria"
         ],
         "image": "https://sb-product-media-prod.azureedge.net/productimages/24439953/24439953_400.png",
-        "apk": 0.89,
-        "url": "https://www.systembolaget.se/produkt/vin/solybiza-red-sangria-organic-246615/"
+        "apk": 0.89
     },
     "https://www.systembolaget.se/produkt/vin/guldkula-7307701/": {
         "name": "Guldkula",
@@ -1811,8 +1716,7 @@
             "torrt vitt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/1204332/1204332_400.png",
-        "apk": 0.3,
-        "url": "https://www.systembolaget.se/produkt/vin/guldkula-7307701/"
+        "apk": 0.3
     },
     "https://www.systembolaget.se/produkt/vin/gw-s-roda-7213901/": {
         "name": "GW :s Röda",
@@ -1829,8 +1733,7 @@
             "fruktigt & smakrikt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/12947975/12947975_400.png",
-        "apk": 0.89,
-        "url": "https://www.systembolaget.se/produkt/vin/gw-s-roda-7213901/"
+        "apk": 0.89
     },
     "https://www.systembolaget.se/produkt/vin/hacienda-el-espino-224901/": {
         "name": "Hacienda el Espino",
@@ -1847,8 +1750,7 @@
             "fruktigt & smakrikt"
         ],
         "image": "https://sb-product-media-prod.azureedge.net/productimages/24457279/24457279_400.png",
-        "apk": 1.33,
-        "url": "https://www.systembolaget.se/produkt/vin/hacienda-el-espino-224901/"
+        "apk": 1.33
     },
     "https://www.systembolaget.se/produkt/vin/massimo-7354601/": {
         "name": "Massimo",
@@ -1865,8 +1767,7 @@
             "kryddigt & mustigt"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/1144313/1144313_400.png",
-        "apk": 1.4,
-        "url": "https://www.systembolaget.se/produkt/vin/massimo-7354601/"
+        "apk": 1.4
     },
     "https://www.systembolaget.se/produkt/vin/red-port-808702/": {
         "name": "Red Port",
@@ -1883,7 +1784,6 @@
             "ruby"
         ],
         "image": "https://product-cdn.systembolaget.se/productimages/11633/11633_400.png",
-        "apk": 1.09,
-        "url": "https://www.systembolaget.se/produkt/vin/red-port-808702/"
+        "apk": 1.09
     }
 }

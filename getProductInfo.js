@@ -32,7 +32,7 @@ const fs = require("fs");
     })
     let apk = product.alcohol?.split(' ')[0].replace(",",".")*product.volume?.split(' ')[0]/100/product.price
     product.apk =  Math.round((apk + Number.EPSILON) * 100) / 100
-    product.url = urls[i]
+    // product.url = urls[i]
     // console.log(product)
     products[urls[i]] = product
   }
@@ -46,7 +46,8 @@ const fs = require("fs");
       "tags": products[url]["tags"],
       "alcohol": products[url]["alcohol"],
       "volume": products[url]["volume"],
-      "price": products[url]["price"]
+      "price": products[url]["price"],
+      "url": url.slice(37,-1)
     })
   }
 
