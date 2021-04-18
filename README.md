@@ -1,13 +1,12 @@
 # Systembolaget Data
 
-Systembolaget removed their official api for products, this is a "working" workaround until they reimplement it.
+Systembolaget removed their official api for products, this is a workaround until they reimplement it. It contains a lot less information then the official one did.
 
 Currently used by:
 https://alkolist.github.io/
 
 
-
-Feel free to use it however you like (as long as systembolaget allows):
+## Files:
 
 `products.json` includes all products and some information about them.
 
