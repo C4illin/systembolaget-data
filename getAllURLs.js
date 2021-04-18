@@ -2,18 +2,17 @@ const puppeteer = require("puppeteer")
 const fs = require("fs");
 
 (async () => {
-  let urls = fs.readFileSync('urls.txt','utf8').split('\n')
+  let urls = fs.readFileSync('urls.txt','utf8').replaceAll("\r","").split('\n')
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
   await page.goto('https://www.systembolaget.se/')
-  await page.click('button.css-1upq44r')
-  await page.click('button.css-49r7zy')
+  await page.click('button.css-1upq44r') // Age popup
+  await page.click('button.css-49r7zy') // Cookie popup
   // await page.setDefaultNavigationTimeout(0)
  
 
-  let url = "https://www.systembolaget.se/sok/?page="
+  let url = "https://www.systembolaget.se/sok/?sortBy=ProductLaunchDate&sortDirection=Descending&page="
 
-  let hrefsFiltered = ["test"]
   let pageCounter = 1
   while (pageCounter > 0) {
     await page.goto(url + pageCounter)
@@ -24,7 +23,7 @@ const fs = require("fs");
     })
     
     const hrefs = await page.$$eval('a', as => as.map(a => (a.href)))
-    hrefsFiltered = hrefs.filter((link) => link.startsWith("https://www.systembolaget.se/produkt/"))
+    let hrefsFiltered = hrefs.filter((link) => link.startsWith("https://www.systembolaget.se/produkt/"))
 
     if (hrefsFiltered.length == 0) {
       await page.screenshot({ path: 'test.png' })
