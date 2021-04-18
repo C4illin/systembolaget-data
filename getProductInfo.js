@@ -3,7 +3,8 @@ const fs = require("fs");
 
 (async () => {
   let products = require('./products.json')
-  let urls = fs.readFileSync('urls.txt','utf8').split('\n')
+  let urls = fs.readFileSync('testurls.txt','utf8').split('\n')
+  let brokenurls = []
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
   await page.goto('https://www.systembolaget.se/')
@@ -34,21 +35,27 @@ const fs = require("fs");
     product.apk =  Math.round((apk + Number.EPSILON) * 100) / 100
     // product.url = urls[i]
     // console.log(product)
-    products[urls[i]] = product
+    if (product["nr"] == null) {
+      brokenurls.push(urls[i])
+    } else {
+      products[urls[i]] = product
+    }
   }
 
   let sortOnAPK = []
   for (let url in products) {
-    sortOnAPK.push({
-      "apk": products[url]["apk"],
-      "name": products[url]["name"],
-      "subtitle": products[url]["subtitle"],
-      "tags": products[url]["tags"],
-      "alcohol": products[url]["alcohol"],
-      "volume": products[url]["volume"],
-      "price": products[url]["price"],
-      "url": url.slice(37,-1)
-    })
+    if (products[url]["apk"]) {
+      sortOnAPK.push({
+        "apk": products[url]["apk"],
+        "name": products[url]["name"],
+        "subtitle": products[url]["subtitle"],
+        "tags": products[url]["tags"],
+        "alcohol": products[url]["alcohol"],
+        "volume": products[url]["volume"],
+        "price": products[url]["price"],
+        "url": url.slice(37,-1)
+      })
+    }
   }
 
   sortOnAPK = sortOnAPK.sort(function(a, b) {
@@ -56,7 +63,7 @@ const fs = require("fs");
     return ((x > y) ? -1 : ((x < y) ? 1 : 0))
   })
 
-  // console.log(sortOnAPK)
+  console.log(brokenurls)
 
   fs.writeFile('apksort.json', JSON.stringify(sortOnAPK, null, 0), (err) => {
     if (err) {
