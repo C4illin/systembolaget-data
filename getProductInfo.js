@@ -11,7 +11,7 @@ const fs = require("fs");
   await page.click('button.css-49r7zy')
   // var product = {}
 
-  for (let i = 1995; i < urls.length; i++) { //urls.length
+  for (let i = 0; i < urls.length; i++) { //urls.length
     console.log(i + 1 + " - " + urls[i])
     await page.goto(urls[i])
 
@@ -20,7 +20,7 @@ const fs = require("fs");
         "name": document.getElementsByClassName('css-4zkxez')[0]?.innerText,
         "subtitle": document.getElementsByClassName('css-bk1kgv')[0]?.innerText,
         "alcohol": document.querySelector('.css-1cff46h > div:nth-child(3) > span:nth-child(1)')?.innerText,
-        "price": Number(document.querySelector('.css-16ahep3 > div:nth-child(1)')?.innerText.replace(":-","").replace(":",".")),
+        "price": Number(document.querySelector('.css-16ahep3 > div:nth-child(1)')?.innerText.replace(" ","").replace(":-","").replace(":",".")),
         "volume": document.querySelector('.css-1cff46h > div:nth-child(2) > span:nth-child(1)')?.innerText,
         "sugar": document.querySelector('.css-1cff46h > div:nth-child(4) > span:nth-child(1)')?.innerText,
         "country": document.querySelector('.css-x4jkyo > span:nth-child(1)')?.innerText.replace("Tillverkad i ",""),
@@ -56,7 +56,7 @@ const fs = require("fs");
     return ((x > y) ? -1 : ((x < y) ? 1 : 0))
   })
 
-  console.log(sortOnAPK)
+  // console.log(sortOnAPK)
 
   fs.writeFile('apksort.json', JSON.stringify(sortOnAPK, null, 0), (err) => {
     if (err) {
