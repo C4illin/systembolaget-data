@@ -44,7 +44,7 @@ const fs = require("fs");
 
   let sortOnAPK = []
   for (let url in products) {
-    if (products[url]["apk"]) {
+    if (products[url]["apk"] !== null) {
       sortOnAPK.push({
         "apk": products[url]["apk"],
         "name": products[url]["name"],
