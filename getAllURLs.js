@@ -3,6 +3,8 @@ const fs = require("fs");
 
 (async () => {
   let urls = fs.readFileSync('urls.txt','utf8').replaceAll("\r","").split('\n')
+  let startSize = urls.length
+  console.log("Start storlek: " + startSize)
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
   await page.goto('https://www.systembolaget.se/')
@@ -38,7 +40,8 @@ const fs = require("fs");
     } 
   }
 
-  console.log(urls)
+  console.log("Slut storlek: " + urls.length)
+  console.log("Delta: " + (urls.length - startSize))
 
   let file = fs.createWriteStream('urls.txt')
   file.write(urls.join('\n'))
