@@ -3,7 +3,7 @@ const fs = require("fs");
 
 (async () => {
   let products = require('./products.json')
-  let urls = fs.readFileSync('testurls.txt','utf8').split('\n')
+  let urls = fs.readFileSync('urls.txt','utf8').split('\n')
   let brokenurls = []
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
