@@ -13,8 +13,11 @@ const fs = require("fs");
   // await page.setDefaultNavigationTimeout(0)
  
 
-  let url = "https://www.systembolaget.se/sok/?sortBy=ProductLaunchDate&sortDirection=Descending&page="
+  let url = "https://www.systembolaget.se/sok/?newArrivalType=Nytt%20senaste%20m%C3%A5naden" + "&page="
 
+  // there is a cap at 666 pages (9990 products) but enough products for 1460 pages (21897 prudcts @ 15 per page)
+
+  let productCounter = 0
   let pageCounter = 1
   while (pageCounter > 0) {
     await page.goto(url + pageCounter)
@@ -34,6 +37,7 @@ const fs = require("fs");
       pageCounter = 0
     } else {
       for (let i = 0; i < hrefsFiltered.length; i++) {
+        productCounter += 1
         if (!urls.includes(hrefsFiltered[i])) {
           urls.push(hrefsFiltered[i])
           counter += 1
@@ -44,6 +48,7 @@ const fs = require("fs");
     console.log("Found: " + counter)
   }
 
+  console.log("Total: " + productCounter)
   console.log("Slut storlek: " + urls.length)
   console.log("Delta: " + (urls.length - startSize))
 
