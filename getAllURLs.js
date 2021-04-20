@@ -21,12 +21,14 @@ const fs = require("fs");
     await page.waitForSelector(".css-1hw29i9").then(() => {
       console.log(pageCounter)
     }).catch(() => {
-      console.log('FAIL')
+      console.log('FAIL' + pageCounter)
     })
     
-    const hrefs = await page.$$eval('a', as => as.map(a => (a.href)))
+    // hrefs is unnessesary middle step
+    let hrefs = await page.$$eval('a', as => as.map(a => (a.href)))
     let hrefsFiltered = hrefs.filter((link) => link.startsWith("https://www.systembolaget.se/produkt/"))
 
+    let counter = 0
     if (hrefsFiltered.length == 0) {
       await page.screenshot({ path: 'test.png' })
       pageCounter = 0
@@ -34,10 +36,12 @@ const fs = require("fs");
       for (let i = 0; i < hrefsFiltered.length; i++) {
         if (!urls.includes(hrefsFiltered[i])) {
           urls.push(hrefsFiltered[i])
+          counter += 1
         }
       }
       pageCounter += 1
-    } 
+    }
+    console.log("Found: " + counter)
   }
 
   console.log("Slut storlek: " + urls.length)
