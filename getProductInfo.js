@@ -28,13 +28,18 @@ const fs = require("fs");
         "nr": Number(document.querySelector('span.css-epvm6:nth-child(2)')?.innerText.slice(3)),
         "tags": document.getElementsByClassName('css-eakdcs')[0]?.innerText.toLowerCase().split("\n"),
         "image": document.getElementsByClassName('css-77ccha')[0]?.src,
+        "pant": document.getElementsByClassName("css-9mcku5")[0]?.innerText.slice(7,-3).replace(",","."),
       }
       return product
     })
+    if (product.pant) {
+      product.pant = Number(product.pant)
+      let apkp = product.alcohol?.split(' ')[0].replace(",",".")*product.volume?.split(' ')[0]/100/(product.price+product.pant)
+      product.apkp = Math.round((apkp + Number.EPSILON) * 1000) / 1000
+    }
     let apk = product.alcohol?.split(' ')[0].replace(",",".")*product.volume?.split(' ')[0]/100/product.price
-    product.apk =  Math.round((apk + Number.EPSILON) * 100) / 100
-    // product.url = urls[i]
-    // console.log(product)
+    product.apk =  Math.round((apk + Number.EPSILON) * 1000) / 1000
+
     if (product["nr"] == null) {
       brokenurls.push(urls[i])
     } else {
