@@ -4,7 +4,7 @@ const fs = require("fs");
 (async () => {
   let products = require('./products.json')
   let urls = fs.readFileSync('testurls.txt','utf8').split('\n')
-  let brokenurls = []
+  let brokenurls = fs.readFileSync('oldurls.txt','utf8').split('\n')
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
   await page.goto('https://www.systembolaget.se/')
@@ -41,7 +41,9 @@ const fs = require("fs");
     product.apk =  Math.round((apk + Number.EPSILON) * 1000) / 1000
 
     if (product["nr"] == null) {
-      brokenurls.push(urls[i])
+      if (!brokenurls.includes(urls[i])){
+        brokenurls.push(urls[i])
+      }
     } else {
       products[urls[i]] = product
     }
