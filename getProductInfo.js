@@ -70,6 +70,20 @@ const fs = require("fs");
 
   console.log(brokenurls)
 
+  if (brokenurls.length > 0) {
+    let urls = fs.readFileSync('urls.txt','utf8').replaceAll("\r","").split('\n')
+
+    urls = urls.filter( ( el ) => !brokenurls.includes( el ) )
+
+    let file = fs.createWriteStream('urls.txt')
+    file.write(urls.join('\n'))
+    file.end()
+
+    let filebrokenurls = fs.createWriteStream('oldurls.txt')
+    filebrokenurls.write(brokenurls.join('\n'))
+    filebrokenurls.end()
+  }
+
   fs.writeFile('apksort.json', JSON.stringify(sortOnAPK, null, 0), (err) => {
     if (err) {
       throw err
