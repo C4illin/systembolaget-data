@@ -20691,7 +20691,6 @@ https://www.systembolaget.se/produkt/sprit/auld-rare-benriach-8561502/
 https://www.systembolaget.se/produkt/sprit/zuidam-8524401/
 https://www.systembolaget.se/produkt/sprit/sture-gold-8491401/
 https://www.systembolaget.se/produkt/sprit/herencia-de-plata-8832401/
-https://www.systembolaget.se/produkt/sprit/glen-moray-8501501/
 https://www.systembolaget.se/produkt/sprit/hyde-no-3-8566401/
 https://www.systembolaget.se/produkt/sprit/silent-pool-8696901/
 https://www.systembolaget.se/produkt/sprit/staile-uisge-8666601/
@@ -20709,3 +20708,4 @@ https://www.systembolaget.se/produkt/sprit/unicum-8121601/
 https://www.systembolaget.se/produkt/sprit/manousakis-tsikoudia-8494802/
 https://www.systembolaget.se/produkt/sprit/kyro-gin-8775602/
 https://www.systembolaget.se/produkt/vin/la-casa-di-bricciano-7279001/
+https://www.systembolaget.se/produkt/ol/skelleftea-bryggeri-3585414/

@@ -3,33 +3,42 @@ const fs = require("fs");
 
 (async () => {
   let products = require('./products.json')
-  let urls = fs.readFileSync('testurls.txt','utf8').split('\n')
+  let urls = fs.readFileSync('urls.txt','utf8').split('\n')
   let brokenurls = fs.readFileSync('oldurls.txt','utf8').split('\n')
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
   await page.goto('https://www.systembolaget.se/')
   await page.click('button.css-1upq44r')
-  await page.click('button.css-49r7zy')
-  // var product = {}
+  await page.click('button[type="secondary"]')
+  await page.screenshot({ path: 'test.png' })
 
-  for (let i = 0; i < urls.length; i++) { //urls.length
+  for (let i = 20700; i < urls.length; i++) { //urls.length
     console.log(i + 1 + " - " + urls[i])
     await page.goto(urls[i])
 
     var product = await page.evaluate(() => {
-      let product = {
-        "name": document.getElementsByClassName('css-4zkxez')[0]?.innerText,
-        "subtitle": document.getElementsByClassName('css-bk1kgv')[0]?.innerText,
-        "alcohol": document.querySelector('.css-1cff46h > div:nth-child(3) > span:nth-child(1)')?.innerText,
-        "price": Number(document.querySelector('.css-16ahep3 > div:nth-child(1)')?.innerText.replace(" ","").replace(":-","").replace(":",".")),
-        "volume": document.querySelector('.css-1cff46h > div:nth-child(2) > span:nth-child(1)')?.innerText,
-        "sugar": document.querySelector('.css-1cff46h > div:nth-child(4) > span:nth-child(1)')?.innerText,
-        "country": document.querySelector('.css-x4jkyo > span:nth-child(1)')?.innerText.replace("Tillverkad i ",""),
-        "nr": Number(document.querySelector('span.css-epvm6:nth-child(2)')?.innerText.slice(3)),
-        "tags": document.getElementsByClassName('css-eakdcs')[0]?.innerText.toLowerCase().split("\n"),
-        "image": document.getElementsByClassName('css-77ccha')[0]?.src,
-        "pant": document.getElementsByClassName("css-9mcku5")[0]?.innerText.slice(7,-3).replace(",","."),
+      let main = document.querySelector(".col-md-7.offset-md-1")?.children
+      let product = {"nr":null}
+      if (main) {
+        product = {
+          "name": main[0].firstChild?.children[1].firstChild.firstChild?.innerText,
+          "subtitle": main[0].firstChild?.children[1].firstChild?.children[1]?.innerText,
+          "alcohol": main[2].firstChild.firstChild?.children[2]?.children[0]?.innerText,
+          "price": Number(main[2]?.children[1].firstChild?.innerText.replace(" ","").replace(":-","").replace(":",".")),
+          "volume": main[2].firstChild.firstChild?.children[1]?.children[0]?.innerText,
+          "sugar": main[2].firstChild.firstChild?.children[3]?.children[0]?.innerText,
+          "country": main[0].firstChild?.children[1]?.children[1]?.innerText.replace("Tillverkad i ",""),
+          "nr": Number(main[2].firstChild.firstChild.firstChild?.children[1]?.innerText.slice(3)),
+          "tags": main[0].firstChild.firstChild?.innerText.toLowerCase().split("\n"),
+          "image": document.querySelector("div.col-md-4").firstChild.firstChild.firstChild?.src,
+          "pant": main[2]?.children[1]?.children[2]?.children[1]?.innerText.slice(7,-3).replace(",","."),
+        }
+
+        if (!product["image"]) {
+          product["image"] = document.querySelector("div.col-md-4").firstChild.firstChild?.src
+        }
       }
+      
       return product
     })
     if (product.pant) {
@@ -70,7 +79,7 @@ const fs = require("fs");
     return ((x > y) ? -1 : ((x < y) ? 1 : 0))
   })
 
-  console.log(brokenurls)
+  // console.log(brokenurls)
 
   if (brokenurls.length > 0) {
     let urls = fs.readFileSync('urls.txt','utf8').replaceAll("\r","").split('\n')
