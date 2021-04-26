@@ -9,7 +9,7 @@ const fs = require("fs");
   const page = await browser.newPage()
   await page.goto('https://www.systembolaget.se/')
   await page.click('button.css-1upq44r') // Age popup
-  await page.click('button.css-49r7zy') // Cookie popup
+  await page.click('button[type="secondary"]') // Cookie popup
   // await page.setDefaultNavigationTimeout(0)
  
 
@@ -21,10 +21,11 @@ const fs = require("fs");
   let pageCounter = 1
   while (pageCounter > 0) {
     await page.goto(url + pageCounter)
-    await page.waitForSelector(".css-1hw29i9").then(() => {
+    await page.waitForSelector(".col-12.col-lg-9 > div > div:nth-child(2) > div").then(() => {
       console.log(pageCounter)
     }).catch(() => {
       console.log('FAIL' + pageCounter)
+      page.screenshot({ path: 'testfail.png' })
     })
     
     // hrefs is unnessesary middle step
