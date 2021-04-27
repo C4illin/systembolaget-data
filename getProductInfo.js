@@ -3,8 +3,8 @@ const fs = require("fs");
 
 (async () => {
   let products = require('./products.json')
-  let urls = fs.readFileSync('urls.txt','utf8').split('\n')
-  let brokenurls = fs.readFileSync('oldurls.txt','utf8').split('\n')
+  let urls = fs.readFileSync('urls.txt','utf8').replaceAll("\r","").split('\n')
+  let brokenurls = fs.readFileSync('oldurls.txt','utf8').replaceAll("\r","").split('\n')
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
   await page.goto('https://www.systembolaget.se/')
@@ -12,26 +12,31 @@ const fs = require("fs");
   await page.click('button[type="secondary"]')
   await page.screenshot({ path: 'test.png' })
 
-  for (let i = 20700; i < urls.length; i++) { //urls.length
+  for (let i = 5530; i < 5550; i++) { //urls.length
     console.log(i + 1 + " - " + urls[i])
     await page.goto(urls[i])
 
-    var product = await page.evaluate(() => {
+    let product = await page.evaluate(() => {
       let main = document.querySelector(".col-md-7.offset-md-1")?.children
       let product = {"nr":null}
+      
       if (main) {
+        let offset = 0
+        if (main.length == 5) {
+          offset = 1
+        }
         product = {
-          "name": main[0].firstChild?.children[1].firstChild.firstChild?.innerText,
-          "subtitle": main[0].firstChild?.children[1].firstChild?.children[1]?.innerText,
-          "alcohol": main[2].firstChild.firstChild?.children[2]?.children[0]?.innerText,
-          "price": Number(main[2]?.children[1].firstChild?.innerText.replace(" ","").replace(":-","").replace(":",".")),
-          "volume": main[2].firstChild.firstChild?.children[1]?.children[0]?.innerText,
-          "sugar": main[2].firstChild.firstChild?.children[3]?.children[0]?.innerText,
-          "country": main[0].firstChild?.children[1]?.children[1]?.innerText.replace("Tillverkad i ",""),
-          "nr": Number(main[2].firstChild.firstChild.firstChild?.children[1]?.innerText.slice(3)),
-          "tags": main[0].firstChild.firstChild?.innerText.toLowerCase().split("\n"),
-          "image": document.querySelector("div.col-md-4").firstChild.firstChild.firstChild?.src,
-          "pant": main[2]?.children[1]?.children[2]?.children[1]?.innerText.slice(7,-3).replace(",","."),
+          "name": main[offset]?.firstChild?.children[1]?.firstChild?.firstChild?.innerText,
+          "subtitle": main[offset]?.firstChild?.children[1]?.firstChild?.children[1]?.innerText,
+          "alcohol": main[2+offset]?.firstChild?.firstChild?.children[2]?.children[0]?.innerText,
+          "price": Number(main[2+offset]?.children[1]?.firstChild?.innerText.replace(" ","").replace(":-","").replace(":",".")),
+          "volume": main[2+offset]?.firstChild?.firstChild?.children[1]?.children[0]?.innerText,
+          "sugar": main[2+offset]?.firstChild?.firstChild?.children[3]?.children[0]?.innerText,
+          "country": main[offset]?.firstChild?.children[1]?.children[1]?.innerText.replace("Tillverkad i ",""),
+          "nr": Number(main[2+offset]?.firstChild?.firstChild?.firstChild?.children[1]?.innerText.slice(3)),
+          "tags": main[offset]?.firstChild?.firstChild?.innerText.toLowerCase().split("\n"),
+          "image": document.querySelector("div.col-md-4")?.firstChild?.firstChild?.firstChild?.src,
+          "pant": main[2+offset]?.children[1]?.children[2]?.children[1]?.innerText.slice(7,-3).replace(",","."),
         }
 
         if (!product["image"]) {
@@ -41,6 +46,7 @@ const fs = require("fs");
       
       return product
     })
+    // console.log(product)
     if (product.pant) {
       product.pant = Number(product.pant)
       let apkp = product.alcohol?.split(' ')[0].replace(",",".")*product.volume?.split(' ')[0]/100/(product.price+product.pant)
@@ -53,6 +59,8 @@ const fs = require("fs");
       if (!brokenurls.includes(urls[i])){
         brokenurls.push(urls[i])
       }
+      delete products[urls[i]]
+      console.log("BROKEN: " + urls[i])
     } else {
       products[urls[i]] = product
     }
