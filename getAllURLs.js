@@ -13,8 +13,8 @@ const fs = require("fs");
   // await page.setDefaultNavigationTimeout(0)
  
 
-  // let url = "https://www.systembolaget.se/sok/?newArrivalType=Nytt%20senaste%20m%C3%A5naden" + "&page="
-  let url = "https://www.systembolaget.se/sok/?" + "&page="
+  let url = "https://www.systembolaget.se/sok/?newArrivalType=Nytt%20senaste%20m%C3%A5naden" + "&page="
+  // let url = "https://www.systembolaget.se/sok/?" + "&page="
 
   // there is a cap at 666 pages (9990 products) but enough products for 1460 pages (21897 prudcts @ 15 per page)
 
