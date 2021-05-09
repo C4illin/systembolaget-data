@@ -38,7 +38,7 @@ const fs = require("fs");
       await page.waitForSelector(".col-12.col-lg-9 > div > div:nth-child(2) > div").then(() => {
         console.log(pageCounter)
       }).catch(() => {
-        console.log('FAIL' + pageCounter)
+        console.log('FAIL: ' + pageCounter)
         page.screenshot({ path: 'testfail.png' })
       })
     
