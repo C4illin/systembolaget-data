@@ -12,7 +12,7 @@ const fs = require("fs");
   await page.click('button[type="secondary"]')
   await page.screenshot({ path: 'test.png' })
 
-  for (let i = 21450; i < urls.length; i++) { //urls.length
+  for (let i = 0; i < urls.length; i++) { //urls.length
     console.log(i + 1 + " - " + urls[i])
     await page.goto(urls[i])
 
@@ -37,7 +37,10 @@ const fs = require("fs");
           "tags": main[offset]?.firstChild?.firstChild?.innerText.toLowerCase().split("\n"),
           "image": document.querySelector("div.col-md-4")?.firstChild?.firstChild?.firstChild?.src,
           "pant": main[2+offset]?.children[1]?.children[2]?.children[1]?.innerText.slice(7,-3).replace(",","."),
-          "ordervara": main[2+offset]?.firstChild?.children[1]?.firstChild?.textContent?.includes("Ordervara, längre leveranstid"),
+        }
+
+        if (main[2+offset]?.firstChild?.children[1]?.firstChild?.textContent == "Ordervara, längre leveranstid") {
+          product.tags.push("ordervara")
         }
 
         if (!product["image"]) {
@@ -79,7 +82,6 @@ const fs = require("fs");
         "volume": products[url]["volume"],
         "price": products[url]["price"],
         "url": url.slice(37,-1),
-        "available": products[url]["ordervara"],
       })
     }
   }
