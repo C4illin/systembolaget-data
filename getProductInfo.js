@@ -72,7 +72,7 @@ const fs = require("fs");
 
   let sortOnAPK = []
   for (let url in products) {
-    if (products[url]["apk"] !== null) {
+    if (products[url]["apk"] || products[url]["apk"] === 0) {
       sortOnAPK.push({
         "apk": products[url]["apk"],
         "name": products[url]["name"],
@@ -87,7 +87,18 @@ const fs = require("fs");
   }
 
   sortOnAPK = sortOnAPK.sort(function(a, b) {
-    var x = a["apk"]; var y = b["apk"]
+    var x = a["apk"]
+    var y = b["apk"]
+    // if(x === null && y === null) {
+    //   return 0
+    // }
+    // if(y === null) {
+    //   return -1
+    // }
+    // if(x === null) {
+    //   return 1
+    // }
+
     return ((x > y) ? -1 : ((x < y) ? 1 : 0))
   })
 
