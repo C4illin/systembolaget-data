@@ -16,17 +16,17 @@ const fs = require("fs");
   // let url = "https://www.systembolaget.se/sok/?newArrivalType=Nytt%20senaste%20m%C3%A5naden" + "&page="
   // let url = "https://www.systembolaget.se/sok/?" + "&page="
 
-  // products:
-  // 5062
-  // 5042
-  // 5356
-  // 6299
+  // let urlArray = [
+  //   "https://www.systembolaget.se/sok/?priceFrom=400",
+  //   "https://www.systembolaget.se/sok/?priceFrom=200&priceTo=400",
+  //   "https://www.systembolaget.se/sok/?priceFrom=100&priceTo=200",
+  //   "https://www.systembolaget.se/sok/?priceTo=100"
+  // ]
+
   let urlArray = [
-    "https://www.systembolaget.se/sok/?priceFrom=400",
-    "https://www.systembolaget.se/sok/?priceFrom=200&priceTo=400",
-    "https://www.systembolaget.se/sok/?priceFrom=100&priceTo=200",
-    "https://www.systembolaget.se/sok/?priceTo=100"
+    "https://www.systembolaget.se/sok/?newArrivalType=Nytt%20senaste%20m%C3%A5naden"
   ]
+
 
   // there is a cap at 666 pages (9990 products) but enough products for 1460 pages (21897 prudcts @ 15 per page)
   let productCounter = 0
