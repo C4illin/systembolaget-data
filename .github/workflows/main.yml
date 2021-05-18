@@ -1,11 +1,8 @@
 name: node.js deploy
 
 on:
-  push:
-    branches:
-      - main
-  watch:
-    types: [started]
+  schedule:
+    - cron: "0 0 1/7 * *"
 
 jobs:
   run_and_push:
