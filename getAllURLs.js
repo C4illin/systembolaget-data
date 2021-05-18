@@ -2,14 +2,16 @@ const puppeteer = require("puppeteer")
 const fs = require("fs");
 
 (async () => {
-  let urls = fs.readFileSync('urls.txt','utf8').replaceAll("\r","").split('\n')
+  let urls = fs.readFileSync("urls.txt","utf8").replaceAll("\r","").split("\n")
   let startSize = urls.length
   console.log("Start storlek: " + startSize)
-  const browser = await puppeteer.launch()
+  const browser = await puppeteer.launch({
+    args: ["--disable-dev-shm-usage","--no-sandbox"]
+  })
   const page = await browser.newPage()
-  await page.goto('https://www.systembolaget.se/')
-  await page.click('button.css-1upq44r') // Age popup
-  await page.click('button[type="secondary"]') // Cookie popup
+  await page.goto("https://www.systembolaget.se/")
+  await page.click("button.css-1upq44r") // Age popup
+  await page.click("button[type='secondary']") // Cookie popup
   // await page.setDefaultNavigationTimeout(0)
  
 
@@ -38,17 +40,17 @@ const fs = require("fs");
       await page.waitForSelector(".col-12.col-lg-9 > div > div:nth-child(2) > div").then(() => {
         console.log(pageCounter)
       }).catch(() => {
-        console.log('FAIL: ' + pageCounter)
-        page.screenshot({ path: 'testfail.png' })
+        console.log("FAIL: " + pageCounter)
+        page.screenshot({ path: "testfail.png" })
       })
     
       // hrefs is unnessesary middle step
-      let hrefs = await page.$$eval('a', as => as.map(a => (a.href)))
+      let hrefs = await page.$$eval("a", as => as.map(a => (a.href)))
       let hrefsFiltered = hrefs.filter((link) => link.startsWith("https://www.systembolaget.se/produkt/"))
 
       let counter = 0
       if (hrefsFiltered.length == 0) {
-        await page.screenshot({ path: 'test.png' })
+        await page.screenshot({ path: "test.png" })
         pageCounter = 0
       } else {
         for (let i = 0; i < hrefsFiltered.length; i++) {
@@ -68,8 +70,8 @@ const fs = require("fs");
     console.log("Slut storlek: " + urls.length)
     console.log("Delta: " + (urls.length - startSize))
 
-    let file = fs.createWriteStream('urls.txt')
-    file.write(urls.join('\n'))
+    let file = fs.createWriteStream("urls.txt")
+    file.write(urls.join("\n"))
     file.end()
   }
   
