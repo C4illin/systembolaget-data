@@ -3,10 +3,12 @@ name: node.js deploy
 on:
   push:
     branches:
-      - master
+      - main
+  watch:
+    types: [started]
 
 jobs:
-  build_and_deploy:
+  run_and_push:
     runs-on: ubuntu-latest
     steps:
       - name: GitHub Checkout
