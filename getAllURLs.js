@@ -18,16 +18,16 @@ const fs = require("fs");
   // let url = "https://www.systembolaget.se/sok/?newArrivalType=Nytt%20senaste%20m%C3%A5naden" + "&page="
   // let url = "https://www.systembolaget.se/sok/?" + "&page="
 
-  // let urlArray = [
-  //   "https://www.systembolaget.se/sok/?priceFrom=400",
-  //   "https://www.systembolaget.se/sok/?priceFrom=200&priceTo=400",
-  //   "https://www.systembolaget.se/sok/?priceFrom=100&priceTo=200",
-  //   "https://www.systembolaget.se/sok/?priceTo=100"
-  // ]
-
   let urlArray = [
-    "https://www.systembolaget.se/sok/?newArrivalType=Nytt%20senaste%20m%C3%A5naden"
+    "https://www.systembolaget.se/sok/?priceFrom=400",
+    "https://www.systembolaget.se/sok/?priceFrom=200&priceTo=400",
+    "https://www.systembolaget.se/sok/?priceFrom=100&priceTo=200",
+    "https://www.systembolaget.se/sok/?priceTo=100"
   ]
+
+  // let urlArray = [
+  //   "https://www.systembolaget.se/sok/?newArrivalType=Nytt%20senaste%20m%C3%A5naden"
+  // ]
 
 
   // there is a cap at 666 pages (9990 products) but enough products for 1460 pages (21897 prudcts @ 15 per page)
@@ -37,7 +37,7 @@ const fs = require("fs");
     let pageCounter = 1
     while (pageCounter > 0) {
       await page.goto(url + pageCounter)
-      await page.waitForSelector(".col-12.col-lg-9 > div > div:nth-child(2) > div").then(() => {
+      await page.waitForSelector(".col-12.col-lg-9 > div > div:nth-child(1) > div").then(() => {
         console.log(pageCounter)
       }).catch(() => {
         console.log("FAIL: " + pageCounter)
