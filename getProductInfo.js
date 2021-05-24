@@ -39,6 +39,10 @@ const fs = require("fs");
           "pant": main[2+offset]?.children[1]?.children[2]?.children[1]?.innerText.slice(7,-3).replace(",","."),
         }
 
+        if (product["alcohol"]?.endsWith("g/l")) {
+          product["alcohol"] = "0 %"
+        }
+
         if (main[2+offset]?.firstChild?.children[1]?.firstChild?.textContent == "Ordervara, längre leveranstid") {
           product.tags.push("ordervara")
         }
@@ -89,16 +93,6 @@ const fs = require("fs");
   sortOnAPK = sortOnAPK.sort(function(a, b) {
     var x = a["apk"]
     var y = b["apk"]
-    // if(x === null && y === null) {
-    //   return 0
-    // }
-    // if(y === null) {
-    //   return -1
-    // }
-    // if(x === null) {
-    //   return 1
-    // }
-
     return ((x > y) ? -1 : ((x < y) ? 1 : 0))
   })
 
