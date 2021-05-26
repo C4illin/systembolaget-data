@@ -151,7 +151,6 @@ https://www.systembolaget.se/produkt/vin/bourgueil-trinch-9328001/
 https://www.systembolaget.se/produkt/ol/gouden-carolus-1113201/
 https://www.systembolaget.se/produkt/vin/hermitage-blanc-9560101/
 https://www.systembolaget.se/produkt/vin/quinta-de-couselo-seleccion-9529501/
-https://www.systembolaget.se/produkt/alkoholfritt/leitz-1902515/
 https://www.systembolaget.se/produkt/vin/veronica-ortega-9320601/
 https://www.systembolaget.se/produkt/vin/tesch-9220601/
 https://www.systembolaget.se/produkt/ol/goteborgs-summer-pale-ale-3459803/
@@ -324,7 +323,6 @@ https://www.systembolaget.se/produkt/vin/yzaguirre-7611601/
 https://www.systembolaget.se/produkt/vin/sentio-7350801/
 https://www.systembolaget.se/produkt/vin/savage-7053301/
 https://www.systembolaget.se/produkt/sprit/dragon-blood-8162602/
-https://www.systembolaget.se/produkt/alkoholfritt/mikkeller-8298012/
 https://www.systembolaget.se/produkt/vin/chateau-vannieres-7433601/
 https://www.systembolaget.se/produkt/vin/vieux-chateau-des-jouans-312801/
 https://www.systembolaget.se/produkt/vin/pompette-jullada-7079009/
