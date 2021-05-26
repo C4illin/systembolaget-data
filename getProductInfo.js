@@ -12,7 +12,7 @@ const fs = require("fs");
   await page.click('button[type="secondary"]')
   await page.screenshot({ path: 'test.png' })
 
-  for (let i = 22300; i < urls.length; i++) { //urls.length
+  for (let i = 22320; i < urls.length; i++) { //urls.length
     console.log(i + 1 + " - " + urls[i])
     await page.goto(urls[i])
 
@@ -65,11 +65,16 @@ const fs = require("fs");
     product.apk =  Math.round((apk + Number.EPSILON) * 1000) / 1000
 
     if (product["nr"] == null) {
-      if (!brokenurls.includes(urls[i])){
-        brokenurls.push(urls[i])
+      let pagetitle = await page.title()
+      if (pagetitle == "404 - sidan kan inte hittas | Systembolaget") {
+        if (!brokenurls.includes(urls[i])){
+          brokenurls.push(urls[i])
+        }
+        delete products[urls[i]]
+        console.log("BROKEN: " + urls[i])
+      } else {
+        console.log("TEMPBROKEN: " + urls[i])
       }
-      delete products[urls[i]]
-      console.log("BROKEN: " + urls[i])
     } else {
       products[urls[i]] = product
     }
