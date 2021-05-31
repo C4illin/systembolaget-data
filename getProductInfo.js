@@ -5,12 +5,12 @@ const fs = require("fs");
   let products = require('./products.json')
   let urls = fs.readFileSync('urls.txt','utf8').replaceAll("\r","").split('\n')
   let brokenurls = fs.readFileSync('oldurls.txt','utf8').replaceAll("\r","").split('\n')
-  // const browser = await puppeteer.launch()
-  const browser = await puppeteer.launch({
-    headless: true,
-    executablePath: '/usr/bin/chromium-browser',
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
-  })
+  const browser = await puppeteer.launch()
+  // const browser = await puppeteer.launch({
+  //   headless: true,
+  //   executablePath: '/usr/bin/chromium-browser',
+  //   args: ['--no-sandbox', '--disable-setuid-sandbox']
+  // })
   const page = await browser.newPage()
   await page.goto('https://www.systembolaget.se/')
   await page.click('button.css-1upq44r')
