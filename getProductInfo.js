@@ -17,7 +17,7 @@ const fs = require("fs");
   await page.click('button[type="secondary"]')
   await page.screenshot({ path: 'test.png' })
 
-  for (let i = 0; i < 15000; i++) { //urls.length
+  for (let i = 0; i < 100; i++) { //urls.length
     console.log(i + 1 + " - " + urls[i])
     await page.goto(urls[i])
 
@@ -27,9 +27,11 @@ const fs = require("fs");
       
       if (main) {
         let offset = 0
-        if (main.length == 5) {
+
+        if (main[2+offset]?.children[1]?.firstChild?.innerText == null) {
           offset = 1
         }
+        
         product = {
           "name": main[offset]?.firstChild?.children[1]?.firstChild?.firstChild?.innerText,
           "subtitle": main[offset]?.firstChild?.children[1]?.firstChild?.children[1]?.innerText,
@@ -41,7 +43,11 @@ const fs = require("fs");
           "nr": Number(main[2+offset]?.firstChild?.firstChild?.firstChild?.children[1]?.innerText.slice(3)),
           "tags": main[offset]?.firstChild?.firstChild?.innerText.toLowerCase().split("\n"),
           "image": document.querySelector("div.col-md-4")?.firstChild?.firstChild?.firstChild?.src,
-          "pant": main[2+offset]?.children[1]?.children[2]?.children[1]?.innerText.slice(7,-3).replace(",","."),
+          "pant": main[2+offset]?.children[1]?.children[2]?.children[1]?.innerText.slice(5,-3).replace(",","."),
+        }
+
+        if (product["alcohol"] == null) {
+          product["alcohol"] = "0 %"
         }
 
         if (product["alcohol"]?.endsWith("g/l")) {
