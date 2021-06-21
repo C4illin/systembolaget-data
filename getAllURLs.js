@@ -37,7 +37,7 @@ const fs = require("fs");
     let pageCounter = 1
     while (pageCounter > 0) {
       await page.goto(url + pageCounter)
-      await page.waitForSelector(".col-12.col-lg-9 > div > div:nth-child(1) > div").then(() => {
+      await page.waitForSelector(".col-12.col-lg-9 > div > div:nth-child(1) h3").then(() => {
         console.log(pageCounter)
       }).catch(() => {
         console.log("FAIL: " + pageCounter)
