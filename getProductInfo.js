@@ -17,7 +17,7 @@ const fs = require("fs");
   await page.click('button[type="secondary"]')
   await page.screenshot({ path: 'test.png' })
 
-  for (let i = 0; i < 100; i++) { //urls.length
+  for (let i = 22000; i < urls.length; i++) { //urls.length
     console.log(i + 1 + " - " + urls[i])
     await page.goto(urls[i])
 
