@@ -4,7 +4,8 @@ const fs = require("fs");
 (async () => {
   let products = require('./products.json')
   let urls = fs.readFileSync('urls.txt','utf8').replaceAll("\r","").split('\n')
-  let brokenurls = fs.readFileSync('oldurls.txt','utf8').replaceAll("\r","").split('\n')
+  // let brokenurls = fs.readFileSync('oldurls.txt','utf8').replaceAll("\r","").split('\n')
+  let brokenurls = []
   const browser = await puppeteer.launch()
   // const browser = await puppeteer.launch({
   //   headless: true,
@@ -124,9 +125,9 @@ const fs = require("fs");
     file.write(urls.join('\n'))
     file.end()
 
-    let filebrokenurls = fs.createWriteStream('oldurls.txt')
-    filebrokenurls.write(brokenurls.join('\n'))
-    filebrokenurls.end()
+    // let filebrokenurls = fs.createWriteStream('oldurls.txt')
+    // filebrokenurls.write(brokenurls.join('\n'))
+    // filebrokenurls.end()
   }
 
   fs.writeFile('apksort.json', JSON.stringify(sortOnAPK, null, 0), (err) => {
