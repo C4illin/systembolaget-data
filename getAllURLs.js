@@ -10,7 +10,7 @@ const fs = require("fs");
   })
   const page = await browser.newPage()
   await page.goto("https://www.systembolaget.se/")
-  await page.click("button.css-1upq44r") // Age popup
+  await page.click("section div div div button") // Age popup
   await page.click("button[type='secondary']") // Cookie popup
   // await page.setDefaultNavigationTimeout(0)
  
@@ -37,7 +37,7 @@ const fs = require("fs");
     let pageCounter = 1
     while (pageCounter > 0) {
       await page.goto(url + pageCounter)
-      await page.waitForSelector(".col-12.col-lg-9 > div > div:nth-child(1) h3").then(() => {
+      await page.waitForSelector("div[width='1,1,0.75'] > div > div:nth-child(1) h3").then(() => {
         console.log(pageCounter)
       }).catch(() => {
         console.log("FAIL: " + pageCounter)
