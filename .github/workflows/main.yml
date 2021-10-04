@@ -1,8 +1,8 @@
 name: node.js deploy
 
-on:
-  schedule:
-    - cron: "0 4 * * mon"
+# on:
+  # schedule:
+    # - cron: "0 4 * * mon"
 
 jobs:
   run_and_push:
