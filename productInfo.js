@@ -40,7 +40,7 @@ const withPage = (browser) => async (fn) => {
       await page.goto('https://www.systembolaget.se/')
       await page.click("section div div div button")
       await page.click('button[type="secondary"]')
-      await page.screenshot({ path: 'test2.png' })
+      // await page.screenshot({ path: 'test2.png' })
     })
   })
 
