@@ -8,9 +8,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.7.2",
     "puppeteer": "^8.0.0"
   },
-  "devDependencies": {},
   "description": "",
   "repository": {
     "type": "git",
