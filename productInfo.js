@@ -12,7 +12,7 @@ const withBrowser = async (fn) => {
 }
 
 const withPage = (browser) => async (fn) => {
-  const page = await browser.newPage()
+  const page = await browser.newPage({ headless: true })
   try {
     return await fn(page)
   } finally {
@@ -22,16 +22,25 @@ const withPage = (browser) => async (fn) => {
 
 (async () => {
   let products = require('./products.json')
-  const urls = fs.readFileSync('urls.txt','utf8').replaceAll("\r","").split('\n').slice(0, 1000)
+  const urls = fs.readFileSync('urls.txt','utf8').replaceAll("\r","").split('\n').slice(15000, 16000)
   let brokenurls = []
   let counter = 1
 
   await withBrowser(async browser => {
     await withPage(browser)(async page => {
+      await page.setRequestInterception(true)
+      page.on('request', (req) => {
+        if(req.resourceType() == 'stylesheet' || req.resourceType() == 'font' || req.resourceType() == 'image'){
+          req.abort()
+        }
+        else {
+          req.continue()
+        }
+      })
       await page.goto('https://www.systembolaget.se/')
       await page.click("section div div div button")
       await page.click('button[type="secondary"]')
-      // await page.screenshot({ path: 'test2.png' })
+      await page.screenshot({ path: 'test2.png' })
     })
   })
 
@@ -110,7 +119,7 @@ const withPage = (browser) => async (fn) => {
           products[url] = product
         }
       })
-    }, {concurrency: 50})
+    }, {concurrency: 30})
   })
 
 
@@ -135,6 +144,8 @@ const withPage = (browser) => async (fn) => {
     var y = b["apk"]
     return ((x > y) ? -1 : ((x < y) ? 1 : 0))
   })
+
+  console.log("Broken: " + brokenurls.length)
 
   if (brokenurls.length > 0) {
     let urls = fs.readFileSync('urls.txt','utf8').replaceAll("\r","").split('\n')
