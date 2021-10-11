@@ -3,7 +3,9 @@ const fs = require("fs")
 const bluebird = require("bluebird")
 
 const withBrowser = async (fn) => {
-  const browser = await puppeteer.launch()
+  const browser = await puppeteer.launch({
+    args: ["--disable-dev-shm-usage","--no-sandbox"]
+  })
   try {
     return await fn(browser)
   } finally {
@@ -12,7 +14,7 @@ const withBrowser = async (fn) => {
 }
 
 const withPage = (browser) => async (fn) => {
-  const page = await browser.newPage({ headless: true })
+  const page = await browser.newPage()
   try {
     return await fn(page)
   } finally {
@@ -22,12 +24,15 @@ const withPage = (browser) => async (fn) => {
 
 (async () => {
   let products = require('./products.json')
-  const urls = fs.readFileSync('urls.txt','utf8').replaceAll("\r","").split('\n')//.slice(15000, 15100)
+  const urls = fs.readFileSync('urls.txt','utf8').replaceAll("\r","").split('\n').slice(15000, 16000)
+  console.log("Num of urls: " + urls.length)
   let brokenurls = []
   let counter = 1
 
   await withBrowser(async browser => {
+    console.log("Browser is online")
     await withPage(browser)(async page => {
+      console.log("Page is online")
       await page.setRequestInterception(true)
       page.on('request', (req) => {
         if(req.resourceType() == 'stylesheet' || req.resourceType() == 'font' || req.resourceType() == 'image'){
@@ -37,9 +42,11 @@ const withPage = (browser) => async (fn) => {
           req.continue()
         }
       })
+      console.log("Oh oh cookie prompt")
       await page.goto('https://www.systembolaget.se/')
       await page.click("section div div div button")
       await page.click('button[type="secondary"]')
+      console.log("Passed cookie prompt")
       // await page.screenshot({ path: 'test2.png' })
     })
   })
@@ -119,7 +126,7 @@ const withPage = (browser) => async (fn) => {
           products[url] = product
         }
       })
-    }, {concurrency: 30})
+    }, {concurrency: 50})
   })
 
 
