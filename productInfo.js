@@ -24,7 +24,7 @@ const withPage = (browser) => async (fn) => {
 
 (async () => {
   let products = require('./products.json')
-  const urls = fs.readFileSync('urls.txt','utf8').replaceAll("\r","").split('\n').slice(15000, 16000)
+  const urls = fs.readFileSync('urls.txt','utf8').replaceAll("\r","").split('\n')//.slice(14000)
   console.log("Num of urls: " + urls.length)
   let brokenurls = []
   let counter = 1
