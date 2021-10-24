@@ -14,66 +14,74 @@ const fs = require("fs");
   await page.click("button[type='secondary']") // Cookie popup
   // await page.setDefaultNavigationTimeout(0)
  
-
-  // let url = "https://www.systembolaget.se/sok/?newArrivalType=Nytt%20senaste%20m%C3%A5naden" + "&page="
-  // let url = "https://www.systembolaget.se/sok/?" + "&page="
-
-  let urlArray = [
-    "https://www.systembolaget.se/sok/?priceFrom=400",
-    "https://www.systembolaget.se/sok/?priceFrom=200&priceTo=400",
-    "https://www.systembolaget.se/sok/?priceFrom=100&priceTo=200",
-    "https://www.systembolaget.se/sok/?priceTo=100"
-  ]
-
-  // let urlArray = [
-  //   "https://www.systembolaget.se/sok/?newArrivalType=Nytt%20senaste%20m%C3%A5naden"
-  // ]
-
-
-  // there is a cap at 666 pages (9990 products) but enough products for 1460 pages (21897 prudcts @ 15 per page)
+  let lastprice = 19
+  let endprice = 50
   let productCounter = 0
-  for(let urlindex = 0; urlindex < urlArray.length; urlindex++) {
-    let url = urlArray[urlindex] + "&page="
-    let pageCounter = 1
-    while (pageCounter > 0) {
-      await page.goto(url + pageCounter)
-      await page.waitForSelector("div[width='1,1,0.75'] > div > div:nth-child(1) h3").then(() => {
-        console.log(pageCounter)
-      }).catch(() => {
-        console.log("FAIL: " + pageCounter)
-        page.screenshot({ path: "testfail.png" })
-      })
-    
-      // hrefs is unnessesary middle step
-      let hrefs = await page.$$eval("a", as => as.map(a => (a.href)))
-      let hrefsFiltered = hrefs.filter((link) => link.startsWith("https://www.systembolaget.se/produkt/"))
 
-      let counter = 0
-      if (hrefsFiltered.length == 0) {
-        await page.screenshot({ path: "test.png" })
-        pageCounter = 0
-      } else {
-        for (let i = 0; i < hrefsFiltered.length; i++) {
-          productCounter += 1
-          if (!urls.includes(hrefsFiltered[i])) {
-            urls.push(hrefsFiltered[i])
-            counter += 1
-          }
+  let stillRunning = true
+  
+  while (stillRunning) {
+    console.log(lastprice)
+    let url = `https://www.systembolaget.se/sok/?sortBy=Price&sortDirection=Ascending&priceFrom=${lastprice}`
+    await page.goto(url)
+
+    let tooFew = true
+    while (tooFew) {
+      tooFew = false
+      await page.waitForSelector("div[width='1,1,0.75'] > div > div:nth-child(1) h3")
+      await page.waitForSelector(".css-6hztd2")
+      await page.click(".css-6hztd2", {delay: 100})
+
+      let moreHref = true
+      while (moreHref) {
+        moreHref = false
+        let hrefs = await page.$$eval("a", as => as.map(a => (a.href)))
+        let lastHrefLength = hrefsFiltered?.length || 0
+        var hrefsFiltered = hrefs.filter((link) => link.startsWith("https://www.systembolaget.se/produkt/"))
+
+        if (hrefsFiltered.length == lastHrefLength && hrefsFiltered.length % 30 == 0) {
+          moreHref = true
+          await page.waitForTimeout(1000)
         }
-        pageCounter += 1
       }
-      console.log("Found: " + counter)
+      
+      let prices = await page.$$eval("span", as => as.map(span => span.innerText))
+      let pricesFiltered = prices.filter((price) => price.includes(":") && (price.endsWith(":-") || price.endsWith("*")))
+      let lastlastprice = lastprice
+      lastprice = Math.floor(pricesFiltered.slice(-1)[0].replace(":-", "").replace("*", "").replace(":","."))
+      
+
+      if (lastprice == lastlastprice) {
+        tooFew = true
+      }
     }
-
-    console.log("Pages: " + pageCounter)
-    console.log("Total: " + productCounter)
-    console.log("Slut storlek: " + urls.length)
-    console.log("Delta: " + (urls.length - startSize))
-
-    let file = fs.createWriteStream("urls.txt")
-    file.write(urls.join("\n"))
-    file.end()
+    let counter = 0
+    if (hrefsFiltered.length == 0) {
+      await page.screenshot({ path: "test.png" })
+      console.log("Something broke")
+    } else {
+      for (let i = 0; i < hrefsFiltered.length; i++) {
+        productCounter += 1
+        if (!urls.includes(hrefsFiltered[i])) {
+          urls.push(hrefsFiltered[i])
+          counter += 1
+        }
+      }
+      if (hrefsFiltered.length < 30 || lastprice > endprice) {
+        console.log("End of page")
+        stillRunning = false
+      }
+    }
+    console.log("Found: " + counter + " of " + hrefsFiltered.length + " products")
+    // console.log(hrefsFiltered)
   }
+  console.log("Total: " + productCounter)
+  console.log("Slut storlek: " + urls.length)
+  console.log("Delta: " + (urls.length - startSize))
+
+  let file = fs.createWriteStream("urls.txt")
+  file.write(urls.join("\n"))
+  file.end()
   
   await browser.close()
 })()
