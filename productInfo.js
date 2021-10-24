@@ -47,7 +47,6 @@ const withPage = (browser) => async (fn) => {
       await page.click("section div div div button")
       await page.click('button[type="secondary"]')
       console.log("Passed cookie prompt")
-      // await page.screenshot({ path: 'test2.png' })
     })
   })
 
@@ -94,15 +93,10 @@ const withPage = (browser) => async (fn) => {
             if (main[2+offset]?.firstChild?.children[1]?.firstChild?.textContent == "Ordervara, längre leveranstid") {
               product.tags.push("ordervara")
             }
-
-          // if (!product["image"]) {
-          //   product["image"] = document.querySelector("div > img")?.src
-          // }
           }
         
           return product
         })
-        // console.log(product)
         if (product.pant) {
           product.pant = Number(product.pant)
           let apkp = product.alcohol?.split(' ')[0].replace(",",".")*product.volume?.split(' ')[0]/100/(product.price+product.pant)
