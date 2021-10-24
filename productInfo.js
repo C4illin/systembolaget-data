@@ -123,6 +123,9 @@ const withPage = (browser) => async (fn) => {
             console.log("TEMPBROKEN: " + url)
           }
         } else {
+          if(!products[url] || products[url][apk] != product[apk]) {
+            product["changed"] = Date.now()
+          }
           products[url] = product
         }
       })
