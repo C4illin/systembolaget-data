@@ -9,13 +9,22 @@ const fs = require("fs");
     args: ["--disable-dev-shm-usage","--no-sandbox"]
   })
   const page = await browser.newPage()
+  await page.setRequestInterception(true)
+  page.on('request', (req) => {
+    if(req.resourceType() == 'stylesheet' || req.resourceType() == 'font' || req.resourceType() == 'image'){
+      req.abort()
+    }
+    else {
+      req.continue()
+    }
+  })
   await page.goto("https://www.systembolaget.se/")
   await page.click("section div div div button") // Age popup
   await page.click("button[type='secondary']") // Cookie popup
   // await page.setDefaultNavigationTimeout(0)
  
-  let lastprice = 19
-  let endprice = 50
+  let lastprice = 90
+  // let endprice = 10000
   let productCounter = 0
 
   let stillRunning = true
@@ -29,9 +38,13 @@ const fs = require("fs");
     while (tooFew) {
       tooFew = false
       await page.waitForSelector("div[width='1,1,0.75'] > div > div:nth-child(1) h3")
-      await page.waitForSelector(".css-6hztd2")
-      await page.click(".css-6hztd2", {delay: 100})
-
+      await page.waitForSelector(".css-6hztd2", {timeout: 5000}).then(async () => {
+        // sometimes crashes without delay idk why
+        await page.click(".css-6hztd2", {delay: 100})
+      }).catch(async () => {
+        console.log("Couldn't find more products")
+      })
+      
       let moreHref = true
       while (moreHref) {
         moreHref = false
@@ -48,7 +61,7 @@ const fs = require("fs");
       let prices = await page.$$eval("span", as => as.map(span => span.innerText))
       let pricesFiltered = prices.filter((price) => price.includes(":") && (price.endsWith(":-") || price.endsWith("*")))
       let lastlastprice = lastprice
-      lastprice = Math.floor(pricesFiltered.slice(-1)[0].replace(":-", "").replace("*", "").replace(":","."))
+      lastprice = Math.floor(pricesFiltered.slice(-1)[0].replace(":-", "").replace("*", "").replace(":",".").replaceAll(" ",""))
       
 
       if (lastprice == lastlastprice) {
@@ -67,7 +80,7 @@ const fs = require("fs");
           counter += 1
         }
       }
-      if (hrefsFiltered.length < 30 || lastprice > endprice) {
+      if (hrefsFiltered.length < 30) {
         console.log("End of page")
         stillRunning = false
       }
