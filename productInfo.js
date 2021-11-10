@@ -24,7 +24,7 @@ const withPage = (browser) => async (fn) => {
 
 (async () => {
   let products = require('./products.json')
-  const urls = fs.readFileSync('urls.txt','utf8').replaceAll("\r","").split('\n')//.slice(14000)
+  const urls = fs.readFileSync('urls.txt','utf8').replaceAll("\r","").split('\n').slice(20000)
   console.log("Num of urls: " + urls.length)
   let brokenurls = []
   let counter = 1
@@ -117,8 +117,10 @@ const withPage = (browser) => async (fn) => {
             console.log("TEMPBROKEN: " + url)
           }
         } else {
-          if(!products[url] || products[url][apk] != product[apk]) {
+          if(!products[url] || products[url]["apk"] != product["apk"]) {
             product["changed"] = Date.now()
+          } else if (products[url]["changed"]) {
+            product["changed"] == products[url]["changed"]
           }
           products[url] = product
         }

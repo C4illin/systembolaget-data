@@ -23,14 +23,14 @@ const fs = require("fs");
   await page.click("button[type='secondary']") // Cookie popup
   // await page.setDefaultNavigationTimeout(0)
  
-  let lastprice = 90
-  // let endprice = 10000
+  let lastprice = 100
+  let endprice = 200
   let productCounter = 0
 
   let stillRunning = true
   
   while (stillRunning) {
-    console.log(lastprice)
+    console.log("From price: " + lastprice)
     let url = `https://www.systembolaget.se/sok/?newArrivalType=Nytt senaste 3 månader&sortBy=Price&sortDirection=Ascending&priceFrom=${lastprice}`
     await page.goto(url)
 
@@ -57,6 +57,7 @@ const fs = require("fs");
         if (hrefsFiltered.length == lastHrefLength && hrefsFiltered.length % 30 == 0) {
           moreHref = true
           await page.waitForTimeout(1000)
+          console.log(hrefsFiltered.length)
         }
       }
       
@@ -82,7 +83,7 @@ const fs = require("fs");
           counter += 1
         }
       }
-      if (hrefsFiltered.length < 30) {
+      if (hrefsFiltered.length < 30 || lastprice > endprice) {
         console.log("End of page")
         stillRunning = false
       }
