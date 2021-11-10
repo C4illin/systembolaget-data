@@ -31,7 +31,7 @@ const fs = require("fs");
   
   while (stillRunning) {
     console.log(lastprice)
-    let url = `https://www.systembolaget.se/sok/?sortBy=Price&sortDirection=Ascending&priceFrom=${lastprice}`
+    let url = `https://www.systembolaget.se/sok/?newArrivalType=Nytt senaste 3 månader&sortBy=Price&sortDirection=Ascending&priceFrom=${lastprice}`
     await page.goto(url)
 
     let tooFew = true
@@ -39,7 +39,9 @@ const fs = require("fs");
       tooFew = false
       await page.waitForSelector("div[width='1,1,0.75'] > div > div:nth-child(1) h3")
       await page.waitForSelector(".css-6hztd2", {timeout: 5000}).then(async () => {
-        // sometimes crashes without delay idk why
+        // await page.evaluate(() => {
+        //   window.scrollTo(0,window.document.body.scrollHeight)
+        // })
         await page.click(".css-6hztd2", {delay: 100})
       }).catch(async () => {
         console.log("Couldn't find more products")
