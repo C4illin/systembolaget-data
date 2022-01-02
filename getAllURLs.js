@@ -4,7 +4,7 @@ const fs = require("fs");
 (async () => {
   let urls = fs.readFileSync("urls.txt","utf8").replaceAll("\r","").split("\n")
   let startSize = urls.length
-  console.log("Start storlek: " + startSize)
+  console.log("Start size: " + startSize)
   const browser = await puppeteer.launch({
     args: ["--disable-dev-shm-usage","--no-sandbox"]
   })
@@ -23,15 +23,26 @@ const fs = require("fs");
   await page.click("button[type='secondary']") // Cookie popup
   // await page.setDefaultNavigationTimeout(0)
  
-  let lastprice = 100
-  let endprice = 200
+  let lastprice = 0
+  // let endprice = 200
   let productCounter = 0
 
   let stillRunning = true
+
+  let urlarray = [
+    "https://www.systembolaget.se/sok/?assortmentText=Säsong",
+    "https://www.systembolaget.se/sok/?assortmentText=Tillf%C3%A4lligt%20sortiment",
+    "https://www.systembolaget.se/sok/?newArrivalType=Nytt%20senaste%203%20m%C3%A5nader",
+    "https://www.systembolaget.se/sok/?assortmentText=Webblanseringar",
+    "https://www.systembolaget.se/sok/?assortmentText=Fast%20sortiment",
+    "https://www.systembolaget.se/sok/?assortmentText=Lokalt%20%26%20Sm%C3%A5skaligt",
+    "https://www.systembolaget.se/sok/?assortmentText=Presentartiklar"
+  ]
   
   while (stillRunning) {
     console.log("From price: " + lastprice)
-    let url = `https://www.systembolaget.se/sok/?newArrivalType=Nytt senaste 3 månader&sortBy=Price&sortDirection=Ascending&priceFrom=${lastprice}`
+    let urlbase = "https://www.systembolaget.se/sok/?assortmentText=Fast%20sortiment"
+    let url = `${urlbase}&sortBy=Price&sortDirection=Ascending&priceFrom=${lastprice}`
     await page.goto(url)
 
     let tooFew = true
@@ -48,13 +59,15 @@ const fs = require("fs");
       })
       
       let moreHref = true
+      let moreHrefCounter = 0
       while (moreHref) {
         moreHref = false
         let hrefs = await page.$$eval("a", as => as.map(a => (a.href)))
         let lastHrefLength = hrefsFiltered?.length || 0
         var hrefsFiltered = hrefs.filter((link) => link.startsWith("https://www.systembolaget.se/produkt/"))
 
-        if (hrefsFiltered.length == lastHrefLength && hrefsFiltered.length % 30 == 0) {
+        if (hrefsFiltered.length == lastHrefLength && hrefsFiltered.length % 30 == 0 && moreHrefCounter < 5) {
+          moreHrefCounter += 1
           moreHref = true
           await page.waitForTimeout(1000)
           console.log(hrefsFiltered.length)
@@ -67,7 +80,7 @@ const fs = require("fs");
       lastprice = Math.floor(pricesFiltered.slice(-1)[0].replace(":-", "").replace("*", "").replace(":",".").replaceAll(" ",""))
       
 
-      if (lastprice == lastlastprice) {
+      if (lastprice == lastlastprice && hrefsFiltered.length != 1) {
         tooFew = true
       }
     }
@@ -83,17 +96,17 @@ const fs = require("fs");
           counter += 1
         }
       }
-      if (hrefsFiltered.length < 30 || lastprice > endprice) {
+      if (hrefsFiltered.length < 30) { // || lastprice > endprice) {
         console.log("End of page")
         stillRunning = false
       }
     }
-    console.log("Found: " + counter + " of " + hrefsFiltered.length + " products")
+    console.log("New: " + counter + " of " + hrefsFiltered.length + " products")
     // console.log(hrefsFiltered)
   }
-  console.log("Total: " + productCounter)
-  console.log("Slut storlek: " + urls.length)
-  console.log("Delta: " + (urls.length - startSize))
+  console.log("\n\nTotal found: " + productCounter)
+  console.log("End size: " + urls.length)
+  console.log("Total new: " + (urls.length - startSize))
 
   let file = fs.createWriteStream("urls.txt")
   file.write(urls.join("\n"))
