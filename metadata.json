@@ -1,0 +1,26 @@
+{
+    "docCount": 23042,
+    "fullAssortmentDocCount": 23042,
+    "nextPage": 2,
+    "priceRange": {
+        "min": 4,
+        "max": 790000
+    },
+    "volumeRange": {
+        "min": 0,
+        "max": 30000
+    },
+    "alcoholPercentageRange": {
+        "min": 0,
+        "max": 80
+    },
+    "sugarContentRange": {
+        "min": 0,
+        "max": 571
+    },
+    "sugarContentGramPer100mlRange": {
+        "min": 0,
+        "max": 57.1
+    },
+    "didYouMeanQuery": null
+}
