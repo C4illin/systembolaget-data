@@ -7,7 +7,7 @@ Use this one: https://github.com/dcronqvist/systembolaget-api
 
 Website is still up
 
-Systembolaget removed their official api for products, this is a workaround until they reimplement it. It contains a lot less information then the official one did.
+Systembolaget removed their official api for products, this is a workaround.
 
 Currently used by:
 https://alkolist.github.io/
