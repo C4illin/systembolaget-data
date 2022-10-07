@@ -1,16 +1,14 @@
 {
   "name": "systembolaget",
   "version": "1.0.0",
-  "main": "getAllURLs.js",
+  "main": "getAllProducts.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bluebird": "^3.7.2",
-    "node-fetch": "^3.2.10",
-    "puppeteer": "^8.0.0"
+    "node-fetch": "^3.2.10"
   },
   "description": "",
   "repository": {
