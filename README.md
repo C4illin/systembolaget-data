@@ -17,6 +17,8 @@ https://github.com/alkolist/alkolist.github.io
 
 `/v1/products` includes all products and some information about them.
 
+https://susbolaget.emrik.org/v1/products
+
 ## Install:
 
 ```yml
