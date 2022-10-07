@@ -22,7 +22,7 @@ https://github.com/alkolist/alkolist.github.io
 ```yml
 # docker-compose.yml
 
-version: "3.8"
+version: "3"
 services:
   systembolaget-data:
     image: ghcr.io/c4illin/systembolaget-data:main
