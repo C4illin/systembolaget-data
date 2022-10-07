@@ -27,8 +27,8 @@ app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}`);
 });
 
-const updateProducts = new CronJob('0 3 * * *', () => {
+const updateProducts = new CronJob('0 5 * * *', () => {
   console.log('Updating ALL products')
   getAllProducts();
-  console.log('Product update done')
 });
+updateProducts.start()

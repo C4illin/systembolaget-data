@@ -22,7 +22,7 @@ export const getAllProducts = () => {
     for (const urlParam of urlParameters) {
       let url = starturl + urlParam
       console.log("Starting: " + url)
-      for (let i = 1; i < 10; i++) {
+      for (let i = 1; i < 500; i++) {
         await fetch(url + "&page=" + i, options)
           .then(res => res.json())
           .then(json => {
@@ -42,7 +42,7 @@ export const getAllProducts = () => {
       }
     }
 
-    fs.writeFile('test.json', JSON.stringify(products, null, 4), (err) => {
+    fs.writeFile('products.json', JSON.stringify(products, null, 2), (err) => {
       if (err) {
         throw err
       }
