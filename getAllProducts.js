@@ -21,19 +21,18 @@ export const getAllProducts = () => {
   (async () => {
     for (const urlParam of urlParameters) {
       let url = starturl + urlParam
-      console.log(url)
-      for (let i = 1; i < 400; i++) {
+      console.log("Starting: " + url)
+      for (let i = 1; i < 10; i++) {
         await fetch(url + "&page=" + i, options)
           .then(res => res.json())
           .then(json => {
-            console.log(i)
             if (i > json["metadata"]["nextPage"] && json["metadata"]["nextPage"] > 0) {
-              console.log("Aborted")
+              console.log("Aborted, something is wrong...")
               console.log("Last page: " + json["metadata"]["nextPage"])
               i = 10000
             } else if (json["metadata"]["nextPage"] == -1) {
               products = products.concat(json["products"])
-              console.log("Aborted 2")
+              console.log("Done after " + i + " pages")
               i = 10000
             } else {
               products = products.concat(json["products"])

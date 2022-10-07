@@ -13,6 +13,21 @@ https://alkolist.github.io/
 Website repo:
 https://github.com/alkolist/alkolist.github.io
 
-## Files:
+## Paths:
 
-`products.json` includes all products and some information about them.
+`/v1/products` includes all products and some information about them.
+
+## Install:
+
+```yml
+# docker-compose.yml
+
+version: "3.8"
+services:
+  systembolaget-data:
+    image: ghcr.io/c4illin/systembolaget-data:main
+    container_name: systembolaget-data
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+```
