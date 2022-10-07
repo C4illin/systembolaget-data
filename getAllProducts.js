@@ -16,7 +16,16 @@ export const getAllProducts = () => {
     }
   }
 
-  let urlParameters = ['&assortmentText=S%C3%A4song', '&assortmentText=Tillf%C3%A4lligt%20sortiment', '&assortmentText=Webblanseringar', '&assortmentText=Fast%20sortiment', '&assortmentText=Lokalt%20%26%20Sm%C3%A5skaligt', '&assortmentText=Presentartiklar', '&assortmentText=Ordervaror&price.max=250', '&assortmentText=Ordervaror&price.min=250'];
+  let urlParameters = [
+    '&assortmentText=S%C3%A4song',
+    '&assortmentText=Tillf%C3%A4lligt%20sortiment',
+    '&assortmentText=Webblanseringar',
+    '&assortmentText=Fast%20sortiment',
+    '&assortmentText=Lokalt%20%26%20Sm%C3%A5skaligt',
+    '&assortmentText=Presentartiklar',
+    '&assortmentText=Ordervaror&price.max=250',
+    '&assortmentText=Ordervaror&price.min=251'
+  ];
 
   (async () => {
     for (const urlParam of urlParameters) {
