@@ -24,7 +24,6 @@ https://susbolaget.emrik.org/v1/products (≈56 MB)
 ```yml
 # docker-compose.yml
 
-version: "3"
 services:
   systembolaget-data:
     image: ghcr.io/c4illin/systembolaget-data:main
