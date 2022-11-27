@@ -17,7 +17,7 @@ https://github.com/alkolist/alkolist.github.io
 
 `/v1/products` includes ALL products and some information about them.
 
-https://susbolaget.emrik.org/v1/products (≈56 MB)
+https://susbolaget.emrik.org/v1/products (≈50 MB)
 
 ## Install:
 
