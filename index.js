@@ -5,9 +5,21 @@ import { dirname } from 'path';
 import { getAllProducts } from './getAllProducts.js';
 import compression from "compression"
 import helmet from "helmet"
+import { readFile } from 'fs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+
+readFile("data/products.json", function read(err, data) {
+  if(!err && data) {
+    console.log("Products.json found, no need to fetch")
+  } else if(err.code == "ENOENT") {
+    console.log("Products.json not found, fetching")
+    getAllProducts();
+  } else {
+    console.log("Error with products.json: ", err.code)
+  }
+})
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -16,7 +28,7 @@ app.use(compression())
 app.use(helmet())
 
 app.get('/v1/products', (req, res) => {
-  res.sendFile(__dirname + '/products.json');
+  res.sendFile(__dirname + '/data/products.json');
 });
 
 app.get('/', (req, res) => {
@@ -27,7 +39,7 @@ app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}`);
 });
 
-const updateProducts = new CronJob('0 5 * * *', () => {
+const updateProducts = new CronJob('0 3 * * *', () => {
   console.log('Updating ALL products')
   getAllProducts();
 });

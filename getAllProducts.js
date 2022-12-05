@@ -51,7 +51,7 @@ export const getAllProducts = () => {
       }
     }
 
-    fs.writeFile('products.json', JSON.stringify(products, null, 2), (err) => {
+    fs.writeFile('data/products.json', JSON.stringify(products, null, 2), (err) => {
       if (err) {
         throw err
       }

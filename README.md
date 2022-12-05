@@ -29,6 +29,10 @@ services:
     image: ghcr.io/c4illin/systembolaget-data:main
     container_name: systembolaget-data
     restart: unless-stopped
+    environment:
+      - TZ=Europe/Stockholm
     ports:
       - 3000:3000
+    volumes:
+      - ./data:/usr/src/app/data
 ```
