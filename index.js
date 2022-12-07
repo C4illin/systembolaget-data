@@ -5,6 +5,7 @@ import { dirname } from 'path';
 import { getAllProducts } from './getAllProducts.js';
 import compression from "compression"
 import helmet from "helmet"
+import cors from "cors"
 import { readFile } from 'fs';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -26,6 +27,7 @@ const port = process.env.PORT || 3000;
 
 app.use(compression())
 app.use(helmet())
+app.use(cors())
 
 app.get('/v1/products', (req, res) => {
   res.sendFile(__dirname + '/data/products.json');
