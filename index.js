@@ -10,10 +10,12 @@ import { readFile } from 'fs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+let products = []
 
 readFile("data/products.json", function read(err, data) {
   if(!err && data) {
     console.log("Products.json found, no need to fetch")
+    products = JSON.parse(data)
   } else if(err.code == "ENOENT") {
     console.log("Products.json not found, fetching")
     getAllProducts();
@@ -33,6 +35,16 @@ app.get('/v1/products', (req, res) => {
   res.sendFile(__dirname + '/data/products.json');
 });
 
+app.get("/v1/product/:id", (req, res) => {
+  let data = products.find(product => product.productNumber == req.params.id)
+  res.send(data)
+});
+
+app.get("/v1/productShort/:id", (req, res) => {
+  let data = products.find(product => product.productNumberShort == req.params.id)
+  res.send(data)
+});
+
 app.get('/', (req, res) => {
   res.redirect('v1/products');
 })
@@ -43,6 +55,6 @@ app.listen(port, () => {
 
 const updateProducts = new CronJob('0 3 * * *', () => {
   console.log('Updating ALL products')
-  getAllProducts();
+  products = getAllProducts();
 });
 updateProducts.start()

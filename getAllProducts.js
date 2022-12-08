@@ -56,6 +56,7 @@ export const getAllProducts = () => {
         throw err
       }
       console.log("Wrote: " + products.length + " products")
+      return products
     })
   })()
 }
