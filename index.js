@@ -17,8 +17,8 @@ readFile("data/products.json", function read(err, data) {
     console.log("Products.json found, no need to fetch")
     products = JSON.parse(data)
   } else if(err.code == "ENOENT") {
-    console.log("Products.json not found, fetching")
-    getAllProducts();
+    console.log("Products.json not found, fetching...")
+    products = getAllProducts();
   } else {
     console.log("Error with products.json: ", err.code)
   }
