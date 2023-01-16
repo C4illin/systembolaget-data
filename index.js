@@ -58,3 +58,5 @@ const updateProducts = new CronJob('0 3 * * *', () => {
   products = getAllProducts();
 });
 updateProducts.start()
+
+// getAllProducts();
