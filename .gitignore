@@ -2,3 +2,4 @@ test*
 node_modules/
 /dist
 /data/products.json
+/libs

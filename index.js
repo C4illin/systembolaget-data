@@ -24,8 +24,10 @@ readFile("data/products.json", function read(err, data) {
     console.log("Products.json found, no need to fetch")
     idMap(JSON.parse(data))
   } else if(err.code == "ENOENT") {
-    console.log("Products.json not found, fetching...")
-    idMap(getAllProducts())
+    console.log("Products.json not found, this takes a while...");
+    getAllProducts(productIdMap).then((products) => {
+      idMap(products)
+    })
   } else {
     console.log("Error with products.json: ", err.code)
   }
@@ -66,8 +68,8 @@ app.listen(port, () => {
 
 const updateProducts = new CronJob('0 3 * * *', () => {
   console.log('Updating ALL products')
-  idMap(getAllProducts())
+  getAllProducts(productIdMap).then((products) => {
+    idMap(products)
+  })
 });
 updateProducts.start()
-
-// getAllProducts();
