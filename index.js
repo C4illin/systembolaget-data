@@ -10,15 +10,22 @@ import { readFile } from 'fs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-let products = []
+let productIdMap = {};
+
+const idMap = (products) => {
+  for (const product of products) {
+    productIdMap[product.productNumber] = product
+  }
+  console.log("IdMap created")
+}
 
 readFile("data/products.json", function read(err, data) {
   if(!err && data) {
     console.log("Products.json found, no need to fetch")
-    products = JSON.parse(data)
+    idMap(JSON.parse(data))
   } else if(err.code == "ENOENT") {
     console.log("Products.json not found, fetching...")
-    products = getAllProducts();
+    idMap(getAllProducts())
   } else {
     console.log("Error with products.json: ", err.code)
   }
@@ -31,23 +38,27 @@ app.use(compression())
 app.use(helmet())
 app.use(cors())
 
-app.get('/v1/products', (req, res) => {
+app.get('/v1/products', (_req, res) => {
   res.sendFile(__dirname + '/data/products.json');
 });
 
 app.get("/v1/product/:id", (req, res) => {
-  let data = products.find(product => product.productNumber == req.params.id)
-  res.send(data)
+  const result = productIdMap[req.params.id]
+  if (result) {
+    res.json(result)
+  } else {
+    res.status(404).json({"error": "404, product not found"})
+  }
+  // res.json(productIdMap[req.params.id] || { "error": "Product not found"})
 });
 
-app.get("/v1/productShort/:id", (req, res) => {
-  let data = products.find(product => product.productNumberShort == req.params.id)
-  res.send(data)
-});
-
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
   res.redirect('v1/products');
 })
+
+app.get('*', function(req, res){
+  res.status(404).send("404, page not found. See <a href='https://github.com/C4illin/systembolaget-data'>https://github.com/C4illin/systembolaget-data</a> for documentation.");
+});
 
 app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}`);
@@ -55,7 +66,7 @@ app.listen(port, () => {
 
 const updateProducts = new CronJob('0 3 * * *', () => {
   console.log('Updating ALL products')
-  products = getAllProducts();
+  idMap(getAllProducts())
 });
 updateProducts.start()
 

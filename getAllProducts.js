@@ -1,5 +1,6 @@
 import fetch from 'node-fetch'
 import fs from 'fs'
+// import { putItem } from './libs/ddbPut.js'
 
 export const getAllProducts = () => {
   let starturl = "https://api-extern.systembolaget.se/sb-api-ecommerce/v1/productsearch/search?size=30"
@@ -24,10 +25,10 @@ export const getAllProducts = () => {
           priceHistory = product.priceHistory
         }
 
-        toCompare[product.productNumberShort] = [product.price, product.volume, product.alcoholPercentage, priceHistory, priceChangedDate]
+        toCompare[product.productNumber] = [product.price, product.volume, product.alcoholPercentage, priceHistory, priceChangedDate]
       }
     } else if(err.code == "ENOENT") {
-      console.log("Products.json not found, don't upload to AWS")
+      console.log("Products.json not found, overwriting AWS")
     } else {
       console.log("Error with products.json: ", err.code)
     }
@@ -79,18 +80,19 @@ export const getAllProducts = () => {
     }
     
     for(const product of products) {
-      if (product.productNumberShort in toCompare) {
-        product.priceChangedDate = toCompare[product.productNumberShort][4]
-        if (product.price == toCompare[product.productNumberShort][0] && product.volume == toCompare[product.productNumberShort][1] && product.alcoholPercentage == toCompare[product.productNumberShort][2] || changedDate == toCompare[product.productNumberShort][4]) {  
-          product.priceHistory = toCompare[product.productNumberShort][3]
-          continue;
+      if (product.productNumber in toCompare) {
+        product.priceChangedDate = toCompare[product.productNumber][4]
+        if (product.price == toCompare[product.productNumber][0] && product.volume == toCompare[product.productNumber][1] && product.alcoholPercentage == toCompare[product.productNumber][2] || changedDate == toCompare[product.productNumber][4]) {  
+          product.priceHistory = toCompare[product.productNumber][3]
+          continue; //no need to update product
         }
-        product.priceHistory = toCompare[product.productNumberShort][3].append({"date": changedDate, "price": product.price})
+        product.priceHistory = toCompare[product.productNumber][3].append({"date": changedDate, "price": product.price})
       } else {
         product["priceHistory"] = [{"date": changedDate, "price": product.price}]
       }
-      // console.log("Product: " + product.productNumberShort + " was updated")
+      // console.log("Product: " + product.productNumber + " was updated")
       product["priceChangedDate"] = changedDate
+      // putItem(product)
     }
     
     fs.writeFile('data/products.json', JSON.stringify(products, null, 2), (err) => {
