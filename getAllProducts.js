@@ -60,10 +60,20 @@ export const getAllProducts = async (productIdMap) => {
   }
   const newProductNum = products.length
 
+  let dupCount = 0;
+
   let foundIDs = [];
-  for (const product of products) {
-    if (product.productNumber in productIdMap) {
+  for (let i = products.length - 1; i >= 0; i--) {
+    let product = products[i]
+    if (foundIDs.includes(product.productNumber)) {
+      products.splice(i, 1)
+      dupCount++
+      continue;
+    } else {
       foundIDs.push(product.productNumber);
+    }
+
+    if (product.productNumber in productIdMap && productIdMap[product.productNumber].changedDate) {
       // add old data
       product["changedDate"] = productIdMap[product.productNumber].changedDate;
       product["priceHistory"] =
@@ -75,10 +85,7 @@ export const getAllProducts = async (productIdMap) => {
       if (product.price != productIdMap[product.productNumber].price) {
         product.priceHistory.push({ x: changedDate, y: product.price });
       }
-      if (
-        product.alcoholPercentage !=
-        productIdMap[product.productNumber].alcoholPercentage
-      ) {
+      if (product.alcoholPercentage != productIdMap[product.productNumber].alcoholPercentage) {
         product.alcoholHistory.push({
           x: changedDate,
           y: product.alcoholPercentage || 0,
@@ -88,11 +95,12 @@ export const getAllProducts = async (productIdMap) => {
       product["changedDate"] = changedDate;
       product["priceHistory"] = [{ x: changedDate, y: product.price }];
       product["alcoholHistory"] = [
-        { x: changedDate, y: product.alcoholPercentage || 0},
+        { x: changedDate, y: product.alcoholPercentage || 0 },
       ];
     }
   }
 
+  let delCount = 0;
   for (const id of Object.keys(productIdMap)) {
     if (!foundIDs.includes(id)) {
       // console.log("Product not found: " + id);
@@ -103,24 +111,25 @@ export const getAllProducts = async (productIdMap) => {
         ) {
           // product not found for a week, remove it
           console.log("Product removed: " + id);
+          delCount++
           continue;
         }
       } else {
         productIdMap[id]["lastFound"] = changedDate;
-        productIdMap[id]["isTemporaryOutOfStock"] = true;
+        productIdMap[id]["isTemporaryOutOfStock"] = true; //high chance it is
       }
       products.push(productIdMap[id]);
     }
   }
   console.log("Found: " + newProductNum + " products")
-  console.log("New: " + (newProductNum - foundIDs.length) + " products");
-  console.log("Not found: " + (Object.keys(productIdMap).length - foundIDs.length) + " products");
-  
+  console.log("Delta: " + (foundIDs.length - Object.keys(productIdMap).length) + " products");
+  console.log("Duplicates: " + dupCount + " products");
+  console.log("Deleted: " + delCount + " products");
 
   // fs.rename("data/products.json", "data/products_old.json", (err) => { if (err) console.error(err); })
   fs.writeFile(
     "data/products.json",
-    JSON.stringify(products, null, 2), (err) => {if (err) {throw err;}}
+    JSON.stringify(products, null, 2), (err) => { if (err) { throw err; } }
   );
   console.log("Wrote: " + products.length + " products");
   return products;
