@@ -61,6 +61,7 @@ export const getAllProducts = async (productIdMap) => {
   const newProductNum = products.length
 
   let dupCount = 0;
+  let updatedProducts = [];
 
   let foundIDs = [];
   for (let i = products.length - 1; i >= 0; i--) {
@@ -82,14 +83,21 @@ export const getAllProducts = async (productIdMap) => {
         productIdMap[product.productNumber].alcoholHistory;
 
       // add new data
+      let updated = false;
       if (product.price != productIdMap[product.productNumber].price) {
         product.priceHistory.push({ x: changedDate, y: product.price });
+        updated = true;
       }
       if (product.alcoholPercentage != productIdMap[product.productNumber].alcoholPercentage) {
         product.alcoholHistory.push({
           x: changedDate,
           y: product.alcoholPercentage || 0,
         });
+        updated = true;
+      }
+      if (updated) {
+        product["changedDate"] = changedDate;
+        updatedProducts.push(product.productNumber);
       }
     } else {
       product["changedDate"] = changedDate;
@@ -132,5 +140,6 @@ export const getAllProducts = async (productIdMap) => {
     JSON.stringify(products, null, 2), (err) => { if (err) { throw err; } }
   );
   console.log("Wrote: " + products.length + " products");
+  fs.writeFile("data/updatedProducts.json", JSON.stringify(updatedProducts, null, 2), (err) => { if (err) { throw err; } })
   return products;
 };
