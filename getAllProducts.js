@@ -140,6 +140,6 @@ export const getAllProducts = async (productIdMap) => {
     JSON.stringify(products, null, 2), (err) => { if (err) { throw err; } }
   );
   console.log("Wrote: " + products.length + " products");
-  fs.writeFile("data/updatedProducts.json", JSON.stringify(updatedProducts, null, 2), (err) => { if (err) { throw err; } })
+  fs.writeFile("data/updated.json", JSON.stringify(updatedProducts, null, 2), (err) => { if (err) { throw err; } })
   return products;
 };

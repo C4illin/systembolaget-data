@@ -44,6 +44,10 @@ app.get('/v1/products', (_req, res) => {
   res.sendFile(__dirname + '/data/products.json');
 });
 
+app.get('/v1/products/updated', (req, res) => {
+  res.sendFile(__dirname + '/data/updated.json');
+});
+
 app.get("/v1/product/:id", (req, res) => {
   const result = productIdMap[req.params.id]
   if (result) {

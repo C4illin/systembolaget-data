@@ -2,5 +2,5 @@ test*
 node_modules/
 /dist
 /data/products.json
-/data/updatedProducts.json
+/data/updated.json
 /libs
