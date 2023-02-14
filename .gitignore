@@ -4,3 +4,5 @@ node_modules/
 /data/products.json
 *.xls
 *.xlsx
+/data/updated.json
+/libs
