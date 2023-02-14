@@ -2,3 +2,5 @@ test*
 node_modules/
 /dist
 /data/products.json
+*.xls
+*.xlsx
