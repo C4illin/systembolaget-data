@@ -5,4 +5,5 @@ node_modules/
 *.xls
 *.xlsx
 /data/updated.json
+/data/backup.json
 /libs

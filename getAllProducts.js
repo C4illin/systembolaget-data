@@ -77,10 +77,9 @@ export const getAllProducts = async (productIdMap) => {
     if (product.productNumber in productIdMap && productIdMap[product.productNumber].changedDate) {
       // add old data
       product["changedDate"] = productIdMap[product.productNumber].changedDate;
-      product["priceHistory"] =
-        productIdMap[product.productNumber].priceHistory;
-      product["alcoholHistory"] =
-        productIdMap[product.productNumber].alcoholHistory;
+      product["priceHistory"] = productIdMap[product.productNumber].priceHistory;
+      product["alcoholHistory"] = productIdMap[product.productNumber].alcoholHistory;
+      product["soldVolume"] = productIdMap[product.productNumber].soldVolume;
 
       // add new data
       let updated = false;
