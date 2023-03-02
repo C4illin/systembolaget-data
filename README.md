@@ -5,7 +5,7 @@
 
 
 
-Systembolaget removed their official api for products, this is a workaround.
+Systembolaget removed their official api for products, this is a workaround. It includes all data available as well as some historic data fetched from old excel documents.
 
 Currently used by:
 https://alkolist.github.io/
@@ -17,7 +17,7 @@ https://github.com/alkolist/alkolist.github.io
 
 `/v1/products` includes ALL products and some information about them.
 
-https://susbolaget.emrik.org/v1/products (≈50 MB)
+https://susbolaget.emrik.org/v1/products (≈73 MB)
 
 ## Install:
 
