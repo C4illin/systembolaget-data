@@ -7,6 +7,7 @@ export const getAllProducts = async (productIdMap) => {
     "https://api-extern.systembolaget.se/sb-api-ecommerce/v1/productsearch/search?size=30";
   // let products = require('./test.json')
   let products = [];
+  let updatedProducts = fs.readFileSync("data/updated.json");
   // let toCompare = {}
   let changedDate = new Date(new Date().valueOf() - 1000 * 3600 * 10)
     .setHours(0, 0, 0, 0)
@@ -61,7 +62,6 @@ export const getAllProducts = async (productIdMap) => {
   const newProductNum = products.length
 
   let dupCount = 0;
-  let updatedProducts = [];
 
   let foundIDs = [];
   for (let i = products.length - 1; i >= 0; i--) {
@@ -96,7 +96,7 @@ export const getAllProducts = async (productIdMap) => {
       }
       if (updated) {
         product["changedDate"] = changedDate;
-        updatedProducts.push(product.productNumber);
+        updatedProducts.push({"id":product.productNumber, "date":changedDate});
       }
     } else {
       product["changedDate"] = changedDate;
@@ -139,6 +139,12 @@ export const getAllProducts = async (productIdMap) => {
     JSON.stringify(products, null, 2), (err) => { if (err) { throw err; } }
   );
   console.log("Wrote: " + products.length + " products");
+
+  // filter products updated more than 7 days ago
+  updatedProducts = updatedProducts.filter((product) => {
+    return product.date + 1000 * 60 * 60 * 24 * 7 > changedDate;
+  });
+
   fs.writeFile("data/updated.json", JSON.stringify(updatedProducts, null, 2), (err) => { if (err) { throw err; } })
   return products;
 };
