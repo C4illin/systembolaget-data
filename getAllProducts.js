@@ -7,8 +7,18 @@ export const getAllProducts = async (productIdMap) => {
     "https://api-extern.systembolaget.se/sb-api-ecommerce/v1/productsearch/search?size=30";
   // let products = require('./test.json')
   let products = [];
-  let updatedProducts = fs.readFileSync("data/updated.json");
-  // let toCompare = {}
+  
+  let updatedProducts = []
+  fs.readFile("data/updated.json", function read(err, data) {
+    if(!err && data) {
+      updatedProducts = JSON.parse(data)
+    } else if(err.code == "ENOENT") {
+      console.log("Updated.json not found.");
+    } else {
+      console.log("Error with updated.json: ", err.code)
+    }
+  })
+
   let changedDate = new Date(new Date().valueOf() - 1000 * 3600 * 10)
     .setHours(0, 0, 0, 0)
     .valueOf(); // yesterday if less then 10 hours ago
