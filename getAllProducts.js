@@ -7,12 +7,12 @@ export const getAllProducts = async (productIdMap) => {
     "https://api-extern.systembolaget.se/sb-api-ecommerce/v1/productsearch/search?size=30";
   // let products = require('./test.json')
   let products = [];
-  
+
   let updatedProducts = []
   fs.readFile("data/updated.json", function read(err, data) {
-    if(!err && data) {
+    if (!err && data) {
       updatedProducts = JSON.parse(data)
-    } else if(err.code == "ENOENT") {
+    } else if (err.code == "ENOENT") {
       console.log("Updated.json not found.");
     } else {
       console.log("Error with updated.json: ", err.code)
@@ -93,9 +93,12 @@ export const getAllProducts = async (productIdMap) => {
 
       // add new data
       let updated = false;
+      let reason = "";
+
       if (product.price != productIdMap[product.productNumber].price) {
         product.priceHistory.push({ x: changedDate, y: product.price });
         updated = true;
+        reason = "Priset ändrades från " + productIdMap[product.productNumber].price + " till " + product.price + " kr.";
       }
       if (product.alcoholPercentage != productIdMap[product.productNumber].alcoholPercentage) {
         product.alcoholHistory.push({
@@ -103,10 +106,11 @@ export const getAllProducts = async (productIdMap) => {
           y: product.alcoholPercentage || 0,
         });
         updated = true;
+        reason = "Alkoholhalten ändrades från " + productIdMap[product.productNumber].alcoholPercentage + " till " + product.alcoholPercentage + " %.";
       }
       if (updated) {
         product["changedDate"] = changedDate;
-        updatedProducts.push({"id":product.productNumber, "date":changedDate});
+        updatedProducts.push({ "id": product.productNumber, "date": changedDate, "reason": reason });
       }
     } else {
       product["changedDate"] = changedDate;
@@ -114,6 +118,7 @@ export const getAllProducts = async (productIdMap) => {
       product["alcoholHistory"] = [
         { x: changedDate, y: product.alcoholPercentage || 0 },
       ];
+      updatedProducts.push({ "id": product.productNumber, "date": changedDate, "reason": "Ny produkt." });
     }
   }
 
