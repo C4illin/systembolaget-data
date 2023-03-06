@@ -7,11 +7,9 @@
 
 Systembolaget removed their official api for products, this is a workaround. It includes all data available as well as some historic data fetched from old excel documents.
 
-Currently used by:
-https://alkolist.github.io/
-
-Website repo:
-https://github.com/alkolist/alkolist.github.io
+Example usage:
+* https://github.com/alkolist/alkolist.github.io
+* https://github.com/C4illin/Alkoinfo
 
 ## Paths:
 
