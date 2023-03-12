@@ -34,3 +34,5 @@ services:
     volumes:
       - ./data:/usr/src/app/data
 ```
+
+Download products.json from above and place in `./data`, or download excel from systembolaget.se and import manually.
