@@ -110,10 +110,10 @@ export const getAllProducts = async (productIdMap) => {
 					x: changedDate,
 					y: product.alcoholPercentage || 0,
 				});
-				updated = true;
-				reason = `Alkoholhalten ändrades från ${
-					productIdMap[product.productNumber].alcoholPercentage
-				} till ${product.alcoholPercentage} %.`;
+				// updated = true;
+				// reason = `Alkoholhalten ändrades från ${
+				// 	productIdMap[product.productNumber].alcoholPercentage
+				// } till ${product.alcoholPercentage} %.`;
 			}
 			if (updated) {
 				product.changedDate = changedDate;
