@@ -1,12 +1,12 @@
-import express from "express";
-import { CronJob } from "cron";
-import { fileURLToPath } from "node:url";
-import { dirname } from "node:path";
-import { getAllProducts } from "./getAllProducts.js";
 import compression from "compression";
-import helmet from "helmet";
 import cors from "cors";
+import { CronJob } from "cron";
+import express from "express";
+import helmet from "helmet";
 import { readFile } from "node:fs";
+import { dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+import { getAllProducts } from "./getAllProducts.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
