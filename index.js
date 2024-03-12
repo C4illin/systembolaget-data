@@ -40,7 +40,10 @@ app.use(compression());
 app.use(helmet());
 app.use(cors());
 
-app.get("/v1/products", (_req, res) => {
+app.get("/v1/products", (req, res) => {
+	// print who IP of the request
+	const ip = req.headers["x-forwarded-for"] || req.socket.remoteAddress; 
+	console.log(`Request from ${ip}`);
 	res.sendFile(`${__dirname}/data/products.json`);
 });
 
