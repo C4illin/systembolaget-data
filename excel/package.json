@@ -1,14 +1,14 @@
 {
-  "name": "excel",
-  "version": "1.0.0",
-  "description": "",
-  "main": "excel.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "read-excel-file": "^5.5.3"
-  }
+	"name": "excel",
+	"version": "1.0.0",
+	"description": "",
+	"main": "excel.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"read-excel-file": "^5.5.3"
+	}
 }

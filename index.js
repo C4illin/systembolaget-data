@@ -42,7 +42,7 @@ app.use(cors());
 
 app.get("/v1/products", (req, res) => {
 	// print who IP of the request
-	const ip = req.headers["x-forwarded-for"] || req.socket.remoteAddress; 
+	const ip = req.headers["x-forwarded-for"] || req.socket.remoteAddress;
 	console.log(`Request from ${ip}`);
 	res.sendFile(`${__dirname}/data/products.json`);
 });
@@ -77,9 +77,15 @@ app.listen(port, () => {
 	console.log(`Listening at http://localhost:${port}`);
 });
 
-new CronJob("0 0 3 * * *", () => {
-	console.log("Updating ALL products");
-	getAllProducts(productIdMap).then((products) => {
-		idMap(products);
-	});
-}, null, true, "Europe/Stockholm");
+new CronJob(
+	"0 0 3 * * *",
+	() => {
+		console.log("Updating ALL products");
+		getAllProducts(productIdMap).then((products) => {
+			idMap(products);
+		});
+	},
+	null,
+	true,
+	"Europe/Stockholm",
+);
