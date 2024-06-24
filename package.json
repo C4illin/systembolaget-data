@@ -26,6 +26,6 @@
 	"homepage": "https://github.com/C4illin/systembolaget-data#readme",
 	"type": "module",
 	"devDependencies": {
-		"@biomejs/biome": "1.8.1"
+		"@biomejs/biome": "1.8.2"
 	}
 }
