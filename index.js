@@ -70,12 +70,23 @@ app.get("/", (_req, res) => {
 	res.redirect("v1/products");
 });
 
-app.get("*", (_req, res) => {
-	res
-		.status(404)
-		.send(
-			"404, page not found. See <a href='https://github.com/C4illin/systembolaget-data'>https://github.com/C4illin/systembolaget-data</a> for documentation.",
-		);
+// 404 handler - place this after all other routes
+app.use((req, res) => {
+  res
+    .status(404)
+    .format({
+      'text/html': () => {
+        res.send(
+          "404, page not found. See <a href='https://github.com/C4illin/systembolaget-data'>https://github.com/C4illin/systembolaget-data</a> for documentation."
+        );
+      },
+      'application/json': () => {
+        res.json({ error: "404, page not found", docs: "https://github.com/C4illin/systembolaget-data" });
+      },
+      default: () => {
+        res.send("404, page not found");
+      }
+    });
 });
 
 app.listen(port, () => {
