@@ -16,6 +16,8 @@ Example usage:
 
 https://susbolaget.emrik.org/v1/products (≈73 MB)
 
+(the data at my instance is updated every dat at 03, swedish time)
+
 ## Install:
 
 ```yml
