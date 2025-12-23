@@ -3,7 +3,8 @@
 	"version": "1.0.0",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"check": "biome check && biome lint",
+		"format": "biome format --write && biome lint --write"
 	},
 	"author": "",
 	"license": "ISC",

@@ -49,7 +49,7 @@ const processItem = (item) => {
 			.split(" ")
 			.sort()[0];
 
-		const changedDate = new Date(Number.parseInt(year) + 1, 0, 1).valueOf();
+		const changedDate = new Date(Number.parseInt(year, 10) + 1, 0, 1).valueOf();
 
 		console.log("Year:", year, "Epoch:", changedDate);
 

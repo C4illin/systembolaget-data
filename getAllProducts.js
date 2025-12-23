@@ -1,11 +1,9 @@
-import fetch from "node-fetch";
 import fs from "node:fs";
-// import { putItem } from './libs/ddbPut.js'
+import fetch from "node-fetch";
 
 export const getAllProducts = async (productIdMap) => {
 	const starturl =
 		"https://api-extern.systembolaget.se/sb-api-ecommerce/v1/productsearch/search?size=30";
-	// let products = require('./test.json')
 	let products = [];
 
 	let updatedProducts = [];
@@ -19,9 +17,9 @@ export const getAllProducts = async (productIdMap) => {
 		}
 	});
 
-	const changedDate = new Date(new Date().valueOf() - 1000 * 3600 * 10)
+	const changedDate = new Date(Date.now() - 1000 * 3600 * 10)
 		.setHours(0, 0, 0, 0)
-		.valueOf(); // yesterday if less then 10 hours ago
+		.valueOf(); // Yesterday if less than 10 hours ago
 
 	const options = {
 		method: "GET",
@@ -110,10 +108,6 @@ export const getAllProducts = async (productIdMap) => {
 					x: changedDate,
 					y: product.alcoholPercentage || 0,
 				});
-				// updated = true;
-				// reason = `Alkoholhalten ändrades från ${
-				// 	productIdMap[product.productNumber].alcoholPercentage
-				// } till ${product.alcoholPercentage} %.`;
 			}
 			if (updated) {
 				product.changedDate = changedDate;
@@ -140,13 +134,12 @@ export const getAllProducts = async (productIdMap) => {
 	let delCount = 0;
 	for (const id of Object.keys(productIdMap)) {
 		if (!foundIDs.includes(id)) {
-			// console.log("Product not found: " + id);
 			if (productIdMap[id].lastFound) {
 				if (
 					productIdMap[id].lastFound + 1000 * 60 * 60 * 24 * 7 <
 					changedDate
 				) {
-					// product not found for a week, remove it
+					// Product not found for a week, remove it
 					console.log(`Product removed: ${id}`);
 					delCount++;
 					continue;
@@ -165,7 +158,6 @@ export const getAllProducts = async (productIdMap) => {
 	console.log(`Duplicates: ${dupCount} products`);
 	console.log(`Deleted: ${delCount} products`);
 
-	// fs.rename("data/products.json", "data/products_old.json", (err) => { if (err) console.error(err); })
 	fs.writeFile(
 		"data/products.json",
 		JSON.stringify(products, null, 2),
@@ -177,7 +169,7 @@ export const getAllProducts = async (productIdMap) => {
 	);
 	console.log(`Wrote: ${products.length} products`);
 
-	// filter products updated more than 7 days ago
+	// Filter products updated more than 7 days ago
 	updatedProducts = updatedProducts.filter((product) => {
 		return product.date + 1000 * 60 * 60 * 24 * 7 > changedDate;
 	});

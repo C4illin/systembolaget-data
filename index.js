@@ -1,11 +1,11 @@
+import { readFile } from "node:fs";
+import { dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 import compression from "compression";
 import cors from "cors";
 import { CronJob } from "cron";
 import express from "express";
 import helmet from "helmet";
-import { readFile } from "node:fs";
-import { dirname } from "node:path";
-import { fileURLToPath } from "node:url";
 import { getAllProducts } from "./getAllProducts.js";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -41,7 +41,7 @@ app.use(helmet());
 app.use(cors());
 
 app.get("/v1/products", (_req, res) => {
-	// print who IP of the request
+	// Print who IP of the request
 	// const ip = req.headers["x-forwarded-for"] || req.socket.remoteAddress;
 	// console.log(`Request from ${ip}`);
 	res.sendFile(`${__dirname}/data/products.json`);
@@ -71,7 +71,7 @@ app.get("/", (_req, res) => {
 });
 
 // 404 handler - place this after all other routes
-app.use((req, res) => {
+app.use((_req, res) => {
 	res.status(404).format({
 		"text/html": () => {
 			res.send(
